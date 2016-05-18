@@ -1,0 +1,37 @@
+/**
+ *
+ * Header.
+ *
+ */
+
+
+.header {
+  position: absolute;
+  top: 0;
+  z-index: z($z-index-elements, nav);
+
+  width: 100%;
+
+  background-color: $gray-darkest;
+  transition: top .35s, right .35s, padding .35s;
+
+  &--inner {
+    @include flexbox;
+    @include flex-direction(row);
+
+    position: relative;
+
+    height: 5.5em;
+
+    @include breakpoint($layout-max-width+1) {
+      max-width: $layout-max-width;
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: $layout-padding;
+    }
+
+    @include breakpoint($breakpoint-bigscreen) {
+      padding-left: 0;
+    }
+  }
+}

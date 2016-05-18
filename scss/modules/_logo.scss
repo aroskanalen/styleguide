@@ -1,0 +1,72 @@
+/**
+ *
+ * Logo.
+ *
+ */
+
+
+/* Logo styling
+   ========================================================================== */
+.logo {
+  @include flexbox;
+  @include flex-direction(row);
+
+  margin-left: $layout-padding;
+}
+
+.is-frontpage .logo {
+  @include align-items(center);
+  @include flex-direction(column);
+
+  margin-bottom: 0;
+
+  color: $white;
+
+  .material-icons {
+    font-size: 34px;
+  }
+
+  &--text {
+    margin-top: .1em;
+  }
+
+  &--slogan {
+    color: transparentize($white, .5);
+    font-size: .45em;
+  }
+}
+
+.is-page .logo,
+.is-page .logo.is-sticky {
+  @include align-items(center);
+  @include strip-link-styles($white, none);
+
+  overflow: hidden;
+
+  height: 100%;
+
+  font-size: 1.25em;
+  font-weight: 300;
+  line-height: 1em;
+
+  .material-icons {
+    margin-right: .25em;
+
+    font-size: 38px;
+  }
+
+  @include breakpoint($layout-max-width+1) {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: $layout-max-width;
+
+    font-size: 1.75em;
+  }
+
+  span {
+    box-sizing: border-box;
+
+    font-weight: 400;
+    white-space: nowrap;
+  }
+}
