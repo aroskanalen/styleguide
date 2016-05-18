@@ -6,6 +6,11 @@
  *
  * Inspiration http://getbootstrap.com/javascript/
  * Requires a javascript to show hide elements.
+ * The black overlay wraps around the modal box.
+ * Modal dialog mixin takes three parameters :
+ *  - $width: width of dialog window, any viable css width may be used
+ *  - $position: positioning of dialog window, left, right or center
+ *  - $speed: The speed of the animation, any viable transition speed (remember "s")
  */
 
 
@@ -30,19 +35,19 @@
   transition: opacity .2s, z-index .2s; // Use z-index to show hide since "display:none" doesn't work with transitions.
 
   &.is-visible {
-    z-index: z($z-index-elements, modal-overlay-visible); // Most likely on top of all other content.
+    z-index: 10; // Most likely on top of all other content.
     opacity: 1;
   }
 }
 
 
 /* Mixin for defining modal-dialog */
-@mixin modal-dialog($width:420px, $position:center, $speed:.2) {
+@mixin modal-dialog($width:420px, $position:center, $speed:.2s) {
   width: $width;
 
   position: relative;
 
-  background: $white;
+  background: #fff;
   box-shadow: 0 3px 9px rgba(0,0,0,.5);
 
   @if $position == 'left' {
