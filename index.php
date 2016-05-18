@@ -8,19 +8,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#000000">
 
-  <!-- Replace below stylesheet with your own stylesheet -->
-  <link rel="stylesheet" href="../admin/css/styles.css">
-
-  <!-- Style Guide Boilerplate Styles -->
-  <link rel="stylesheet" href="css/sg-style.css">
   <!--[if lt IE 9]><link rel="stylesheet" href="css/sg-style-old-ie.css"><![endif]-->
 
   <!-- https://github.com/sindresorhus/github-markdown-css -->
   <link rel="stylesheet" href="css/github-markdown.css">
 
   <!-- Replace below stylesheet with your own stylesheet -->
-  <link rel="stylesheet" href="./css/styles.css">
-  
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Style Guide Boilerplate Styles -->
+  <link rel="stylesheet" href="css/sg-style.css">
+
   <!-- prism Syntax Highlighting Styles -->
   <link rel="stylesheet" href="vendor/prism/prism.css">
 </head>
@@ -39,10 +37,25 @@
 
   <div class="sg-wrapper sg-clearfix">
     <div id="nav" class="sg-sidebar" role="navigation">
-      <h2 class="sg-h2 sg-subnav-title">About</h2>
+
       <ul class="sg-nav-group">
+        <h2 class="sg-h2 sg-subnav-title">About</h2>
         <li>
           <a href="#sg-about">Getting Started</a>
+        </li>
+      </ul>
+
+      <ul class="sg-nav-group">
+        <li class="sg-subnav-parent">
+          <ul class="sg-nav-group">
+            <h2 class="sg-h2 sg-subnav-title">Design</h2>
+            <li>
+              <a href="design/login.php">Login</a>
+            </li>
+            <li>
+              <a href="design/overview-planning.html">Overview planning</a>
+            </li>
+          </ul>
         </li>
       </ul>
 
