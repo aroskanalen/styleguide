@@ -1,0 +1,91 @@
+/**
+ *
+ * Submenu.
+ *
+ */
+
+.submenu {
+  position: absolute;
+  top: 5.5em;
+
+  display: block;
+  width: 100%;
+
+  background-color: $white;
+  border-bottom: 1px solid $gray-lighter;
+
+  &--inner {
+    @include flexbox;
+    @include align-content(stretch);
+    @include justify-content(flex-start);
+
+    margin-left: $layout-padding;
+
+    @include breakpoint($layout-max-width+1) {
+      margin-right: auto;
+      margin-left: auto;
+      max-width: $layout-max-width;
+      padding-left: $layout-padding;
+    }
+
+    @include breakpoint($breakpoint-bigscreen) {
+      padding-left: 0;
+    }
+  }
+
+  &--links {
+    @include flexbox;
+    @include align-content(stretch);
+
+    margin: auto;
+
+    &.is-left {
+      @include flex-grow(1);
+      @include align-self(stretch);
+    }
+
+    &.is-right {
+      @include align-self(flex-end);
+    }
+  }
+
+  &--link {
+    @include flexbox;
+    @include strip-link-styles($theme-color);
+
+    // Google icons
+    .material-icons {
+      margin-top: -.06em;
+      margin-right: .15em;
+    }
+
+    &:hover {
+      span {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &--link + &--link {
+    padding-left: 1.5em;
+  }
+
+  &--icon-link {
+    @include flexbox;
+    @include strip-link-styles($gray-darkest);
+
+    padding: .75em;
+
+    &.is-active {
+      background-color: $theme-color;
+
+      .material-icons {
+        color: $white;
+      }
+    }
+
+    .material-icons {
+      font-size: 36px;
+    }
+  }
+}

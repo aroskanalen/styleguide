@@ -18,6 +18,9 @@
   <!-- https://github.com/sindresorhus/github-markdown-css -->
   <link rel="stylesheet" href="css/github-markdown.css">
 
+  <!-- Replace below stylesheet with your own stylesheet -->
+  <link rel="stylesheet" href="./css/styles.css">
+  
   <!-- prism Syntax Highlighting Styles -->
   <link rel="stylesheet" href="vendor/prism/prism.css">
 </head>
