@@ -20,6 +20,7 @@
 }
 
 body {
+  background-color: transparent;: #fff;
   margin: 0;
 }
 
@@ -30,6 +31,12 @@ body {
   padding-bottom: 12px; /* For older browsers */
   padding-top: 0.75rem;
   padding-top: 12px; /* For older browsers */
+}
+
+@media screen and (min-width: 1025px) {
+  .sg-header {
+    margin-left: 15%;
+  }
 }
 
 .sg-info,
@@ -45,7 +52,7 @@ body {
 .sg-main,
 .sg-sidebar {
   padding-top: 24px; /* For older browsers */
-  padding-top: 1.5rem;
+  padding-top: 2rem;
   padding-bottom: 16px; /* For older browsers */
   padding-bottom: 1rem;
 }
@@ -53,6 +60,7 @@ body {
 .sg-sidebar {
   background: #3d3d3d;
   color: #fff;
+  overflow: auto;
   padding-left: 16px; /* For older browsers */
   padding-left: 0 1rem;
   padding-right: 16px; /* For older browsers */
@@ -82,14 +90,14 @@ body {
     bottom: 0;
     float: left;
     opacity: 1;
-    position: absolute;
+    position: fixed;
     top: 0;
-    width: 25%;
+    width: 15%;
   }
 
   .sg-main {
     float: right;
-    width: 75%;
+    width: 85%;
   }
 }
 
@@ -171,7 +179,7 @@ body {
 ---------------------------------------------------------------------------- */
 .sg-logo {
   float: left;
-  font-size: 1em;
+  font-size: 2em;
   line-height: 2;
   margin: 0;
   padding: 0;
@@ -271,7 +279,7 @@ body {
 .sg-h1,
 .sg-h2,
 .sg-h3 {
-  margin-bottom: 1em;
+  margin-bottom: .25em;
   margin-top: 0;
 }
 
@@ -369,8 +377,11 @@ body {
 /* Sections
 ---------------------------------------------------------------------------- */
 .sg-section {
-  margin-bottom: 32px; /* For older browsers */
-  margin-bottom: 3rem;
+  background-color: #eee;
+  border-radius: .5em;
+  margin-bottom: 12px; /* For older browsers */
+  margin-bottom: 1rem;
+  padding: 1em;
 }
 
 /* Colors
