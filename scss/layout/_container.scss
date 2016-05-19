@@ -35,11 +35,14 @@
 .container-wrapper {
   @include flexbox;
   @include flex(0 0 100%);
+  @include flex-direction(column);
+
+  @include breakpoint($breakpoint-desk) {
+    @include flex-direction(row);
+  }
 
   &.is-login-page {
     .container {
-      @include flex(0 0 100%);
-
       &:nth-child(1) {
         @include flex(0 0 auto);
 
@@ -64,6 +67,8 @@
       }
 
       &:nth-child(2) {
+        @include flex(0 0 100%);
+
         @include breakpoint($breakpoint-desk) {
           @include flex(0 0 65%);
         }
