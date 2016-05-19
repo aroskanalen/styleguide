@@ -12,6 +12,7 @@ include_once $_SERVER['DOCUMENT_ROOT']. '/design/assets/_settings.php';
   <!--[if IE 9]>
   <link href="<?php print $base_path; ?>/css/ie9.css" rel="stylesheet" type="text/css">
   <![endif]-->
+  <link href="<?php print $base_path; ?>/css/vis.css" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Alegreya+Sans:400,300,500,700,400italic,300italic" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
