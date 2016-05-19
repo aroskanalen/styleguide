@@ -498,6 +498,7 @@ body {
   -webkit-order: 2;
   -moz-order: 2;
   order: 2;
+  padding: 1em;
 }
 
 .sg-example {

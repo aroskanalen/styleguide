@@ -29,7 +29,7 @@ input[type="url"],
 textarea {
   border: 0;
   display: block;
-  min-height: 3.75em;
+  min-height: 3.25em;
   padding: .85em 1.25em;
   width: 100%;
 
@@ -58,6 +58,23 @@ textarea {
 
 .form {
   margin-top: 1.25em;
+
+  &.is-inverted {
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    input[type="datetime"],
+    input[type="email"],
+    input[type="number"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="time"],
+    input[type="url"],
+    textarea {
+      color: $white;
+      background-color: $gray-lightest;
+    }
+  }
 
   &--group {
     margin-top: 1.25em;
