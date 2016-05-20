@@ -308,7 +308,12 @@ body {
 .sg-h3 {
 }
 
-.sg-about p {
+.sg-section.sg-about {
+  display: block;
+}
+
+.sg-about p + p {
+  margin-top: 1em;
 }
 
 
