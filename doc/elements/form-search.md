@@ -1,1 +1,3 @@
-Uses filter icon from images folder
+#### Usage
+
+An input field with a search icon.
