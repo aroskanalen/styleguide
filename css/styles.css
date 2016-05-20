@@ -104,16 +104,6 @@
 
 /**
  *
- * Well
- *
- */
-.well {
-  margin-top: 1.25em;
-  padding-top: 1.25em;
-  border-top: 1px solid #d9d9d9; }
-
-/**
- *
  * Base
  *
  * Contains styling and reset of basic elements
@@ -625,9 +615,9 @@ textarea {
 .itk-message--inner {
   border-radius: .75em;
   padding: 1em;
-  background-color: #f1f1f1;
-  border: 1px solid #b1b1b1;
-  color: #727272; }
+  background-color: #fff;
+  border: 1px solid #bfbfbf;
+  color: gray; }
   .itk-message--inner.is-info {
     background-color: #dff2bf;
     border: 1px solid #aadc55;

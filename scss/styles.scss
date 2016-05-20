@@ -17,7 +17,6 @@
 // Helper classes
 @import "helpers/patterns";
 @import "helpers/overlay";
-@import "helpers/well";
 
 
 // Elements
@@ -28,7 +27,7 @@
 
 
 // Modules
-@import "modules/alerts";
+@import "modules/messages";
 @import "modules/dropdown";
 @import "modules/modal";
 @import "modules/nav-tabs";
