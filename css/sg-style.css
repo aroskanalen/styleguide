@@ -251,12 +251,15 @@ body {
   display: block;
   padding: .35em 0 .35em .5em;
   text-decoration: none;
-  text-transform: capitalize;
   -webkit-transition: all .15s ease-in;
      -moz-transition: all .15s ease-in;
       -ms-transition: all .15s ease-in;
        -o-transition: all .15s ease-in;
           transition: all .15s ease-in;
+}
+
+.sg-nav-group a::first-letter {
+  text-transform: capitalize;
 }
 
 .sg-nav-group a:hover,
