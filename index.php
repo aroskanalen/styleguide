@@ -80,6 +80,5 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="js/sg-scripts.js"></script>
   <script src="js/modal.js"></script>
-  <script src="js/dropdown.js"></script>
 </body>
 </html>
