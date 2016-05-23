@@ -554,15 +554,17 @@ textarea {
  *
  */
 .button {
-  display: inline-block;
-  line-height: 1.5em;
-  font-size: 125%;
-  padding: .5em 2em;
   position: relative;
+  display: inline-block;
+  margin-top: .5em;
+  margin-right: .5em;
+  padding: .5em 2em;
   border: 0;
   border-radius: 0.4em;
   color: #fff;
   cursor: pointer;
+  font-size: 125%;
+  line-height: 1.5em;
   text-align: center;
   vertical-align: middle; }
   .button:link {
@@ -589,9 +591,11 @@ textarea {
     .button.is-grayscale:hover {
       background: #595959; }
   .button.is-inactive {
-    background: #d9d9d9; }
+    background: #d9d9d9;
+    color: #999999; }
     .button.is-inactive:hover {
-      background: #b3b3b3; }
+      background: #d9d9d9;
+      cursor: not-allowed; }
   .button.is-warning {
     background: #b13a32; }
     .button.is-warning:hover {
