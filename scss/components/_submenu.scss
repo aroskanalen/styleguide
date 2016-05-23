@@ -53,12 +53,6 @@
     @include flexbox;
     @include strip-link-styles($theme-color);
 
-    // Google icons
-    .material-icons {
-      margin-top: -.06em;
-      margin-right: .15em;
-    }
-
     &:hover {
       span {
         text-decoration: underline;
@@ -78,14 +72,6 @@
 
     &.is-active {
       background-color: $theme-color;
-
-      .material-icons {
-        color: $white;
-      }
-    }
-
-    .material-icons {
-      font-size: 36px;
     }
   }
 }

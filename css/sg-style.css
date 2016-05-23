@@ -590,3 +590,29 @@ body {
   width: 100%;
   z-index: 100;
 }
+
+/* Example
+---------------------------------------------------------------------------- */
+
+.sg-custom-example-wrapper,
+.sg-custom-example {
+  display: flex;
+}
+
+.sg-custom-example {
+  align-items: center;
+  flex-direction: column;
+
+  margin-top: .5em;
+  margin-right: .5em;
+  padding: 1em;
+
+  background-color: #fff;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.sg-custom-example.four-columns {
+  flex-basis: 25%;
+}
+

@@ -1,0 +1,51 @@
+/**
+ *
+ * Icons
+ *
+ */
+
+.icon {
+  display: block;
+
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  &.is-small {
+    height: 24px;
+    width: 24px;
+  }
+
+  &.is-medium {
+    height: 36px;
+    width: 36px;
+  }
+
+  &.is-large {
+    height: 48px;
+    width: 48px;
+  }
+
+  &--apps {
+    background-image: url('../design/assets/icons/ic_apps_black_48px.svg');
+
+    &-invert {
+      background-image: url('../design/assets/icons/ic_apps_white_48px.svg');
+    }
+  }
+
+  &--event-note {
+    background-image: url('../design/assets/icons/ic_event_note_black_48px.svg');
+
+    &-invert {
+      background-image: url('../design/assets/icons/ic_event_note_white_48px.svg');
+    }
+  }
+
+  &--search {
+    background-image: url('../design/assets/icons/ic_search_black_48px.svg');
+  }
+
+  &--tune {
+    background-image: url('../design/assets/icons/ic_tune_black_48px.svg');
+  }
+}

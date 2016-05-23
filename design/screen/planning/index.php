@@ -17,8 +17,8 @@ include_once $assets_path . '/_menus.php';
       </a>
     </div>
     <div class="submenu--links is-right">
-      <a href="<?php echo $base_path; ?>/design/screen/index.php" class="submenu--icon-link"><i class="material-icons">apps</i></a>
-      <a href="<?php echo $base_path; ?>/design/screen/planning/index.php" class="submenu--icon-link is-active"><i class="material-icons">event_note</i></a>
+      <a href="<?php echo $base_path; ?>/design/screen/index.php" class="submenu--icon-link"><i class="icon icon--apps is-medium"></i></a>
+      <a href="<?php echo $base_path; ?>/design/screen/planning/index.php" class="submenu--icon-link is-active"><i class="icon icon--event-note-invert is-medium"></i></a>
     </div>
   </div>
 </nav>
@@ -29,7 +29,7 @@ include_once $assets_path . '/_menus.php';
         <div class="search--input">
           <input type="search" placeholder="Søg ...">
         </div>
-        <a class="search--toggle-filter"><img src="<?php echo $base_path; ?>/design/assets/icons/ic_tune_48px.svg"></a>
+        <a class="search--toggle-filter"><i class="icon icon--tune is-large"></i></a>
       </section>
       <section class="search-planning">
         <article class="search-planning--item">
