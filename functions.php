@@ -93,7 +93,6 @@
   function renderFileExample($content) {
     if ($content != '') {
       echo '<div class="sg-sub-section sg-example">';
-      echo '<h3 class="sg-h3 sg-title">Example</h3>';
       echo $content;
       echo '</div>';
     }
@@ -101,7 +100,7 @@
 
   function renderFileSource($content) {
     if ($content != '') {
-      echo '<div class="sg-sub-section">';
+      echo '<div class="sg-sub-section sg-code">';
       echo '<div class="sg-markup-controls">';
       echo '<button type="button" class="sg-btn sg-btn--source">View Source</button>';
       echo '<a class="sg-btn--top" href="#top">Back to Top</a>';

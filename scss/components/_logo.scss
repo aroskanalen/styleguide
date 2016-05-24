@@ -5,36 +5,14 @@
  */
 
 
-/* Logo styling
+/* Default use
    ========================================================================== */
+
 .logo {
   @include flexbox;
   @include flex-direction(row);
-
-  margin-left: $layout-padding;
 }
 
-.is-frontpage .logo {
-  @include align-items(center);
-  @include flex-direction(column);
-
-  margin-bottom: 0;
-
-  color: $white;
-
-  .material-icons {
-    font-size: 34px;
-  }
-
-  &--text {
-    margin-top: .1em;
-  }
-
-  &--slogan {
-    color: transparentize($white, .5);
-    font-size: .45em;
-  }
-}
 
 .is-page .logo,
 .is-page .logo.is-sticky {
@@ -44,6 +22,7 @@
   overflow: hidden;
 
   height: 100%;
+  margin-left: $layout-padding;
 
   font-size: 1.25em;
   font-weight: 300;
@@ -68,5 +47,31 @@
 
     font-weight: 400;
     white-space: nowrap;
+  }
+}
+
+
+/* Specific use on the login page.
+   ========================================================================== */
+
+.is-login-page .logo {
+  @include align-items(center);
+  @include flex-direction(column);
+
+  margin-bottom: 0;
+
+  color: $white;
+
+  .material-icons {
+    font-size: 34px;
+  }
+
+  &--text {
+    margin-top: .1em;
+  }
+
+  &--slogan {
+    color: transparentize($white, .5);
+    font-size: .45em;
   }
 }

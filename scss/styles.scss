@@ -17,32 +17,31 @@
 // Helper classes
 @import "helpers/patterns";
 @import "helpers/overlay";
-@import "helpers/well";
 
 
 // Elements
 @import "elements/base";
+@import "elements/buttons";
+@import "elements/icons";
 @import "elements/normalize";
 @import "elements/forms";
-@import "elements/buttons";
 
 
 // Modules
-@import "modules/alerts";
-@import "modules/dropdown";
+@import "modules/messages";
 @import "modules/modal";
-@import "modules/nav-tabs";
 @import "modules/pager";
 @import "modules/search";
+<<<<<<< HEAD
 @import "modules/tabs";
 @import "modules/vis";
+=======
+>>>>>>> df57afe8d16cb3196245a95d4b3c6cd052b882ba
 
 
 // Components
 @import "components/submenu";
-@import "components/footer";
 @import "components/search-planning";
-@import "components/search-result";
 @import "components/nav";
 @import "components/hamburger-menu";
 @import "components/header";

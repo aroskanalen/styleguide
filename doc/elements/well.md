@@ -1,1 +1,0 @@
-A simple text with a border above it

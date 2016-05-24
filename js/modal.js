@@ -1,5 +1,5 @@
 /**
- * Toggle sub menu
+ * Toggle modal
  *
  */
 
@@ -10,7 +10,7 @@
     var modalDialog = $('.js-modal-dialog');
     var body = $('body');
 
-    $('.js-toggle-modal').click(function() {
+    $('.js-toggle-modal').bind('touchstart click', function(e) {
       // If nav is open we close it.
       if (modal.hasClass('is-visible')) {
 

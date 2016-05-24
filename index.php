@@ -66,10 +66,8 @@
       <div class="sg-container">
         <div class="sg-info">
           <div class="sg-about sg-section">
-            <h2 id="sg-about" class="sg-h2">Getting Started</h2>
-            <p>Add a new component in the markup/patterns folder.</p>
-            <p>Add the attached styling as a seperate file in the scss/assets folder.</p>
-            <p>Documentation for a component is added in the doc folder.</p>
+            <h2 id="sg-about" class="sg-h2">Aroskanalen styleguide</h2>
+            <p>This is the styleguide for Aroskanalen, find the documentation for the project at <a href="https://github.com/aroskanalen">Github</a>.</p>
           </div><!--/.sg-about-->
         </div><!--/.sg-info-->
 
@@ -82,6 +80,5 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="js/sg-scripts.js"></script>
   <script src="js/modal.js"></script>
-  <script src="js/dropdown.js"></script>
 </body>
 </html>

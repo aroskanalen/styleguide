@@ -17,7 +17,6 @@
 // Helper classes
 @import "helpers/patterns";
 @import "helpers/overlay";
-@import "helpers/well";
 
 
 // Elements
@@ -27,21 +26,16 @@
 
 
 // Modules
-@import "modules/alerts";
-@import "modules/dropdown";
+@import "modules/messages";
 @import "modules/modal";
-@import "modules/nav-tabs";
 @import "modules/pager";
 @import "modules/search";
-@import "modules/tabs";
 @import "modules/vis";
 
 
 // Components
 @import "components/submenu";
-@import "components/footer";
 @import "components/search-planning";
-@import "components/search-result";
 @import "components/nav";
 @import "components/hamburger-menu";
 @import "components/header";

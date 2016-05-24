@@ -1,10 +1,18 @@
-Uses itk-modal asset
+#### Don't use yet
 
-###Modal-dialog mixin
+This uses jquery, but should use angular. Do not use until it has been
+moved to angular.  
+
+@Todo:
+* Use angular instead of jquery
+* Update this description
+
+#### Deprecated description
+##### Modal-dialog mixin
 * Takes three parameters (width, positioning, speed)
 * Width can be any valid css width (px, em, %)
 * Positioning can be left right or center
 * Speed determines the speed of the transition.
 
-### Uses javascript
+##### Uses javascript
 * A small javascript adding the used classes is located in the js folder (filname: modal.js)

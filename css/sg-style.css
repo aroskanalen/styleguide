@@ -20,7 +20,7 @@
 }
 
 body {
-  background-color: transparent;: #fff;
+  background-color: #fff;
   margin: 0;
 }
 
@@ -251,12 +251,15 @@ body {
   display: block;
   padding: .35em 0 .35em .5em;
   text-decoration: none;
-  text-transform: capitalize;
   -webkit-transition: all .15s ease-in;
      -moz-transition: all .15s ease-in;
       -ms-transition: all .15s ease-in;
        -o-transition: all .15s ease-in;
           transition: all .15s ease-in;
+}
+
+.sg-nav-group a::first-letter {
+  text-transform: capitalize;
 }
 
 .sg-nav-group a:hover,
@@ -290,23 +293,36 @@ body {
 
 .sg-h2 {
   border-bottom: 1px solid #ddd;
+  -moz-flex-basis: 100%;
+  -webkit-flex-basis: 100%;
+  flex-basis: 100%;
+  -moz-flex-shrink: 0;
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+  font-size: 1.25em;
   margin-bottom: .75em;
   padding-bottom: .2em;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .sg-h3 {
 }
 
-.sg-about p {
+.sg-section.sg-about {
+  display: block;
+}
+
+.sg-about p + p {
+  margin-top: 1em;
 }
 
 
 /* Buttons
 ---------------------------------------------------------------------------- */
 .sg-btn {
-  background: #cbcbcb;
+  background: #ccc;
   border: none;
+  border-radius: 12px;
   color: #222;
   float: left;
   padding: .5em .9em;
@@ -377,11 +393,24 @@ body {
 /* Sections
 ---------------------------------------------------------------------------- */
 .sg-section {
-  background-color: #eee;
+  background-color: #f2f2f2;
   border-radius: .5em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-bottom: 12px; /* For older browsers */
   margin-bottom: 1rem;
   padding: 1em;
+}
+
+.sg-sub-section {
+  -moz-flex-basis: 100%;
+  -webkit-flex-basis: 100%;
+  flex-basis: 100%;
 }
 
 /* Colors
@@ -466,9 +495,39 @@ body {
 
 /* Markup
 ---------------------------------------------------------------------------- */
+.sg-doc,
+.sg-example {
+  -moz-flex-basis: 50%;
+  -webkit-flex-basis: 50%;
+  flex-basis: 50%;
+}
+
 .sg-doc {
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 1em;
+  -webkit-order: 2;
+  -moz-order: 2;
+  order: 2;
+  padding: 1em;
+}
+
+.sg-example {
+  -webkit-order: 1;
+  -moz-order: 1;
+  order: 1;
+}
+
+.sg-code {
+  -webkit-order: 3;
+  -moz-order: 3;
+  order: 3;
+}
+
+.sg-doc h4 {
+  text-transform: uppercase;
+}
+
+.sg-code {
+  border-top: 1px solid #ddd;
+  margin-top: 1.5em;
 }
 
 .sg-markup-controls {
@@ -531,3 +590,29 @@ body {
   width: 100%;
   z-index: 100;
 }
+
+/* Example
+---------------------------------------------------------------------------- */
+
+.sg-custom-example-wrapper,
+.sg-custom-example {
+  display: flex;
+}
+
+.sg-custom-example {
+  align-items: center;
+  flex-direction: column;
+
+  margin-top: .5em;
+  margin-right: .5em;
+  padding: 1em;
+
+  background-color: #fff;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.sg-custom-example.four-columns {
+  flex-basis: 25%;
+}
+
