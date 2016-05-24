@@ -53,7 +53,7 @@
               <a href="design/login.php">Login</a>
             </li>
             <li>
-              <a href="design/overview-planning.html">Overview planning</a>
+              <a href="design/screen/planning/index.php">Overview planning</a>
             </li>
           </ul>
         </li>

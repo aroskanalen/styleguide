@@ -22,7 +22,6 @@
 
 // Elements
 @import "elements/base";
-@import "elements/normalize";
 @import "elements/forms";
 @import "elements/buttons";
 
@@ -48,8 +47,5 @@
 @import "components/header";
 @import "components/logo";
 
-
 // Layout
-@import "layout/container";
 @import "layout/content";
-@import "layout/frontpage";
