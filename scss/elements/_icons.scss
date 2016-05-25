@@ -24,6 +24,7 @@ i {
     height: 48px;
     width: 48px;
   }
+  
   // Itterate through $icons array defined in _vars.scss, and if a file name matches the data value use this as background image.
   @each $icon-name in $icons {
     &[data-icon*="#{$icon-name}"] {
