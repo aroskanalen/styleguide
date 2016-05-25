@@ -4,7 +4,7 @@
  *
  */
 
-.icon {
+i {
   display: block;
 
   background-repeat: no-repeat;
@@ -24,28 +24,15 @@
     height: 48px;
     width: 48px;
   }
+  // Itterate through $icons array defined in _vars.scss, and if a file name matches the data value use this as background image.
+  @each $icon-name in $icons {
+    &[data-icon*="#{$icon-name}"] {
+      background-image: url('../design/assets/icons/#{$icon-name}.svg');
 
-  &--apps {
-    background-image: url('../design/assets/icons/ic_apps_black_48px.svg');
-
-    &-invert {
-      background-image: url('../design/assets/icons/ic_apps_white_48px.svg');
+      // Override background image with an inverted version if state class applied.
+      &.is-inverted {
+        background-image: url('../design/assets/icons/#{$icon-name}-alt.svg');
+      }
     }
-  }
-
-  &--event-note {
-    background-image: url('../design/assets/icons/ic_event_note_black_48px.svg');
-
-    &-invert {
-      background-image: url('../design/assets/icons/ic_event_note_white_48px.svg');
-    }
-  }
-
-  &--search {
-    background-image: url('../design/assets/icons/ic_search_black_48px.svg');
-  }
-
-  &--tune {
-    background-image: url('../design/assets/icons/ic_tune_black_48px.svg');
   }
 }

@@ -21,6 +21,11 @@ $z-index-elements: modal-overlay-init, header-overlay, header, content, nav, log
                    modal-overlay-visible, hamburger-menu, hamburger-menu-toggle;
 
 
+/* Icons: A list of icons available, should correspond to the file names in icon folder (without file ending)
+   ================================================================================================================== */
+
+$icons: apps, search, event-note, tune;
+
 /* Layout
    ================================================================================================================== */
 
