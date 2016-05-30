@@ -11,28 +11,46 @@
 .vis--timeline-wrapper {
   background: $white;
   border: 1px solid $gray-light;
+  margin: 2em 0;
   padding: 1em;
 }
 
 .vis--header {
   @include flexbox;
-  @include align-items(center);
-  @include align-content(center);
+  @include flex-flow(row wrap);
+  @include justify-content(space-between);
 
   border-bottom: 1px solid $gray-light;
   margin-bottom: 1em;
-  padding: .75em 0;
+  padding: 0 0 .75em;
+}
+
+
+.vis--date-header {
+  @include flex(0, 0, 100%);
+
+  font-weight: bold;
+  margin-bottom: .5em;
+  text-align: center;
 }
 
 .vis--item-header {
   font-weight: bold;
+
+  @include flex(1, 1, auto);
 }
 
-.vis--date-picker {
-  @include align-self(center);
 
-  margin: auto;
+.vis--date-controls {
+  @include flex(1, 1, auto);
+
+  text-align: right;
 }
+
+.vis--button {
+  margin: 0;
+}
+
 
 
 /* Vis styling (we haven't changed the html of elements)
@@ -80,6 +98,10 @@
   border-bottom: none;
 }
 
+.vis-center {
+  border-bottom: 2px solid $gray-lighter;
+}
+
 
 /* Vis panel
    =========================================================== */
@@ -97,7 +119,8 @@
 
   &.vis-left {
     box-sizing: border-box;
-    padding: 0 1em;
+    padding: 0 .8em 0 0;
+    border-right: 1px solid $gray-lighter;
   }
 }
 
@@ -149,6 +172,8 @@
 /* Time axis
    =========================================================== */
 .vis-time-axis {
+  color: $gray-dark;
+  font-size: .8em;
   position: relative;
   overflow: hidden;
 
@@ -169,7 +194,6 @@
 
 .vis-text {
   position: absolute;
-  color: #4d4d4d;
   padding: 3px;
   overflow: hidden;
   box-sizing: border-box;

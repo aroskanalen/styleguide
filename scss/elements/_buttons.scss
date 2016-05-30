@@ -4,6 +4,8 @@
  *
  */
 
+/* Placeholder classes
+   ================================================================================================================== */
 
 %button {
   @include strip-link-styles($white); // A tags
@@ -30,6 +32,10 @@
     text-decoration: none;
   }
 }
+
+
+/* Basic styling
+   ================================================================================================================== */
 
 .button {
   @extend %button;
@@ -68,5 +74,11 @@
     &:hover {
       background: darken($button-default-warning, 15%);
     }
+  }
+
+
+  // Size alteration.
+  &.is-small {
+    font-size: 70%;
   }
 }

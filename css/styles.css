@@ -204,6 +204,8 @@ img {
  * Buttons
  *
  */
+/* Placeholder classes
+   ================================================================================================================== */
 .button {
   position: relative;
   display: inline-block;
@@ -233,6 +235,8 @@ img {
   .button:focus, .button:hover, .button:active {
     text-decoration: none; }
 
+/* Basic styling
+   ================================================================================================================== */
 .button {
   background: #157bb3; }
   .button:hover {
@@ -251,6 +255,8 @@ img {
     background: #b13a32; }
     .button.is-warning:hover {
       background: #752621; }
+  .button.is-small {
+    font-size: 70%; }
 
 /**
  *
@@ -271,21 +277,21 @@ i {
     height: 48px;
     width: 48px; }
   i[data-icon*="apps"] {
-    background-image: url("../design/assets/icons/apps.svg"); }
+    background-image: url("../icons/apps.svg"); }
     i[data-icon*="apps"].is-inverted {
-      background-image: url("../design/assets/icons/apps-alt.svg"); }
+      background-image: url("../icons/apps-alt.svg"); }
   i[data-icon*="search"] {
-    background-image: url("../design/assets/icons/search.svg"); }
+    background-image: url("../icons/search.svg"); }
     i[data-icon*="search"].is-inverted {
-      background-image: url("../design/assets/icons/search-alt.svg"); }
+      background-image: url("../icons/search-alt.svg"); }
   i[data-icon*="event-note"] {
-    background-image: url("../design/assets/icons/event-note.svg"); }
+    background-image: url("../icons/event-note.svg"); }
     i[data-icon*="event-note"].is-inverted {
-      background-image: url("../design/assets/icons/event-note-alt.svg"); }
+      background-image: url("../icons/event-note-alt.svg"); }
   i[data-icon*="tune"] {
-    background-image: url("../design/assets/icons/tune.svg"); }
+    background-image: url("../icons/tune.svg"); }
     i[data-icon*="tune"].is-inverted {
-      background-image: url("../design/assets/icons/tune-alt.svg"); }
+      background-image: url("../icons/tune-alt.svg"); }
 
 /**
  *
@@ -764,6 +770,7 @@ textarea {
 .vis--timeline-wrapper {
   background: #fff;
   border: 1px solid #bfbfbf;
+  margin: 2em 0;
   padding: 1em; }
 
 .vis--header {
@@ -772,28 +779,50 @@ textarea {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  align-items: center;
-  -webkit-align-content: center;
-  -moz-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
   border-bottom: 1px solid #bfbfbf;
   margin-bottom: 1em;
-  padding: .75em 0; }
+  padding: 0 0 .75em; }
+
+.vis--date-header {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 100%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  font-weight: bold;
+  margin-bottom: .5em;
+  text-align: center; }
 
 .vis--item-header {
-  font-weight: bold; }
+  font-weight: bold;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -moz-box-flex: 1;
+  -moz-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto; }
 
-.vis--date-picker {
-  -webkit-align-self: center;
-  -moz-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  margin: auto; }
+.vis--date-controls {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -moz-box-flex: 1;
+  -moz-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  text-align: right; }
+
+.vis--button {
+  margin: 0; }
 
 /* Vis styling (we haven't changed the html of elements)
    =========================================================== */
@@ -831,6 +860,9 @@ textarea {
 .vis-foreground .vis-group:last-child {
   border-bottom: none; }
 
+.vis-center {
+  border-bottom: 2px solid #d9d9d9; }
+
 /* Vis panel
    =========================================================== */
 .vis-panel {
@@ -841,7 +873,8 @@ textarea {
     overflow: hidden; }
   .vis-panel.vis-left {
     box-sizing: border-box;
-    padding: 0 1em; }
+    padding: 0 .8em 0 0;
+    border-right: 1px solid #d9d9d9; }
 
 /* Vis label
    =========================================================== */
@@ -875,6 +908,8 @@ textarea {
 /* Time axis
    =========================================================== */
 .vis-time-axis {
+  color: gray;
+  font-size: .8em;
   position: relative;
   overflow: hidden; }
   .vis-time-axis.vis-foreground {
@@ -890,7 +925,6 @@ textarea {
 
 .vis-text {
   position: absolute;
-  color: #4d4d4d;
   padding: 3px;
   overflow: hidden;
   box-sizing: border-box;
@@ -918,6 +952,7 @@ textarea {
 .submenu {
   position: absolute;
   top: 5.5em;
+  z-index: 5;
   display: block;
   width: 100%;
   background-color: #fff;
@@ -1310,6 +1345,7 @@ textarea {
  *
  */
 .header {
+  display: block;
   position: absolute;
   top: 0;
   z-index: 5;
@@ -1586,7 +1622,7 @@ textarea {
 
 .is-page .content {
   position: relative;
-  top: 12em; }
+  margin-top: 12em; }
   .is-page .content--inner {
     margin-right: auto;
     margin-bottom: 16em;
@@ -1600,6 +1636,9 @@ textarea {
     -moz-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto; }
+
+.is-page.is-screen .content--inner {
+  max-width: 100%; }
 
 /**
  *

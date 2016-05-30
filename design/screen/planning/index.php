@@ -17,8 +17,8 @@ include_once $assets_path . '/_menus.php';
       </a>
     </div>
     <div class="submenu--links is-right">
-      <a href="<?php echo $base_path; ?>/design/screen/index.php" class="submenu--icon-link"><i class="icon icon--apps is-medium"></i></a>
-      <a href="<?php echo $base_path; ?>/design/screen/planning/index.php" class="submenu--icon-link is-active"><i class="icon icon--event-note-invert is-medium"></i></a>
+      <a href="<?php echo $base_path; ?>/design/screen/index.php" class="submenu--icon-link"><i data-icon="apps" class="is-medium"></i></a>
+      <a href="<?php echo $base_path; ?>/design/screen/planning/index.php" class="submenu--icon-link is-active"><i data-icon="event-note" class="is-inverted is-medium"></i></a>
     </div>
   </div>
 </nav>

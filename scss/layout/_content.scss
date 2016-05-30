@@ -38,7 +38,7 @@
 
 .is-page .content {
   position: relative;
-  top: 12em;
+  margin-top: 12em;
 
   &--inner {
     margin-right: auto;
@@ -48,4 +48,9 @@
 
     @include word-wrap;
   }
+}
+
+// Screen creation design uses full width.
+.is-page.is-screen .content--inner {
+  max-width: 100%;
 }
