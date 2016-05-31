@@ -1,3 +1,5 @@
+## Buttons
+
 #### States
 * is-inactive
 * is-grayscale

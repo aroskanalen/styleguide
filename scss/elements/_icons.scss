@@ -4,11 +4,16 @@
  *
  */
 
-i {
+[data-icon] {
   display: block;
 
   background-repeat: no-repeat;
   background-size: 100%;
+
+  &.is-tiny {
+    height: 18px;
+    width: 18px;
+  }
 
   &.is-small {
     height: 24px;
@@ -24,16 +29,16 @@ i {
     height: 48px;
     width: 48px;
   }
+}
 
-  // Itterate through $icons array defined in _vars.scss, and if a file name matches the data value use this as background image.
-  @each $icon-name in $icons {
-    &[data-icon*="#{$icon-name}"] {
-      background-image: url('../icons/#{$icon-name}.svg');
+// Itterate through $icons array defined in _vars.scss, and if a file name matches the data value use this as background image.
+@each $icon-name in $icons {
+  [data-icon*="#{$icon-name}"] {
+    background-image: url('../icons/#{$icon-name}.svg');
 
-      // Override background image with an inverted version if state class applied.
-      &.is-inverted {
-        background-image: url('../icons/#{$icon-name}-alt.svg');
-      }
+    // Override background image with an inverted version if state class applied.
+    &.is-inverted {
+      background-image: url('../icons/#{$icon-name}-alt.svg');
     }
   }
 }

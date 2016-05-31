@@ -1,5 +1,4 @@
-#### Usage
-
+## Messages
 Use messages to display information to the user.
 
 #### State classes

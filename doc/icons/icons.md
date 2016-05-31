@@ -1,5 +1,7 @@
-#### Usage
+## Icons
+Available icons for use in project
 
+#### Usage
 Selected icons from 
 <a href="https://design.google.com/icons/">Google Material Icons</a>, in
 svg format and are available in three sizes.
@@ -12,6 +14,7 @@ svg format and are available in three sizes.
 - Icons with changed colors should be named "|original-name|-alt.svg", "-alt"-files do not need a seperate definition in sass array, instead use the available state class described below. 
 
 #### States
+* is-tiny (18px)
 * is-small (24px)
 * is-medium (36x)
 * is-large (48px)

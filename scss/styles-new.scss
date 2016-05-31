@@ -7,7 +7,7 @@
 // Assets
 @import "assets/flexbox";
 @import "assets/itk-modal";
-
+@import "assets/itk-tabs";
 
 // Helpers
 @import "helpers/vars";
@@ -31,12 +31,12 @@
 @import "modules/modal";
 @import "modules/pager";
 @import "modules/search";
+@import "modules/tabs";
 @import "modules/vis";
 
 
 // Components
 @import "components/submenu";
-@import "components/search-planning";
 @import "components/nav";
 @import "components/hamburger-menu";
 @import "components/header";

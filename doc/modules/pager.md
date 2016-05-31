@@ -1,4 +1,6 @@
-Uses flexbox
-###States
+## Pager
+* Uses flexbox
+
+#### States
 * is-active
 * is-inactive
