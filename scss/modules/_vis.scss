@@ -31,7 +31,7 @@
 
   font-weight: bold;
   margin-bottom: .5em;
-  text-align: center;
+  text-align: right;
 }
 
 .vis--item-header {
@@ -122,12 +122,17 @@
     padding: 0 .8em 0 0;
     border-right: 1px solid $gray-lighter;
   }
+
+  &.vis-vertical {
+    overflow-x: hidden;
+  }
 }
 
 
 /* Vis label
    =========================================================== */
 .vis-label {
+  box-sizing: border-box;
   font-size: .8em;
   padding-top: 5px;
 }
@@ -144,6 +149,8 @@
   font-size: .8em;
   background-color: $theme-color;
   display: inline-block;
+  overflow-x: hidden;
+  white-space: nowrap;
 
   &.vis-box {
     text-align: center;
@@ -198,6 +205,7 @@
   overflow: hidden;
   box-sizing: border-box;
 
+  text-transform: capitalize;
   white-space: nowrap;
 
   &.vis-measure {
@@ -208,7 +216,13 @@
     margin-right: 0;
     visibility: hidden;
   }
+
+  &.vis-major {
+    font-weight: bold;
+  }
 }
+
+
 
 
 /* Current time line

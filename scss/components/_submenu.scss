@@ -26,11 +26,6 @@
       margin-right: auto;
       margin-left: auto;
       max-width: $layout-max-width;
-      padding-left: $layout-padding;
-    }
-
-    @include breakpoint($breakpoint-bigscreen) {
-      padding-left: 0;
     }
   }
 

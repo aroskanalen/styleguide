@@ -7,7 +7,7 @@
 
 /* Hamburger menu styles
    ========================================================================== */
-.hamburger-menu--overlay {
+.hamburger-menu--wrapper {
   @extend %itk--menu-nav-overlay; // assets/_itk-modal.scss
 
   cursor: pointer;

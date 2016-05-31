@@ -8,6 +8,8 @@
 .search {
   margin-left: $layout-padding;
 
+  @include flex(1 1 auto);
+
   @include breakpoint($layout-max-width+1) {
     margin-right: auto;
     margin-left: auto;

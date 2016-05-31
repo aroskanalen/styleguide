@@ -12,6 +12,10 @@
   @include flexbox;
   @include justify-content(center);
 
+  &.has-wrap {
+    @include flex-wrap(wrap);
+  }
+
   &--inner {
     @include flex-basis(100%);
 
