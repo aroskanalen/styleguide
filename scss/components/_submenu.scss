@@ -8,6 +8,9 @@
   position: absolute;
   top: 5.5em;
   z-index: z($z-index-elements, nav);
+  padding-left: 1em;
+  padding-right: 1em;
+  box-sizing: border-box;
 
   display: block;
   width: 100%;
@@ -19,8 +22,6 @@
     @include flexbox;
     @include align-content(stretch);
     @include justify-content(flex-start);
-
-    margin-left: $layout-padding;
 
     @include breakpoint($layout-max-width+1) {
       margin-right: auto;

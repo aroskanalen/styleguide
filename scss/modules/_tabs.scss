@@ -11,9 +11,14 @@
 .tabs {
   @extend %itk--tabs;
 
-  margin: 1em;
-  min-width: 22em;
+  margin: 1em 0;
+  min-width: 100%;
   font-size: .9em;
+
+  @include breakpoint(740px) {
+    margin: 1em;
+    min-width: 22em;
+  }
 }
 
 .tabs--item {

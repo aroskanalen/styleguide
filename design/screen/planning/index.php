@@ -32,7 +32,7 @@ include_once $assets_path . '/_menus.php';
       </form>
       <i data-icon="tune" class="search--toggle-filter is-large"></i>
     </div>
-    <div class="container has-wrap">
+    <div class="container has-wrap search--filters-wrapper">
       <div class="tabs is-center" data-tabs-count="2">
         <span class="tabs--item is-active has-flex" data-ng-class="{'is-active': showFromUser == 'mine'}" data-ng-click="setUser('mine')"><i data-icon="check-circle" class="is-tiny"></i><span class="tabs--text">Mine</span></span>
         <span data-ng-class="{'is-active': showFromUser == 'all'}" data-ng-click="setUser('all')" class="tabs--item has-flex"><span class="tabs--text">Alle</span></span>
@@ -43,9 +43,9 @@ include_once $assets_path . '/_menus.php';
         <span class="tabs--item" data-ng-class="{'is-active': sort.title}"  data-ng-click="setSort('title', 'asc')"><span class="tabs--text">A-Å</span></span>
       </div>
     </div>
-    <?php include $assets_path . '/_timeline.php'; ?>
     <?php include $assets_path . '/_timeline2.php'; ?>
-    <?php include $assets_path . '/_timeline.php'; ?>
+    <?php include $assets_path . '/_timeline2.php'; ?>
+    <?php include $assets_path . '/_timeline2.php'; ?>
     <?php include $assets_path . '/_timeline2.php'; ?>
   </div>
 </main>

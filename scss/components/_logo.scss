@@ -11,6 +11,10 @@
 .logo {
   @include flexbox;
   @include flex-direction(row);
+
+  &--icon {
+    margin-right: 10px;
+  }
 }
 
 

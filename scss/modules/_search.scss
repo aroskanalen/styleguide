@@ -6,19 +6,12 @@
 
 
 .search {
-  margin-left: $layout-padding;
-
   @include flex(1 1 auto);
 
   @include breakpoint($layout-max-width+1) {
     margin-right: auto;
     margin-left: auto;
     max-width: $layout-max-width;
-    padding-left: $layout-padding;
-  }
-
-  @include breakpoint($breakpoint-bigscreen) {
-    padding-left: 0;
   }
 
   &--elements {
@@ -60,8 +53,34 @@
     @include flex-basis(48px);
     @include flex-grow(0);
 
+    cursor: pointer;
+    z-index: 1;
+
     margin-top: .25em;
-    margin-right: 1em;
     margin-left: 1em;
+  }
+
+
+  &--field-wrapper {
+    background-color: $gray-lightest;
+  }
+
+  // Height transition using max-height http://stackoverflow.com/questions/3311299/css-transition-not-working-for-percentage-height
+  &--filters-wrapper {
+    height: auto;
+    max-height: 0;
+    overflow: hidden;
+
+    transition: max-height .2s;
+    transition-timing-function: ease-in-out;
+
+    &.is-open {
+      max-height: 120px;
+
+      // Alter max height to to stacking divs on small screens and inline divs on large screens. (This way close animation wont appear delayed.)
+      @include breakpoint(740px) {
+        max-height: 70px;
+      }
+    }
   }
 }

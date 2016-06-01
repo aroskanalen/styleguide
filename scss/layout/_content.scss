@@ -45,6 +45,8 @@
     margin-bottom: 16em;
     margin-left: auto;
     max-width: $layout-max-width;
+    padding-left: 1em;
+    padding-right: 1em;
 
     @include word-wrap;
   }
