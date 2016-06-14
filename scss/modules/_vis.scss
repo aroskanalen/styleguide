@@ -144,9 +144,6 @@
 /* Vis label
    =========================================================== */
 .vis-label {
-  @include flex();
-  @include align-items(center);
-
   box-sizing: content-box;
   display: flex;
   font-size: .8em;
@@ -154,6 +151,10 @@
 
   &:nth-child(even) {
     background: #efefef;
+  }
+  
+  .vis-inner {
+    margin-top: .2em;
   }
 }
 
@@ -187,6 +188,7 @@
 
   &.vis-range {
     box-sizing: border-box;
+    cursor: pointer;
   }
 
   &-content {

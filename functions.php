@@ -8,15 +8,17 @@
     echo '<ul class="sg-nav-group">';
     foreach ($files as $file) {
       $path = $dir.'/'.$file;
-      if (is_dir($path)) {
+      if (is_dir($path) && !strpos($path, 'examples')) {
         echo '<li class="sg-subnav-parent">';
         renderTitleFromPath($path, 'h2');
         listFilesInFolder($path);
         echo '</li>';
       } else {
-        echo '<li>';
-        renderTitleFromPath($path, '');
-        echo '</li>';
+        if (!strpos($path, 'examples')) {
+          echo '<li>';
+          renderTitleFromPath($path, '');
+          echo '</li>';
+        }
       }
     }
     echo '</ul>';
@@ -30,11 +32,13 @@
     echo '<div class="sg-section-group">';
     foreach ($files as $file) {
       $path = $dir.'/'.$file;
-      if (is_dir($path)) {
+      if (is_dir($path) && !strpos($path, 'examples')) {
         renderTitleFromPath($path, 'h1');
         renderFilesInFolder($path);
       } else {
-        renderFile($path);
+        if (!strpos($path, 'examples')) {
+          renderFile($path, $dir.'/examples/'.$file);
+        }
       }
     }
     echo '</div>';
@@ -53,13 +57,14 @@
     }
   }
 
-  function renderFile($path) {
+  function renderFile($path, $examplePath) {
     $content = file_get_contents($path);
+    $content_example = file_get_contents($examplePath);
     echo '<div class="sg-section">';
     renderTitleFromPath($path, 'h2');
     renderFileDoc($path);
     renderFileExample($content);
-    renderFileSource($content);
+    renderFileSource($content_example);
     echo '</div>';
   }
 

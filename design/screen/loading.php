@@ -1,7 +1,7 @@
 <?php
 include_once $_SERVER['DOCUMENT_ROOT']. '/design/assets/_settings.php';
 
-$is_active = 3;
+$is_active = 2;
 $class = 'is-page';
 
 include_once $assets_path . '/_header.php';
@@ -24,7 +24,7 @@ include_once $assets_path . '/_menus.php';
 </nav>
 <main role="main" class="content">
   <div class="content--inner">
-    <div class="container has-wrap">
+    <div class="container has-wrap search--field-wrapper">
       <form class="search">
         <div class="search--input">
           <input type="search" placeholder="Søg...">
@@ -43,11 +43,7 @@ include_once $assets_path . '/_menus.php';
         <span class="tabs--item" data-ng-class="{'is-active': sort.title}"  data-ng-click="setSort('title', 'asc')"><span class="tabs--text">A-Å</span></span>
       </div>
     </div>
-    <div class="container-full-width has-horisontal-margin">
-      <?php include $assets_path . '/_timeline2.php'; ?>
-      <?php include $assets_path . '/_timeline2.php'; ?>
-      <?php include $assets_path . '/_timeline2.php'; ?>
-      <?php include $assets_path . '/_timeline2.php'; ?>
+    <div class="container-full-width has-horisontal-margin spinner-element">
     </div>
   </div>
 </main>

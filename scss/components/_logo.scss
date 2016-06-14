@@ -15,11 +15,15 @@
   &--icon {
     margin-right: 10px;
   }
+
+  &.is-anonymous {
+    margin: 0 auto;
+  }
 }
 
 
-.is-page .logo,
-.is-page .logo.is-sticky {
+.logo,
+.logo.is-sticky {
   @include align-items(center);
   @include strip-link-styles($white, none);
 

@@ -48,14 +48,18 @@ textarea {
   &.is-error {
     border: 1px solid $error-color;
   }
+
+  &.edit-menu--background-form-element {
+    border: 1px solid $gray-lighter;
+  }
 }
 
 
 /* Form
    ================================================================================================================== */
 
+form,
 .form {
-  margin-top: 1.25em;
 
   &.is-inverted {
     input[type="text"],
@@ -69,7 +73,7 @@ textarea {
     input[type="time"],
     input[type="url"],
     textarea {
-      color: $white;
+      color: $gray-darkest;
       background-color: $gray-lightest;
     }
   }

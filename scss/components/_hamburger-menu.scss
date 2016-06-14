@@ -68,15 +68,7 @@
     text-decoration: none;
 
     &.is-active {
-      @include strip-link-styles($white, none);
-
-      padding-top: .75em;
-      padding-bottom: .75em;
-
-      background-color: $theme-color;
-
-      -webkit-clip-path: polygon(100% 0, 100% 100%, 0 90%, 0 0);
-      clip-path: polygon(100% 0, 100% 100%, 0 90%, 0 0);
+      @include strip-link-styles($theme-color, none);
     }
   }
 }

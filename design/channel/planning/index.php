@@ -43,10 +43,12 @@ include_once $assets_path . '/_menus.php';
         <span class="tabs--item" data-ng-class="{'is-active': sort.title}"  data-ng-click="setSort('title', 'asc')"><span class="tabs--text">A-Å</span></span>
       </div>
     </div>
-    <?php include $assets_path . '/_timeline2.php'; ?>
-    <?php include $assets_path . '/_timeline2.php'; ?>
-    <?php include $assets_path . '/_timeline2.php'; ?>
-    <?php include $assets_path . '/_timeline2.php'; ?>
+    <div class="container-full-width">
+      <?php include $assets_path . '/_timeline2.php'; ?>
+      <?php include $assets_path . '/_timeline2.php'; ?>
+      <?php include $assets_path . '/_timeline2.php'; ?>
+      <?php include $assets_path . '/_timeline2.php'; ?>
+    </div>
   </div>
 </main>
 

@@ -55,6 +55,9 @@
             <li>
               <a href="design/screen/planning/index.php">Overview planning</a>
             </li>
+            <li>
+              <a href="design/screen/loading.php">Overview planning loading</a>
+            </li>
           </ul>
         </li>
       </ul>

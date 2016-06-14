@@ -88,3 +88,15 @@
     }
   }
 }
+
+
+/* Container for full width elements (ie. timeline overview).
+   ========================================================================== */
+.container-full-width {
+  width: 100%;
+
+  &.has-horisontal-margin {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+}
