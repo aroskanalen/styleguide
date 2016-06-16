@@ -1264,7 +1264,7 @@ form--checkbox,
   .vis-label:nth-child(even) {
     background: #efefef; }
   .vis-label .vis-inner {
-    margin-top: .2em; }
+    margin-top: .7em; }
 
 /* Vis item
    =========================================================== */
@@ -1532,8 +1532,8 @@ form--checkbox,
   cursor: pointer; }
 
 .hamburger-menu {
-  z-index: 10;
   cursor: auto;
+  z-index: 10;
   width: 30em;
   position: relative;
   background: #fff;
@@ -1570,6 +1570,7 @@ form--checkbox,
       .hamburger-menu--links a:hover {
         color: #157bb3; }
       .hamburger-menu--links a.is-sub {
+        cursor: pointer;
         font-weight: 100; }
   .hamburger-menu--group {
     margin-bottom: 1.75em;

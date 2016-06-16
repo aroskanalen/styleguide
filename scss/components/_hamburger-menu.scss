@@ -14,8 +14,8 @@
 }
 
 .hamburger-menu {
-  z-index: z($z-index-elements, hamburger-menu);
   cursor: auto;
+  z-index: z($z-index-elements, hamburger-menu);
 
   @include modal-dialog(30em, right, .2s);  // assets/_itk-modal.scss
 
@@ -41,6 +41,7 @@
       }
 
       &.is-sub {
+        cursor: pointer;
         font-weight: 100;
       }
     }
