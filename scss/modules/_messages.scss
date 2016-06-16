@@ -25,6 +25,8 @@ $message-error-color:            #ffbaba;
 }
 
 .itk-message--inner {
+  @include flexbox();
+
   border-radius: .75em;
 
   padding: 1em;
@@ -50,4 +52,15 @@ $message-error-color:            #ffbaba;
     border: 1px solid darken($message-error-color, 25%);
     color: darken($message-error-color, 50%);
   }
+}
+
+.itk-message--content {
+  @include flex(1, 1, auto);
+
+  margin-top: 6px;
+}
+
+
+.itk-message--close {
+  @include flex(0, 0, 40px);
 }
