@@ -1,7 +1,7 @@
 <body class="<?php echo $class; ?>">
   <header class="header">
     <div class="header--inner">
-      <a href="<?php echo $base_path; ?>/design/dashboard/index.php" class="logo js-logo" title="Aroskanalen"><i class="material-icons">filter_none</i><span>Aroskanalen</span></a>
+      <a href="<?php echo $base_path; ?>/design/dashboard/index.php" class="logo js-logo" title="Aroskanalen"><i data-icon="filter-none" class="is-medium logo--icon"></i><span>Aroskanalen</span></a>
       <nav class="nav js-nav">
           <a class="nav--link<?php echo $is_active === 0 || $is_sub_active[0] ? ' is-active' : '' ?>" href="<?php print $base_path; ?>/design/dashboard/index.php">
             Start
@@ -9,7 +9,7 @@
           <a class="nav--link<?php echo $is_active === 1 || $is_sub_active[1] ? ' is-active' : '' ?>" href="#">
             Slides
           </a>
-          <a class="nav--link<?php echo $is_active === 2 || $is_sub_active[2] ? ' is-active' : '' ?>" href="#">
+          <a class="nav--link<?php echo $is_active === 2 || $is_sub_active[2] ? ' is-active' : '' ?>" href="<?php echo $base_path; ?>/design/channel/planning/index.php">
             Kanaler
           </a>
           <a class="nav--link<?php echo $is_active === 3 || $is_sub_active[3] ? ' is-active' : '' ?>" href="<?php echo $base_path; ?>/design/screen/planning/index.php">

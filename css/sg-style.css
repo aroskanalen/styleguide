@@ -251,12 +251,15 @@ body {
   display: block;
   padding: .35em 0 .35em .5em;
   text-decoration: none;
-  text-transform: capitalize;
   -webkit-transition: all .15s ease-in;
      -moz-transition: all .15s ease-in;
       -ms-transition: all .15s ease-in;
        -o-transition: all .15s ease-in;
           transition: all .15s ease-in;
+}
+
+.sg-nav-group a::first-letter {
+  text-transform: capitalize;
 }
 
 .sg-nav-group a:hover,
@@ -305,7 +308,12 @@ body {
 .sg-h3 {
 }
 
-.sg-about p {
+.sg-section.sg-about {
+  display: block;
+}
+
+.sg-about p + p {
+  margin-top: 1em;
 }
 
 
@@ -498,6 +506,7 @@ body {
   -webkit-order: 2;
   -moz-order: 2;
   order: 2;
+  padding: 1em;
 }
 
 .sg-example {
@@ -581,3 +590,29 @@ body {
   width: 100%;
   z-index: 100;
 }
+
+/* Example
+---------------------------------------------------------------------------- */
+
+.sg-custom-example-wrapper,
+.sg-custom-example {
+  display: flex;
+}
+
+.sg-custom-example {
+  align-items: center;
+  flex-direction: column;
+
+  margin-top: .5em;
+  margin-right: .5em;
+  padding: 1em;
+
+  background-color: #fff;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.sg-custom-example.four-columns {
+  flex-basis: 25%;
+}
+

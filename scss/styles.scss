@@ -4,42 +4,49 @@
  *
  */
 
-
-// Include base
-@import "base/vars";
-@import "base/normalize";
-@import "base/base";
-@import "base/forms";
-@import "base/functions";
-@import "base/mixins";
-
-// Include patterns
-@import "patterns/patterns";
-
-// Include assets
+// Assets
 @import "assets/flexbox";
 @import "assets/itk-modal";
 @import "assets/itk-tabs";
 
+// Helpers
+@import "helpers/vars";
+@import "helpers/functions";
+@import "helpers/mixins";
+@import "helpers/font";
+
+// Helper classes
+@import "helpers/patterns";
+@import "helpers/overlay";
+
+
+// Elements
+@import "elements/base";
+@import "elements/buttons";
+@import "elements/icons";
+@import "elements/normalize";
+@import "elements/forms";
+@import "elements/spinner";
+
+
 // Modules
-@import "modules/alerts";
-@import "modules/buttons";
-@import "modules/container";
-@import "modules/content";
-@import "modules/dropdown";
-@import "modules/footer";
-@import "modules/frontpage";
-@import "modules/hamburger-menu";
-@import "modules/header";
-@import "modules/logo";
+@import "modules/messages";
 @import "modules/modal";
-@import "modules/nav";
-@import "modules/nav-tabs";
-@import "modules/overlay";
 @import "modules/pager";
 @import "modules/search";
-@import "modules/search-planning";
-@import "modules/search-result";
-@import "modules/submenu";
 @import "modules/tabs";
-@import "modules/well";
+@import "modules/vis";
+
+
+// Components
+@import "components/submenu";
+@import "components/nav";
+@import "components/hamburger-menu";
+@import "components/header";
+@import "components/logo";
+
+
+// Layout
+@import "layout/container";
+@import "layout/content";
+@import "layout/frontpage";

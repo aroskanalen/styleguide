@@ -1,0 +1,74 @@
+/**
+ *
+ * Submenu.
+ *
+ */
+
+.submenu {
+  position: absolute;
+  top: 5.5em;
+  z-index: z($z-index-elements, nav);
+  padding-left: 1em;
+  padding-right: 1em;
+  box-sizing: border-box;
+
+  display: block;
+  width: 100%;
+
+  background-color: $white;
+  border-bottom: 1px solid $gray-lighter;
+
+  &--inner {
+    @include flexbox;
+    @include align-content(stretch);
+    @include justify-content(flex-start);
+
+    @include breakpoint($layout-max-width+1) {
+      margin-right: auto;
+      margin-left: auto;
+      max-width: $layout-max-width;
+    }
+  }
+
+  &--links {
+    @include flexbox;
+    @include align-content(stretch);
+
+    margin: auto;
+
+    &.is-left {
+      @include flex-grow(1);
+      @include align-self(stretch);
+    }
+
+    &.is-right {
+      @include align-self(flex-end);
+    }
+  }
+
+  &--link {
+    @include flexbox;
+    @include strip-link-styles($theme-color);
+
+    &:hover {
+      span {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &--link + &--link {
+    padding-left: 1.5em;
+  }
+
+  &--icon-link {
+    @include flexbox;
+    @include strip-link-styles($gray-darkest);
+
+    padding: .75em;
+
+    &.is-active {
+      background-color: $theme-color;
+    }
+  }
+}
