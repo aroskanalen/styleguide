@@ -23,113 +23,53 @@
   </head>
   <body class="">
 
-<div>
-  <i data-icon="apps" class="is-tiny"></i>
-  <h5>icon apps</h5>
-</div>
-
-<div>
-  <i data-icon="event-note" class="is-tiny"></i>
-  <h5>icon event-note</h5>
-</div>
-
-<div>
-  <i data-icon="search" class="is-tiny"></i>
-  <h5>icon search</h5>
-</div>
-
-<div>
-  <i data-icon="tune" class="is-tiny"></i>
-  <h5>icon tune</h5>
-</div>
-
-<div>
-  <i data-icon="apps" class="is-small"></i>
-  <h5>icon apps</h5>
-</div>
-
-<div>
-  <i data-icon="event-note" class="is-small"></i>
-  <h5>icon event-note</h5>
-</div>
-
-<div>
-  <i data-icon="search" class="is-small"></i>
-  <h5>icon search</h5>
-</div>
-
-<div>
-  <i data-icon="tune" class="is-small"></i>
-  <h5>icon tune</h5>
-</div>
-
-<div>
-  <i data-icon="apps" class="is-medium"></i>
-  <h5>icon apps</h5>
-</div>
-
-<div>
-  <i data-icon="event-note" class="is-medium"></i>
-  <h5>icon event-note</h5>
-</div>
-
-<div>
-  <i data-icon="search" class="is-medium"></i>
-  <h5>icon search</h5>
-</div>
-
-<div>
-  <i data-icon="tune" class="is-medium"></i>
-  <h5>icon tune</h5>
-</div>
-
-<div>
-  <i data-icon="apps" class="is-large"></i>
-  <h5>icon apps</h5>
-</div>
-
-<div>
-  <i data-icon="event-note" class="is-large"></i>
-  <h5>icon event-note</h5>
-</div>
-
-<div>
-  <i data-icon="search" class="is-large"></i>
-  <h5>icon search</h5>
-</div>
-
-<div>
-  <i data-icon="tune" class="is-large"></i>
-  <h5>icon tune</h5>
-</div>
-
-<div>
-  <i data-icon="apps" class="is-small is-inverted"></i>
-  <h5>icon apps inverted</h5>
-</div>
-
-<div>
-  <i data-icon="event-note" class="is-small is-inverted"></i>
-  <h5>icon event-note inverted</h5>
-</div>
-
-<div>
-  <i data-icon="apps" class="is-large is-inverted"></i>
-  <h5>icon apps inverted</h5>
-</div>
-
-<div>
-  <i data-icon="event-note" class="is-large is-inverted"></i>
-  <h5>icon event-note inverted</h5>
-</div>
-
-<div>
-  <i data-icon="check-circle" class="is-large"></i>
-  <h5>Check circle</h5>
+<div class="container-wrapper is-login-page">
+  <div class="container">
+    <div class="container--inner">
+      <h1 class="logo js-logo" title="Aroskanalen">
+        <i class="material-icons">filter_none</i>
+        <span class="logo--text">Aroskanalen</span>
+        <span class="logo--slogan">Some fancy slogan copy here</span>
+      </h1>
+    </div>
+  </div>
+  <div class="container">
+    <div class="container--inner">
+      <h2>Login</h2>
+      <form action="dashboard/index.php" class="form is-inverted">
+        <div class="form--group">
+          <label for="username">Brugernavn</label>
+          <input type="text" id="username" placeholder="Brugernavn">
+        </div>
+        <div class="form--group">
+          <label for="password">Kodeord</label>
+          <input type="password" id="password" placeholder="Kodeord">
+        </div>
+        <div class="form--group">
+          <input type="submit" class="button is-block" value="Login">
+        </div>
+        <div class="form--checkbox">
+          <label>
+            <input type="checkbox">
+            Husk mig i 30 dage
+          </label>
+        </div>
+      </form>
+      <div class="well">
+        <p>
+          Problemer?
+        </p>
+        <ul>
+          <li><a href="#">Jeg har glemt brugernavn eller kodeord</a></li>
+          <li><a href="#">Jeg vil gerne oprette en ny bruger</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
   <!--DO NOT REMOVE-->
   <script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
-  {"cssEnabled":false,"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"elements"},"patternDesc":"","patternExtension":"twig","patternName":"icon","patternPartial":"elements-icon","patternState":"","extraOutput":[]}
+  {"cssEnabled":false,"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"components"},"patternDesc":"","patternExtension":"twig","patternName":"login box","patternPartial":"components-login-box","patternState":"","extraOutput":[]}
 </script>
 
 <script>
