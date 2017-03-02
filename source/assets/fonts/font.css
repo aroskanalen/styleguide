@@ -41,10 +41,23 @@
   src: local("AlegreyaSans-Light"),
        url("/assets/fonts/AlegreyaSans-Light.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "AlegreyaSans";
   font-style: italic;
   font-weight: 300;
   src: local("AlegreyaSans-LightItalic"),
        url("/assets/fonts/AlegreyaSans-LightItalic.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Material Icons";
+	font-style: normal;
+	font-weight: normal;
+	src: local("Material Icons"),
+		   local("MaterialIcons-Regular"),
+		   url("Material_Icons.eot?#iefix") format("embedded-opentype"),
+		   url("Material_Icons.woff") format("woff"),
+		   url("Material_Icons.woff2") format("woff2"),
+		   url("Material_Icons.svg#MaterialIcons") format("svg");
 }
