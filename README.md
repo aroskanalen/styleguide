@@ -6,7 +6,7 @@ OS2Display styleguide using [Pattern Lab](http://patternlab.io/).
 
 Prerequisites: [git](https://git-scm.com/) and [Composer](https://getcomposer.org/) installed.
 
-In the `htdocs`directory run:
+In the `styleguide`directory run:
 
 ```sh
 composer create-project pattern-lab/edition-twig-standard pattern-lab
@@ -22,6 +22,12 @@ In the file `pattern-lab/config/config.yml` change sourceDir to:
 
 ```json
 sourceDir: ../source
+```
+
+and change publicDir to:
+
+```json
+sourceDir: ../public
 ```
 
 If everything went well you should now be able to generate the static Pattern Lab site. In the `pattern-lab` directory run:
