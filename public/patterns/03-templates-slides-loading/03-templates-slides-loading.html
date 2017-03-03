@@ -21,16 +21,16 @@
     <!-- End Pattern Lab -->
 
   </head>
-  <body class="">
+  <body class="is-page">
 
 <header class="header">
     <div class="header--inner">
       <a href="/design/dashboard/index.php" class="logo js-logo" title="Aroskanalen"><i data-icon="filter-none" class="is-medium logo--icon"></i><span>Aroskanalen</span></a>
       <nav class="nav js-nav">
-          <a class="nav--link is-active" href="../../patterns/03-templates-dashboard/03-templates-dashboard.html">
+          <a class="nav--link " href="../../patterns/03-templates-dashboard/03-templates-dashboard.html">
             Start
           </a>
-          <a class="nav--link " href="../../patterns/03-templates-slides-loading/03-templates-slides-loading.html">
+          <a class="nav--link is-active" href="../../patterns/03-templates-slides-loading/03-templates-slides-loading.html">
             Slides
           </a>
           <a class="nav--link " href="../../patterns/03-templates-channel-planning/03-templates-channel-planning.html">
@@ -112,9 +112,48 @@
     </nav>
   </div>
 
+<nav class="submenu">
+  <div class="submenu--inner">
+    <div class="submenu--links is-left">
+      <a href="#" class="submenu--link">
+        <i class="material-icons md-36">add</i>
+        <span>Opret skærm</span>
+      </a>
+    </div>
+    <div class="submenu--links is-right">
+      <a href="#" class="submenu--icon-link"><i data-icon="apps" class="is-medium"></i></a>
+      <a href="#" class="submenu--icon-link is-active"><i data-icon="event-note" class="is-inverted is-medium"></i></a>
+    </div>
+  </div>
+</nav>
+<main role="main" class="content">
+  <div class="content--inner">
+    <div class="container has-wrap search--field-wrapper">
+      <form class="search">
+        <div class="search--input">
+          <input type="search" placeholder="Søg...">
+        </div>
+      </form>
+      <i data-icon="tune" class="search--toggle-filter is-large"></i>
+    </div>
+    <div class="container has-wrap search--filters-wrapper">
+      <div class="tabs is-center" data-tabs-count="2">
+        <span class="tabs--item is-active has-flex"><i data-icon="check-circle" class="is-tiny"></i><span class="tabs--text">Mine</span></span>
+        <span class="tabs--item has-flex"><span class="tabs--text">Alle</span></span>
+      </div>
+      <div class="tabs is-center" data-tabs-count="3">
+        <span class="tabs--item is-active has-flex"><i data-icon="check-circle" class="is-tiny"></i><span class="tabs--text">Nyeste</span></span>
+        <span class="tabs--item has-flex"><span class="tabs--text">Ældste</span></span>
+        <span class="tabs--item"><span class="tabs--text">A-Å</span></span>
+      </div>
+    </div>
+    <div class="container-full-width has-horisontal-margin spinner-element">
+    </div>
+  </div>
+</main>
   <!--DO NOT REMOVE-->
   <script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
-  {"cssEnabled":false,"lineage":[],"lineageR":[{"lineagePattern":"templates-channel-planning","lineagePath":"..\/..\/patterns\/03-templates-channel-planning\/03-templates-channel-planning.html"},{"lineagePattern":"templates-dashboard","lineagePath":"..\/..\/patterns\/03-templates-dashboard\/03-templates-dashboard.html"},{"lineagePattern":"templates-screen-planning","lineagePath":"..\/..\/patterns\/03-templates-screen-planning\/03-templates-screen-planning.html"},{"lineagePattern":"templates-slides-loading","lineagePath":"..\/..\/patterns\/03-templates-slides-loading\/03-templates-slides-loading.html"}],"patternBreadcrumb":{"patternType":"components"},"patternDesc":"","patternExtension":"twig","patternName":"header","patternPartial":"components-header","patternState":"","extraOutput":[]}
+  {"cssEnabled":false,"lineage":[{"lineagePattern":"components-header","lineagePath":"..\/..\/patterns\/03-templates-slides-loading\/03-templates-slides-loading.html"}],"lineageR":[],"patternBreadcrumb":{"patternType":"templates"},"patternDesc":"","patternExtension":"twig","patternName":"slides loading","patternPartial":"templates-slides-loading","patternState":"","extraOutput":[]}
 </script>
 
 <script>

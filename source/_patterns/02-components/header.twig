@@ -2,19 +2,19 @@
     <div class="header--inner">
       <a href="/design/dashboard/index.php" class="logo js-logo" title="Aroskanalen"><i data-icon="filter-none" class="is-medium logo--icon"></i><span>Aroskanalen</span></a>
       <nav class="nav js-nav">
-          <a class="nav--link" href="/design/dashboard/index.php">
+          <a class="nav--link {{ isActive == 0 ? 'is-active' }}" href="{{ attribute(link, 'templates-dashboard') }}">
             Start
           </a>
-          <a class="nav--link" href="#">
+          <a class="nav--link {{ isActive == 1 ? 'is-active' }}" href="{{ attribute(link, 'templates-slides-loading') }}">
             Slides
           </a>
-          <a class="nav--link" href="/design/channel/planning/index.php">
+          <a class="nav--link {{ isActive == 2 ? 'is-active' }}" href="{{ attribute(link, 'templates-channel-planning') }}">
             Kanaler
           </a>
-          <a class="nav--link is-active" href="/design/screen/planning/index.php">
+          <a class="nav--link {{ isActive == 3 ? 'is-active' }}" href="{{ attribute(link, 'templates-screen-planning') }}">
             Skærme
           </a>
-        <a class="nav--link" href="#">
+        <a class="nav--link {{ isActive == 4 ? 'is-active' }}" href="#">
           Medier
         </a>
       </nav>

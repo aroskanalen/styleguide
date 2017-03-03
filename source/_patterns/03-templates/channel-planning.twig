@@ -1,9 +1,4 @@
-<?php
-$is_active = 2;
-include_once $assets_path . '/_menus.php';
-?>
-
-{% include "components-header" %}
+{% include "components-header" with { isActive: 2 } %}
 
 <nav class="submenu">
   <div class="submenu--inner">
