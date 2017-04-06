@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html class="">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="stylesheet" href="../../css/styles.css?1488540913" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1488540913" media="all" />
+
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    <!-- never cache patterns -->
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1488540913" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1488540913" media="all" />
+    <!-- End Pattern Lab -->
+
+  </head>
+  <body class="">
+
+<div class="button js-toggle-modal">
+  Launch demo modal
+</div>
+<div class="modal js-modal is-hidden">
+  <div class="modal--dialog js-modal-dialog is-hidden">
+    <div class="modal--content">
+      <p>
+        Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero,
+        a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+        Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit.        Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero,
+        sda Etiam porta sem malesuada magna Etiam porta sem males
+        adipiscing elit.        Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero,
+        sda Etiam porta sem malesuada magna Etiam porta sem malesuada magna Etiam porta sem malesuad
+      </p>
+      <p>
+        Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero,
+        a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+        Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit.        Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero,
+        sda Etiam porta sem malesuada magna Etiam porta sem males
+        adipiscing elit.        Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero,
+        sda Etiam porta sem malesuada magna Etiam porta sem malesuada magna Etiam porta sem malesuad
+      </p>
+      <p>
+        Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero,
+        a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+        Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit.        Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero,
+        sda Etiam porta sem malesuada magna Etiam porta sem males
+        adipiscing elit.        Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero,
+        sda Etiam porta sem malesuada magna Etiam porta sem malesuada magna Etiam porta sem malesuad
+      </p>
+      <div class="button js-toggle-modal">
+        Close
+      </div>
+    </div>
+  </div>
+</div>
+  <!--DO NOT REMOVE-->
+  <script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
+  {"cssEnabled":false,"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"modules"},"patternDesc":"<h4>DON'T USE YET<\/h4>\n\n<p>This uses jquery, but should use angular. Do not use until it has been moved to angular.<\/p>\n\n<p>@Todo:<\/p>\n\n<ul>\n<li>Use angular instead of jquery<\/li>\n<li>Update this description<\/li>\n<\/ul>\n\n<h4>Deprecated Description<\/h4>\n\n<p>Modal-dialog mixin<\/p>\n\n<ul>\n<li>Takes three parameters (width, positioning, speed)<\/li>\n<li>Width can be any valid css width (px, em, %)<\/li>\n<li>Positioning can be left right or center<\/li>\n<li>Speed determines the speed of the transition.<\/li>\n<\/ul>\n\n<h4>Uses javascript<\/h4>\n\n<p>A small javascript adding the used classes is located in the js folder (filname: modal.js)<\/p>","patternExtension":"twig","patternName":"Modal (Deprecated)","patternPartial":"modules-modal","patternState":"","extraOutput":[]}
+</script>
+
+<script>
+  /*!
+  * scriptLoader - v0.1
+  *
+  * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+  * Licensed under the MIT license
+  *
+  */
+  
+  var scriptLoader = {
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1488540913">
+  (function() {
+    if (self != top) {
+      var cb = '1488540913';
+      var js = [];
+      if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
+        js.push('styleguide/bower_components/classList.min.js');
+      }
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1488540913">
+  (function() {
+    if (self != top) {
+      var cb = '1488540913';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="/assets/js/modal.js"></script>
+    <script src="/assets/js/menu-toggle.js"></script>
+  </body>
+</html>

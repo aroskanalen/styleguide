@@ -1,3 +1,8 @@
+4.0.0 / 2017-03-03
+==================
+
+* Moved styleguide to [Patternlab](http://patternlab.io/)
+
 3.3.0 / 2015-12-24
 ==================
 
