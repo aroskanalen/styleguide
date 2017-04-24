@@ -1,0 +1,20 @@
+/**
+ *
+ * Submenu link
+ *
+ */
+
+
+.submenu-link {
+
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+
+  &.is-active {
+    border-bottom: 2px solid $theme-color;
+  }
+}
