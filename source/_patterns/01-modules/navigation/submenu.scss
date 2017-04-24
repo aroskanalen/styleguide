@@ -8,7 +8,7 @@
   background-color: $white;
   border-bottom: 1px solid $gray-lighter;
   box-sizing: border-box;
-  display: block;
+  display: flex;
   min-height: 60px;
   padding-left: 1em;
   padding-right: 1em;
@@ -21,6 +21,8 @@
     @include flexbox;
     @include align-content(stretch);
     @include justify-content(flex-start);
+
+    width: 100%;
 
     @include breakpoint($layout-max-width+1) {
       margin-left: auto;
