@@ -1,0 +1,16 @@
+{
+  "submenuLinks": [
+    {
+      "url": "#",
+      "title": "Brugere",
+      "label": "Brugere",
+      "class": ""
+    },
+    {
+      "url": "#",
+      "title": "Grupper",
+      "label": "Grupper",
+      "class": ""
+    }
+  ]
+}

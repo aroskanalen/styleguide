@@ -6,15 +6,16 @@
 
 
 .submenu-link {
+  @include flexbox;
+  @include strip-link-styles($theme-color);
 
-  &:link,
-  &:visited,
-  &:hover,
-  &:active {
-    text-decoration: none;
+  &:hover {
+    span {
+      text-decoration: underline;
+    }
   }
 
-  &.is-active {
-    border-bottom: 2px solid $theme-color;
+  &--link + &--link {
+    padding-left: 1.5em;
   }
 }
