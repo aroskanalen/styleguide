@@ -3,6 +3,6 @@
     {% include "elements-heading" with { heading: box.heading } %}
   {% endblock %}
   <div class="box--inner">
-    <p>Hi omnes lingua, institutis, legibus inter se differunt. Quae vero auctorem tractata ab fiducia dicuntur.</p>
+    {% include "modules-button-link" with { iconLink: box.buttonLink } %}
   </div>
 </article>

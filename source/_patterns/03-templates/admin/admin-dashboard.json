@@ -18,6 +18,10 @@
     "heading": {
       "label": "Users",
       "class": "has-spacing-after"
+    },
+    "buttonLink": {
+      "label": "Opret bruger",
+      "class": "has-spacing-before"
     }
   }
 }
