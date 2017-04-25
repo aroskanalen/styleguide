@@ -16,12 +16,62 @@
   ],
   "boxUsers": {
     "heading": {
-      "label": "Users",
+      "label": "Brugere",
       "class": "has-spacing-after"
     },
     "buttonLink": {
       "label": "Opret bruger",
       "class": "has-spacing-before"
-    }
+    },
+    "list": [
+      {
+        "url": "#",
+        "title": "User 1",
+        "label": "User 1",
+        "class": ""
+      },
+      {
+        "url": "#",
+        "title": "User 2",
+        "label": "User 2",
+        "class": ""
+      },
+      {
+        "url": "#",
+        "title": "User 3",
+        "label": "User 3",
+        "class": ""
+      }
+    ]
+  },
+  "boxGroups": {
+    "heading": {
+      "label": "Grupper",
+      "class": "has-spacing-after"
+    },
+    "buttonLink": {
+      "label": "Opret gruppe",
+      "class": "has-spacing-before"
+    },
+    "list": [
+      {
+        "url": "#",
+        "title": "Gruppe 1",
+        "label": "Gruppe 1",
+        "class": ""
+      },
+      {
+        "url": "#",
+        "title": "Gruppe 2",
+        "label": "Gruppe 2",
+        "class": ""
+      },
+      {
+        "url": "#",
+        "title": "Gruppe 3",
+        "label": "Gruppe 3",
+        "class": ""
+      }
+    ]
   }
 }
