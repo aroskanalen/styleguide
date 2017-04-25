@@ -2,7 +2,21 @@
 
 OS2Display styleguide using [Pattern Lab](http://patternlab.io/).
 
-#### Install Pattern Lab
+#### Build styleguide on a server
+
+Unless this is a clean server, generate the styleguide with the command below.
+
+```sh
+php core/console --generate
+```
+
+If this is the first time, make sure you install Pattern Lab as described below.
+
+```sh
+./scripts/pattern_lab.sh
+```
+
+#### Install Pattern Lab locally
 
 Prerequisites: [git](https://git-scm.com/) and [Composer](https://getcomposer.org/) installed.
 
