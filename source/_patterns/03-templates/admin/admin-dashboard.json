@@ -21,7 +21,11 @@
     },
     "buttonLink": {
       "label": "Opret bruger",
-      "class": "has-spacing-before"
+      "class": "has-spacing-before",
+      "iconRounded": {
+        "icon": "insert_emoticon",
+        "color": "theme"
+      }
     },
     "list": [
       {

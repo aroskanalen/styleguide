@@ -1,0 +1,17 @@
+{% if iconRounded.color == "theme" %}
+  {% set iconRoundedColor = " is-color-theme" %}
+{%  endif %}
+
+{% if iconRounded.class == "small" %}
+  {% set iconRoundedClass = " md-18" %}
+{%  endif %}
+
+{% if iconRounded.class == "medium" %}
+  {% set iconRoundedClass = " md-32" %}
+{%  endif %}
+
+{% if iconRounded.class == "large" %}
+  {% set iconRoundedClass = " md-48" %}
+{%  endif %}
+
+<i class="icon-rounded material-icons{{ iconRoundedClass }}{{ iconRoundedColor }}">{{ iconRounded.icon }}</i>
