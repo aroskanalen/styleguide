@@ -1,0 +1,22 @@
+{
+  "list": [
+    {
+      "url": "#",
+      "title": "List item titel",
+      "label": "List item label",
+      "class": ""
+    },
+    {
+      "url": "#",
+      "title": "List item titel",
+      "label": "List item label",
+      "class": ""
+    },
+    {
+      "url": "#",
+      "title": "List item titel",
+      "label": "List item label",
+      "class": ""
+    }
+  ]
+}
