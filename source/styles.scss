@@ -26,8 +26,10 @@
 @import "_patterns/00-elements/search";
 @import "_patterns/00-elements/spinner";
 @import "_patterns/00-elements/submenu/submenu-link";
+@import "_patterns/00-elements/text/box-header";
 
 /* Modules */
+@import "_patterns/01-modules/grid/grid";
 @import "_patterns/01-modules/message";
 @import "_patterns/01-modules/modal";
 @import "_patterns/01-modules/pager";

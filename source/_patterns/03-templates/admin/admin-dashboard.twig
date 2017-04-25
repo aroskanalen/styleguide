@@ -1,3 +1,21 @@
 {% include "components-header" with { isActive: 5 } %}
 {% include "modules-submenu" %}
-{% include "elements-box-header" %}
+
+<main role="main" class="content">
+  <div class="content--inner">
+    {% embed "modules-grid-halfs" %}
+      {% block items %}
+        {% embed "modules-grid-item" %}
+          {% block content %}
+            {% include "elements-box-header" with { boxHeader: { label: "Box 1" } } %}
+          {% endblock %}
+        {% endembed %}
+        {% embed "modules-grid-item" %}
+          {% block content %}
+            {% include "elements-box-header" with { boxHeader: { label: "Box 2" } } %}
+          {% endblock %}
+        {% endembed %}
+      {% endblock %}
+    {% endembed %}
+  </div>
+</main>
