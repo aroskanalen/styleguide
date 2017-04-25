@@ -13,5 +13,11 @@
       "label": "Grupper",
       "class": ""
     }
-  ]
+  ],
+  "boxUsers": {
+    "heading": {
+      "label": "Users",
+      "class": "has-spacing-after"
+    }
+  }
 }

@@ -7,12 +7,7 @@
       {% block items %}
         {% embed "modules-grid-item" %}
           {% block content %}
-            {% include "elements-box-header" with { boxHeader: { label: "Box 1" } } %}
-          {% endblock %}
-        {% endembed %}
-        {% embed "modules-grid-item" %}
-          {% block content %}
-            {% include "elements-box-header" with { boxHeader: { label: "Box 2" } } %}
+            {% include "modules-box" with { box: boxUsers } %}
           {% endblock %}
         {% endembed %}
       {% endblock %}
