@@ -7,12 +7,12 @@
       {% block items %}
         {% embed "modules-grid-item" %}
           {% block content %}
-            {% include "modules-box" with { box: boxUsers } %}
+            {% include "components-boxUsers" with { box: boxUsers } %}
           {% endblock %}
         {% endembed %}
         {% embed "modules-grid-item" %}
           {% block content %}
-            {% include "modules-box" with { box: boxGroups } %}
+            {% include "components-boxGroups" with { box: boxGroups } %}
           {% endblock %}
         {% endembed %}
       {% endblock %}

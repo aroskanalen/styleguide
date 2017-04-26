@@ -1,16 +1,5 @@
 {
   "box": {
-    "heading": {
-      "label": "Box",
-      "class": "has-spacing-after"
-    },
-    "buttonLink": {
-      "label": "Box button link",
-      "class": "has-spacing-before",
-      "iconRounded": {
-        "icon": "insert_emoticon",
-        "color": "theme"
-      }
-    }
+    "content": "<p>Box content.</p>"
   }
 }

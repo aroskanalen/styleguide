@@ -49,8 +49,8 @@
     ],
     "boxLink": {
       "url": "#",
-      "title": "Box link titel",
-      "label": "Box link label"
+      "title": "Alle brugere",
+      "label": "Alle brugere"
     }
   },
   "boxGroups": {
@@ -88,8 +88,8 @@
     ],
     "boxLink": {
       "url": "#",
-      "title": "Box link titel",
-      "label": "Box link label"
+      "title": "Alle grupper",
+      "label": "Alle grupper"
     }
   }
 }
