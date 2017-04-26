@@ -4,11 +4,13 @@
  *
  */
 
+$forms-text-background-color: $gray-lightest;
 $forms-text-border-radius: $border-radius;
 $forms-text-border-style: 1px solid $gray;
 $forms-text-spacing: 15px;
 
 .forms-text {
+  background-color: $forms-text-background-color;
   border: $forms-text-border-style;
   border-radius: $forms-text-border-radius;
   font-size: 100%;

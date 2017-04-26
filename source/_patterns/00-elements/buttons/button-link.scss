@@ -13,9 +13,10 @@ $button-link-padding: $layout-padding;
 
 .button-link {
   background-color: $button-link-background-color;
-  border: $button-link-neutral-border-style;
+  border: $button-link-border-style;
   border-radius: $button-link-border-radius;
   color: $button-link-text-color;
+  display: block;
   padding: $button-link-padding;
   text-align: center;
 

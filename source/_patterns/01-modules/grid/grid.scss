@@ -36,20 +36,16 @@ $grid-spacing-percent-large:  4%;
   width: 100%;
 
   &--inner {
-    display: flex;
-    flex-wrap: wrap;
+    @include flexbox;
+    @include flex-wrap(wrap);
   }
 
   &--item {
-    align-items: stretch;
+    @include align-items(stretch);
+
     margin-bottom: $grid-spacing-pixel-xxxsmall;
     margin-top: $grid-spacing-pixel-xxxsmall;
     width: 100%;
-
-    @include breakpoint($breakpoint-tablet) {
-      margin-bottom: $grid-spacing-pixel-small;
-      margin-top: $grid-spacing-pixel-small;
-    }
 
     > .grid.is-full > .grid--inner > .grid--item:first-child {
       margin-top: 0;
@@ -60,8 +56,8 @@ $grid-spacing-percent-large:  4%;
     }
 
     &.is-centered {
-      align-items: center;
-      display: flex;
+      @include align-items(center);
+      @include flexbox;
     }
   }
 

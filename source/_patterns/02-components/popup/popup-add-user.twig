@@ -1,0 +1,32 @@
+{% embed "modules-popup" %}
+  {% block content %}
+    {% embed "modules-grid-full" %}
+      {% block items %}
+        {% embed "modules-grid-item" %}
+          {% block content %}
+            {% include "modules-forms-text-field" with { formsLabel: popupAddUser.formsLabel, formsText: popupAddUser.formsText } %}
+          {% endblock %}
+        {% endembed %}
+        {% embed "modules-grid-item" %}
+          {% block content %}
+            <p>Der bliver sendt en e-mail til brugeren med et aktiveringslink.</p>
+          {% endblock %}
+        {% endembed %}
+      {% endblock %}
+    {% endembed %}
+    {% embed "modules-grid-full" %}
+      {% block items %}
+        {% embed "modules-grid-item" %}
+          {% block content %}
+            {% include "elements-button-link" with { buttonLink: popupAddUser.buttonLink } %}
+          {% endblock %}
+        {% endembed %}
+        {% embed "modules-grid-item" %}
+          {% block content %}
+            {% include "elements-button-link-neutral" with { buttonLinkNeutral: popupAddUser.buttonLinkNeutral } %}
+          {% endblock %}
+        {% endembed %}
+      {% endblock %}
+    {% endembed %}
+  {% endblock %}
+{% endembed %}

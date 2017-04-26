@@ -24,7 +24,8 @@
         "icon": "person_add",
         "color": "theme"
       },
-      "label": "Brugere"
+      "label": "Brugere",
+      "jsClass": "js-toggle-modal"
     },
     "list": [
       {
@@ -87,6 +88,27 @@
       "url": "#",
       "title": "Alle grupper",
       "label": "Alle grupper"
+    }
+  },
+  "popupAddUser": {
+    "formsLabel": {
+      "for": "add_user",
+      "label": "E-mail"
+    },
+    "formsText": {
+      "id": "add_user",
+      "name": "add_user",
+      "placeholder": "Indtast e-mail på brugeren"
+    },
+    "buttonLink": {
+      "url": "link.pages-admin-dashboard-user-added",
+      "title": "Tilføj bruger",
+      "label": "Tilføj bruger"
+    },
+    "buttonLinkNeutral": {
+      "url": "link.pages-admin-dashboard",
+      "title": "Annullér",
+      "label": "Annullér"
     }
   }
 }
