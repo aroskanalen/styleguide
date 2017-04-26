@@ -15,6 +15,10 @@
     }
   }
 
+  &.is-active {
+    text-decoration: underline;
+  }
+
   + .submenu-link {
     padding-left: 1.5em;
   }

@@ -1,16 +1,30 @@
 {
+  "bodyClass": "is-page",
+  "submenuLinks": [
+    {
+      "url": "#",
+      "title": "Brugere",
+      "label": "Brugere",
+      "class": "is-active"
+    },
+    {
+      "url": "#",
+      "title": "Grupper",
+      "label": "Grupper",
+      "class": ""
+    }
+  ],
   "boxUsers": {
     "heading": {
       "label": "Brugere",
       "class": "has-spacing-after"
     },
     "buttonLink": {
-      "label": "Opret bruger",
-      "class": "has-spacing-before",
       "iconRounded": {
         "icon": "person_add",
         "color": "theme"
-      }
+      },
+      "label": "Brugere"
     },
     "list": [
       {
@@ -33,7 +47,7 @@
       }
     ],
     "boxLink": {
-      "url": "#",
+      "url": "link.templates-admin-users",
       "title": "Alle brugere",
       "label": "Alle brugere"
     }

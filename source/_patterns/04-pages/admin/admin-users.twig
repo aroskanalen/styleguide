@@ -3,16 +3,11 @@
 
 <main role="main" class="content">
   <div class="content--inner">
-    {% embed "modules-grid-halfs" %}
+    {% embed "modules-grid-full" %}
       {% block items %}
         {% embed "modules-grid-item" %}
           {% block content %}
-            {% include "components-box-list" %}
-          {% endblock %}
-        {% endembed %}
-        {% embed "modules-grid-item" %}
-          {% block content %}
-            {% include "components-box-list" %}
+            {% include "components-box-list" with { boxList: boxUsers } %}
           {% endblock %}
         {% endembed %}
       {% endblock %}
