@@ -1,10 +1,6 @@
 {
   "buttonLink": {
     "label": "Button link",
-    "class": "has-spacing-before",
-    "iconRounded": {
-      "icon": "insert_emoticon",
-      "color": "theme"
-    }
+    "class": "has-spacing-before"
   }
 }
