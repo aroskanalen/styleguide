@@ -2,7 +2,7 @@
   <div class="submenu--inner">
     <div class="submenu--links is-left">
       {% for submenuLink in submenuLinks %}
-        {% include "elements-submenu-link" %}
+        {% include "elements-submenu-link" with { submenuLinkActive: submenuLink } %}
       {% endfor %}
     </div>
   </div>
