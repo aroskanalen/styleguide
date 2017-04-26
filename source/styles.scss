@@ -23,14 +23,25 @@
 @import "_patterns/00-elements/button";
 @import "_patterns/00-elements/forms";
 @import "_patterns/00-elements/icon";
+@import "_patterns/00-elements/icons/icon-rounded";
 @import "_patterns/00-elements/search";
 @import "_patterns/00-elements/spinner";
+@import "_patterns/00-elements/submenu/submenu-link";
+@import "_patterns/00-elements/text/heading";
+@import "_patterns/00-elements/text/button-text";
 
 /* Modules */
+@import "_patterns/01-modules/box/box";
+@import "_patterns/01-modules/box/box-link";
+@import "_patterns/01-modules/button-link/button-link";
+@import "_patterns/01-modules/grid/grid";
+@import "_patterns/01-modules/list/list";
+@import "_patterns/01-modules/list/list-item";
 @import "_patterns/01-modules/message";
 @import "_patterns/01-modules/modal";
 @import "_patterns/01-modules/pager";
 @import "_patterns/01-modules/tabs";
+@import "_patterns/01-modules/navigation/submenu";
 
 /* Components */
 @import "_patterns/02-components/hamburger-menu";
@@ -38,4 +49,3 @@
 @import "_patterns/02-components/logo";
 @import "_patterns/02-components/nav";
 @import "_patterns/02-components/planning-timeline";
-@import "_patterns/02-components/submenu";

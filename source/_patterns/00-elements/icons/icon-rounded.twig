@@ -1,0 +1,21 @@
+{% if iconRounded.color == "theme" %}
+  {% set iconRoundedColor = " is-color-theme" %}
+{%  endif %}
+
+{% if iconRounded.size == "small" %}
+  {% set iconRoundedSize = " md-18" %}
+{%  endif %}
+
+{% if iconRounded.size == "normal" %}
+  {% set iconRoundedSize = " md-24" %}
+{%  endif %}
+
+{% if iconRounded.size == "medium" %}
+  {% set iconRoundedSize = " md-32" %}
+{%  endif %}
+
+{% if iconRounded.size == "large" %}
+  {% set iconRoundedSize = " md-48" %}
+{%  endif %}
+
+<i class="icon-rounded material-icons{{ iconRoundedSize }}{{ iconRoundedColor }}">{{ iconRounded.icon }}</i>

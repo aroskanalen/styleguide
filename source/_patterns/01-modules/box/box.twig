@@ -1,0 +1,9 @@
+<article class="box">
+  {% block header %}
+  {% endblock %}
+  <div class="box--inner">
+    {% block content %}
+      {{ box.content|raw }}
+    {% endblock %}
+  </div>
+</article>

@@ -1,0 +1,10 @@
+{% embed "modules-box" with { box: boxGroups} %}
+  {% block header %}
+    {% include "elements-heading" with { heading: box.heading } %}
+  {% endblock %}
+  {% block content %}
+    {% include "modules-button-link" with { buttonLink: box.buttonLink } %}
+    {% include "modules-list" with { list: box.list } %}
+    {% include "modules-box-link" with { boxLink: box.boxLink } %}
+  {% endblock %}
+{% endembed %}

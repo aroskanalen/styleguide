@@ -1,0 +1,41 @@
+{
+  "boxUsers": {
+    "heading": {
+      "label": "Brugere",
+      "class": "has-spacing-after"
+    },
+    "buttonLink": {
+      "label": "Opret bruger",
+      "class": "has-spacing-before",
+      "iconRounded": {
+        "icon": "person_add",
+        "color": "theme"
+      }
+    },
+    "list": [
+      {
+        "url": "#",
+        "title": "User 1",
+        "label": "User 1",
+        "class": ""
+      },
+      {
+        "url": "#",
+        "title": "User 2",
+        "label": "User 2",
+        "class": ""
+      },
+      {
+        "url": "#",
+        "title": "User 3",
+        "label": "User 3",
+        "class": ""
+      }
+    ],
+    "boxLink": {
+      "url": "#",
+      "title": "Alle brugere",
+      "label": "Alle brugere"
+    }
+  }
+}
