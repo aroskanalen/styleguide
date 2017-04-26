@@ -2,6 +2,6 @@
   "iconRounded": {
     "icon": "insert_emoticon",
     "color": "theme",
-    "class": "md-24"
+    "size": "md-24"
   }
 }
