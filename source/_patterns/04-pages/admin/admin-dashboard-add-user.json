@@ -19,7 +19,7 @@
       "label": "Brugere",
       "class": "has-spacing-after"
     },
-    "buttonLink": {
+    "buttonIconLink": {
       "iconRounded": {
         "icon": "person_add",
         "color": "theme"
@@ -57,7 +57,7 @@
     "heading": {
       "label": "Grupper"
     },
-    "buttonLink": {
+    "buttonIconLink": {
       "iconRounded": {
         "icon": "group_add",
         "color": "theme"

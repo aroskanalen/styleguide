@@ -21,6 +21,8 @@
 
 /* Elements */
 @import "_patterns/00-elements/button";
+@import "_patterns/00-elements/buttons/button-link";
+@import "_patterns/00-elements/buttons/button-link-neutral";
 @import "_patterns/00-elements/form";
 @import "_patterns/00-elements/forms/forms-label";
 @import "_patterns/00-elements/forms/forms-text";
@@ -35,7 +37,7 @@
 /* Modules */
 @import "_patterns/01-modules/box/box";
 @import "_patterns/01-modules/box/box-link";
-@import "_patterns/01-modules/button-link/button-link";
+@import "_patterns/01-modules/button-icon-link/button-icon-link";
 @import "_patterns/01-modules/grid/grid";
 @import "_patterns/01-modules/list/list";
 @import "_patterns/01-modules/list/list-item";

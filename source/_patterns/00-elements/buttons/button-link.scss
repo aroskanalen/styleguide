@@ -1,0 +1,33 @@
+/**
+ *
+ * Button Link
+ *
+ */
+
+$button-link-background-color: $theme-color;
+$button-link-background-color-hover: darken($theme-color, 15%);
+$button-link-text-color: $white;
+$button-link-border-style: 2px solid $theme-color;
+$button-link-border-radius: $border-radius;
+$button-link-padding: $layout-padding;
+
+.button-link {
+  background-color: $button-link-background-color;
+  border: $button-link-neutral-border-style;
+  border-radius: $button-link-border-radius;
+  color: $button-link-text-color;
+  padding: $button-link-padding;
+  text-align: center;
+
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    color: $button-link-text-color;
+    text-decoration: none;
+  }
+
+  &:hover {
+    background-color: $button-link-background-color-hover;
+  }
+}

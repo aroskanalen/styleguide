@@ -19,7 +19,7 @@
       "label": "Brugere",
       "class": "has-spacing-after"
     },
-    "buttonLink": {
+    "buttonIconLink": {
       "iconRounded": {
         "icon": "person_add",
         "color": "theme"
