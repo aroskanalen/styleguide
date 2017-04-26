@@ -1,12 +1,5 @@
 {
   "box": {
-    "heading": {
-      "label": "Box",
-      "class": "has-spacing-after"
-    },
-    "buttonLink": {
-      "label": "Box button link",
-      "class": "has-spacing-before"
-    }
+    "content": "<p>Box content.</p>"
   }
 }

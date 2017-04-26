@@ -21,7 +21,11 @@
     },
     "buttonLink": {
       "label": "Opret bruger",
-      "class": "has-spacing-before"
+      "class": "has-spacing-before",
+      "iconRounded": {
+        "icon": "person_add",
+        "color": "theme"
+      }
     },
     "list": [
       {
@@ -44,9 +48,9 @@
       }
     ],
     "boxLink": {
-      "url": "#",
-      "title": "Box link titel",
-      "label": "Box link label"
+      "url": "link.templates-admin-users",
+      "title": "Alle brugere",
+      "label": "Alle brugere"
     }
   },
   "boxGroups": {
@@ -56,7 +60,11 @@
     },
     "buttonLink": {
       "label": "Opret gruppe",
-      "class": "has-spacing-before"
+      "class": "has-spacing-before",
+      "iconRounded": {
+        "icon": "person_add",
+        "color": "theme"
+      }
     },
     "list": [
       {
@@ -77,6 +85,11 @@
         "label": "Gruppe 3",
         "class": ""
       }
-    ]
+    ],
+    "boxLink": {
+      "url": "#",
+      "title": "Alle grupper",
+      "label": "Alle grupper"
+    }
   }
 }

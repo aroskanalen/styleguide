@@ -1,19 +1,4 @@
 {
-  "bodyClass": "is-page",
-  "submenuLinks": [
-    {
-      "url": "#",
-      "title": "Brugere",
-      "label": "Brugere",
-      "class": ""
-    },
-    {
-      "url": "#",
-      "title": "Grupper",
-      "label": "Grupper",
-      "class": ""
-    }
-  ],
   "boxUsers": {
     "heading": {
       "label": "Brugere",
@@ -48,7 +33,7 @@
       }
     ],
     "boxLink": {
-      "url": "link.templates-admin-users",
+      "url": "#",
       "title": "Alle brugere",
       "label": "Alle brugere"
     }
