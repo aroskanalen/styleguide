@@ -1,0 +1,21 @@
+/**
+ *
+ * Box.
+ *
+ */
+
+$box-background-color: $white;
+$box-border-style: 1px solid $gray-lighter;
+$box-border-radius: $border-radius;
+$box-padding: $layout-padding;
+$box-spacing-top: 10px;
+
+.box {
+  &--inner {
+    background: $box-background-color;
+    border: $box-border-style;
+    border-radius: $box-border-radius;
+    margin-top: $box-spacing-top;
+    padding: $box-padding;
+  }
+}
