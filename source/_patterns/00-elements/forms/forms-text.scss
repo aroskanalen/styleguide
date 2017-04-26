@@ -1,0 +1,32 @@
+/**
+ *
+ * Forms Text
+ *
+ */
+
+$forms-text-border-radius: $border-radius;
+$forms-text-border-style: 1px solid $gray;
+$forms-text-spacing: 15px;
+
+.forms-text {
+  border: $forms-text-border-style;
+  border-radius: $forms-text-border-radius;
+  font-size: 100%;
+  padding-bottom: $forms-text-spacing;
+  padding-left: $forms-text-spacing;
+  padding-right: $forms-text-spacing;
+  padding-top: $forms-text-spacing;
+  width: 100%;
+}
+
+.backup {
+  &--input {
+    @include flexbox;
+    @include flex-direction(column);
+
+  }
+
+  label + .forms-text {
+    margin-top: $forms-text-spacing;
+  }
+}

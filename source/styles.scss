@@ -21,7 +21,9 @@
 
 /* Elements */
 @import "_patterns/00-elements/button";
-@import "_patterns/00-elements/forms";
+@import "_patterns/00-elements/form";
+@import "_patterns/00-elements/forms/forms-label";
+@import "_patterns/00-elements/forms/forms-text";
 @import "_patterns/00-elements/icon";
 @import "_patterns/00-elements/icons/icon-rounded";
 @import "_patterns/00-elements/search";
@@ -38,7 +40,7 @@
 @import "_patterns/01-modules/list/list";
 @import "_patterns/01-modules/list/list-item";
 @import "_patterns/01-modules/message";
-@import "_patterns/01-modules/modal";
+@import "_patterns/01-modules/modal/modal";
 @import "_patterns/01-modules/pager";
 @import "_patterns/01-modules/tabs";
 @import "_patterns/01-modules/navigation/submenu";

@@ -1,0 +1,36 @@
+{% include "components-header" with { isActive: 5 } %}
+{% include "modules-submenu" %}
+
+<main role="main" class="content">
+  <div class="content--inner">
+    {% embed "modules-grid-halfs" %}
+      {% block items %}
+        {% embed "modules-grid-item" %}
+          {% block content %}
+            {% include "components-box-list" with { boxList: boxUsers } %}
+          {% endblock %}
+        {% endembed %}
+        {% embed "modules-grid-item" %}
+          {% block content %}
+            {% include "components-box-list" with { boxList: boxGroups } %}
+          {% endblock %}
+        {% endembed %}
+      {% endblock %}
+    {% endembed %}
+  </div>
+</main>
+
+<div class="modal js-modal is-hidden">
+  <div class="modal--dialog js-modal-dialog is-hidden">
+    <div class="modal--content">
+      {% include "modules-text-field" %}
+      <p>Der bliver sendt en e-mail til brugeren med et aktiveringslink.</p>
+      <div class="button">
+        Opret bruger
+      </div>
+      <div class="button js-toggle-modal">
+        Annullér
+      </div>
+    </div>
+  </div>
+</div>

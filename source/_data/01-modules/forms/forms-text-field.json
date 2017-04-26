@@ -1,0 +1,11 @@
+{
+  "formsLabel": {
+    "for": "forms_text_field",
+    "label": "Text Field Label"
+  },
+  "formsText": {
+    "id": "forms_text_field",
+    "name": "forms_text_field",
+    "placeholder": "Forms Text Field placeholder"
+  }
+}
