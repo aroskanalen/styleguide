@@ -1,3 +1,9 @@
 <div class="list-item {{ listItem.class }}">
-  <a href="{{ listItem.url }}" title="{{ listItem.title }}">{{ listItem.label }}</a>
+  {% if listItem.url %}
+    <a href="{{ listItem.url }}" title="{{ listItem.title }}">
+  {% endif %}
+    {{ listItem.label }}
+  {% if listItem.url %}
+    </a>
+  {% endif %}
 </div>
