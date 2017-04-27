@@ -4,9 +4,10 @@
  *
  */
 
-$forms-label-spacing-top: 5px;
+$forms-label-spacing-bottom: 5px;
 
 .forms-label {
   display: block;
   font-weight: 600;
+  margin-bottom: $forms-label-spacing-bottom;
 }

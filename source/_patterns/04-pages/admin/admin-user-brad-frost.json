@@ -18,14 +18,68 @@
     "heading": {
       "label": "Brad Frost"
     },
-    "formsLabel": {
+    "formsLabelName": {
       "for": "name",
       "label": "Navn"
     },
-    "formsText": {
+    "formsTextName": {
       "id": "name",
       "name": "name",
       "value": "Brad Frost"
+    },
+    "formsLabelEmail": {
+      "for": "email",
+      "label": "E-mail"
+    },
+    "formsTextEmail": {
+      "id": "email",
+      "name": "email",
+      "value": "bradfrost@example.com"
+    },
+    "buttonLink": {
+      "url": "link.pages-user-brad-frost",
+      "title": "Gem",
+      "label": "Gem"
     }
+  },
+  "boxUsers": {
+    "heading": {
+      "label": "Grupper"
+    },
+    "buttonIconLink": {
+      "iconRounded": {
+        "icon": "group_add"
+      },
+      "label": "Tilføj til gruppe",
+      "jsClass": "js-toggle-modal",
+      "dataModal": "js-modal-add-user"
+    },
+    "list": [
+      {
+        "url": "#",
+        "title": "Admin",
+        "label": "Admin"
+      }
+    ]
+  },
+  "boxGroups": {
+    "heading": {
+      "label": "Roller"
+    },
+    "buttonIconLink": {
+      "iconRounded": {
+        "icon": "security"
+      },
+      "label": "Tilføj rolle",
+      "jsClass": "js-toggle-modal",
+      "dataModal": "js-modal-add-group"
+    },
+    "list": [
+      {
+        "url": "#",
+        "title": "Bruger",
+        "label": "Bruger"
+      }
+    ]
   }
 }

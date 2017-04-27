@@ -3,7 +3,9 @@
     {% include "elements-heading" with { heading: boxList.heading } %}
   {% endblock %}
   {% block content %}
-    {% include "modules-button-icon-link" with { buttonIconLink: boxList.buttonIconLink } %}
+    {% if boxList.buttonIconLink %}
+      {% include "modules-button-icon-link" with { buttonIconLink: boxList.buttonIconLink } %}
+    {% endif %}
     {% include "modules-list" with { list: boxList.list } %}
     {% if boxList.boxLink %}
       {% include "modules-box-link" with { boxLink: boxList.boxLink } %}

@@ -3,19 +3,31 @@
 
 <main role="main" class="content">
   <div class="content--inner">
-    {% embed "modules-grid-halfs" %}
+    {% embed "modules-grid-full" %}
       {% block items %}
         {% embed "modules-grid-item" %}
           {% block content %}
             {% embed "modules-box" with { box: boxUserBradFrost } %}
               {% block content %}
-                {% include "modules-forms-text-field" with { formsLabel: boxUserBradFrost.formsLabel, formsText: boxUserBradFrost.formsText } %}
+                {% include "modules-forms-text-field" with { formsLabel: boxUserBradFrost.formsLabelName, formsText: boxUserBradFrost.formsTextName } %}
+                {% include "modules-forms-text-field" with { formsLabel: boxUserBradFrost.formsLabelEmail, formsText: boxUserBradFrost.formsTextEmail } %}
+                {% include "elements-button-link-spacing-top" with { buttonLinkSpacingTop: boxUserBradFrost.buttonLink } %}
               {% endblock %}
             {% endembed %}
           {% endblock %}
         {% endembed %}
+      {% endblock %}
+    {% endembed %}
+    {% embed "modules-grid-halfs" %}
+      {% block items %}
         {% embed "modules-grid-item" %}
           {% block content %}
+            {% include "components-box-list" with { boxList: boxUsers } %}
+          {% endblock %}
+        {% endembed %}
+        {% embed "modules-grid-item" %}
+          {% block content %}
+            {% include "components-box-list" with { boxList: boxGroups } %}
           {% endblock %}
         {% endembed %}
       {% endblock %}
