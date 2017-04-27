@@ -7,8 +7,7 @@
 /* Variables
    ========================================================================== */
 
-$grid-spacing-pixel-xxsmall:  15px;
-$grid-spacing-pixel-small:    20px;
+$grid-spacing-pixel-small:    10px;
 $grid-spacing-pixel-medium:   40px;
 $grid-spacing-percent-medium: 2%;
 $grid-spacing-percent-large:  4%;
@@ -43,8 +42,8 @@ $grid-spacing-percent-large:  4%;
   &--item {
     @include align-items(stretch);
 
-    margin-bottom: $grid-spacing-pixel-xxsmall;
-    margin-top: $grid-spacing-pixel-xxsmall;
+    margin-bottom: $grid-spacing-pixel-small;
+    margin-top: $grid-spacing-pixel-small;
     width: 100%;
 
     > .grid.is-full > .grid--inner > .grid--item:first-child {

@@ -1,1 +1,1 @@
-<a href="{{ buttonLinkNeutral.url }}" class="button-link-neutral" title="{{ buttonLinkNeutral.title }}">{{ buttonLinkNeutral.label }}</a>
+{% include "elements-button-link" with { buttonLink: { url: buttonLinkNeutral.url, title: buttonLinkNeutral.title, label: buttonLinkNeutral.label, class: "is-neutral" } } %}
