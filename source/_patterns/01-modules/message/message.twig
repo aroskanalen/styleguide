@@ -1,0 +1,10 @@
+<div class="message">
+  <div class="message--inner {{ message.class }}">
+    <div class="message--content">
+      {{ message.content }}
+    </div>
+    <div class="message--close">
+      {% include "elements-icon-default" with { iconDefault: { icon: "close" } } %}
+    </div>
+  </div>
+</div>
