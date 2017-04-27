@@ -25,7 +25,8 @@
         "color": "theme"
       },
       "label": "Brugere",
-      "jsClass": "js-toggle-modal"
+      "jsClass": "js-toggle-modal",
+      "dataModal": "js-modal-add-user"
     },
     "list": [
       {
@@ -62,7 +63,9 @@
         "icon": "group_add",
         "color": "theme"
       },
-      "label": "Opret gruppe"
+      "label": "Opret gruppe",
+      "jsClass": "js-toggle-modal",
+      "dataModal": "js-modal-add-group"
     },
     "list": [
       {
@@ -112,6 +115,32 @@
       "url": "link.pages-admin-dashboard",
       "title": "Annullér",
       "label": "Annullér"
-    }
+    },
+    "jsClass": "js-modal-add-user"
+  },
+  "popupAddGroup": {
+    "headingHasSpacingAfter": {
+      "label": "Tilføj gruppe"
+    },
+    "formsLabel": {
+      "for": "add_group",
+      "label": "Navn"
+    },
+    "formsText": {
+      "id": "add_group",
+      "name": "add_user",
+      "add_group": "Indtast navn på gruppen"
+    },
+    "buttonLink": {
+      "url": "link.pages-admin-dashboard-group-added",
+      "title": "Tilføj gruppe",
+      "label": "Tilføj gruppe"
+    },
+    "buttonLinkNeutral": {
+      "url": "link.pages-admin-dashboard",
+      "title": "Annullér",
+      "label": "Annullér"
+    },
+    "jsClass": "js-modal-add-group"
   }
 }

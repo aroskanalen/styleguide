@@ -6,11 +6,12 @@
 (function($) {
   // Function for toggle burger navigation.
   function toggle_modal() {
-    var modal = $('.js-modal');
-    var modalDialog = $('.js-modal-dialog');
     var body = $('body');
 
     $('.js-toggle-modal').bind('touchstart click', function(e) {
+      var modal = $("." + $(this).attr('data-modal'));
+      var modalDialog = $('.js-modal-dialog');
+
       // If nav is open we close it.
       if (modal.hasClass('is-visible')) {
 
