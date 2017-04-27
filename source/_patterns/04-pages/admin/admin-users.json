@@ -41,7 +41,7 @@
         "class": ""
       }
     ],
-    "boxLink": {
+    "boxPager": {
       "url": "link.pages-admin-users",
       "title": "Alle brugere",
       "label": "Alle brugere"

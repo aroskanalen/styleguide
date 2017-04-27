@@ -5,6 +5,21 @@
   {% block content %}
     {% include "modules-button-icon-link" with { buttonIconLink: boxList.buttonIconLink } %}
     {% include "modules-list" with { list: boxList.list } %}
-    {% include "modules-box-link" with { boxLink: boxList.boxLink } %}
+    {% if boxList.boxLink %}
+      {% include "modules-box-link" with { boxLink: boxList.boxLink } %}
+    {% endif %}
+  {% endblock %}
+  {% block footer %}
+    {% if boxList.boxPager %}
+      {% embed "modules-grid-two-thirds-centered" %}
+        {% block items %}
+          {% embed "modules-grid-item-centered" %}
+            {% block content %}
+              {% include "modules-box-pager" with { boxPager: boxList.boxPager } %}
+            {% endblock %}
+          {% endembed %}
+        {% endblock %}
+      {% endembed %}
+    {% endif %}
   {% endblock %}
 {% endembed %}
