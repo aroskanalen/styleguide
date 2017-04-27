@@ -16,34 +16,27 @@
   ],
   "boxUsers": {
     "heading": {
-      "label": "Brugere",
-      "class": "has-spacing-after"
+      "label": "Brugere"
     },
     "buttonIconLink": {
       "iconRounded": {
         "icon": "person_add",
         "color": "theme"
       },
-      "label": "Brugere",
+      "label": "Opret bruger",
       "jsClass": "js-toggle-modal"
     },
     "list": [
       {
         "url": "#",
-        "title": "User 1",
-        "label": "User 1",
+        "title": "Admin",
+        "label": "Admin",
         "class": ""
       },
       {
-        "url": "#",
-        "title": "User 2",
-        "label": "User 2",
-        "class": ""
-      },
-      {
-        "url": "#",
-        "title": "User 3",
-        "label": "User 3",
+        "url": "link.pages-admin-user-brad-frost",
+        "title": "Brad Frost",
+        "label": "Brad Frost",
         "class": ""
       }
     ],
@@ -67,20 +60,8 @@
     "list": [
       {
         "url": "#",
-        "title": "Gruppe 1",
-        "label": "Gruppe 1",
-        "class": ""
-      },
-      {
-        "url": "#",
-        "title": "Gruppe 2",
-        "label": "Gruppe 2",
-        "class": ""
-      },
-      {
-        "url": "#",
-        "title": "Gruppe 3",
-        "label": "Gruppe 3",
+        "title": "Public",
+        "label": "Public",
         "class": ""
       }
     ],

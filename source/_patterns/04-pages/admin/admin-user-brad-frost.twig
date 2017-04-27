@@ -1,0 +1,24 @@
+{% include "components-header" with { isActive: 5 } %}
+{% include "modules-submenu" %}
+
+<main role="main" class="content">
+  <div class="content--inner">
+    {% embed "modules-grid-halfs" %}
+      {% block items %}
+        {% embed "modules-grid-item" %}
+          {% block content %}
+            {% embed "modules-box" with { box: boxUserBradFrost } %}
+              {% block content %}
+                {% include "modules-forms-text-field" with { formsLabel: boxUserBradFrost.formsLabel, formsText: boxUserBradFrost.formsText } %}
+              {% endblock %}
+            {% endembed %}
+          {% endblock %}
+        {% endembed %}
+        {% embed "modules-grid-item" %}
+          {% block content %}
+          {% endblock %}
+        {% endembed %}
+      {% endblock %}
+    {% endembed %}
+  </div>
+</main>

@@ -1,0 +1,31 @@
+{
+  "bodyClass": "is-page",
+  "submenuLinks": [
+    {
+      "url": "#",
+      "title": "Brugere",
+      "label": "Brugere",
+      "class": ""
+    },
+    {
+      "url": "#",
+      "title": "Grupper",
+      "label": "Grupper",
+      "class": ""
+    }
+  ],
+  "boxUserBradFrost": {
+    "heading": {
+      "label": "Brad Frost"
+    },
+    "formsLabel": {
+      "for": "name",
+      "label": "Navn"
+    },
+    "formsText": {
+      "id": "name",
+      "name": "name",
+      "value": "Brad Frost"
+    }
+  }
+}

@@ -5,7 +5,7 @@
       "url": "#",
       "title": "Brugere",
       "label": "Brugere",
-      "class": "is-active"
+      "class": ""
     },
     {
       "url": "#",
@@ -16,40 +16,60 @@
   ],
   "boxUsers": {
     "heading": {
-      "label": "Brugere",
-      "class": "has-spacing-after"
+      "label": "Brugere"
     },
     "buttonIconLink": {
       "iconRounded": {
         "icon": "person_add",
         "color": "theme"
       },
-      "label": "Brugere"
+      "label": "Opret bruger",
+      "jsClass": "js-toggle-modal",
+      "dataModal": "js-modal-add-user"
     },
     "list": [
       {
         "url": "#",
-        "title": "User 1",
-        "label": "User 1",
+        "title": "Admin",
+        "label": "Admin",
         "class": ""
       },
       {
         "url": "#",
-        "title": "User 2",
-        "label": "User 2",
-        "class": ""
-      },
-      {
-        "url": "#",
-        "title": "User 3",
-        "label": "User 3",
+        "title": "Brad Frost",
+        "label": "Brad Frost",
         "class": ""
       }
     ],
     "boxLink": {
-      "url": "link.templates-admin-users",
+      "url": "link.pages-admin-users",
       "title": "Alle brugere",
       "label": "Alle brugere"
     }
+  },
+  "popupAddUser": {
+    "headingHasSpacingAfter": {
+      "label": "Tilføj bruger"
+    },
+    "formsLabel": {
+      "for": "add_user",
+      "label": "E-mail"
+    },
+    "formsText": {
+      "id": "add_user",
+      "name": "add_user",
+      "placeholder": "Indtast e-mail på brugeren"
+    },
+    "buttonLink": {
+      "url": "link.pages-admin-dashboard-user-added",
+      "title": "Tilføj bruger",
+      "label": "Tilføj bruger"
+    },
+    "buttonLinkNeutral": {
+      "url": "link.pages-admin-dashboard",
+      "title": "Annullér",
+      "label": "Annullér"
+    },
+    "jsClass": "js-modal-add-user"
   }
 }

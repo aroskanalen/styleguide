@@ -16,40 +16,27 @@
   ],
   "boxUsers": {
     "heading": {
-      "label": "Brugere",
-      "class": "has-spacing-after"
+      "label": "Brugere"
     },
     "buttonIconLink": {
       "iconRounded": {
         "icon": "person_add",
         "color": "theme"
       },
-      "label": "Brugere",
+      "label": "Opret bruger",
       "jsClass": "js-toggle-modal",
       "dataModal": "js-modal-add-user"
     },
     "list": [
       {
         "url": "#",
-        "title": "User 1",
-        "label": "User 1",
-        "class": ""
-      },
-      {
-        "url": "#",
-        "title": "User 2",
-        "label": "User 2",
-        "class": ""
-      },
-      {
-        "url": "#",
-        "title": "User 3",
-        "label": "User 3",
+        "title": "Admin",
+        "label": "Admin",
         "class": ""
       }
     ],
     "boxLink": {
-      "url": "link.templates-admin-users",
+      "url": "link.pages-admin-users",
       "title": "Alle brugere",
       "label": "Alle brugere"
     }
@@ -70,20 +57,8 @@
     "list": [
       {
         "url": "#",
-        "title": "Gruppe 1",
-        "label": "Gruppe 1",
-        "class": ""
-      },
-      {
-        "url": "#",
-        "title": "Gruppe 2",
-        "label": "Gruppe 2",
-        "class": ""
-      },
-      {
-        "url": "#",
-        "title": "Gruppe 3",
-        "label": "Gruppe 3",
+        "title": "Public",
+        "label": "Public",
         "class": ""
       }
     ],
