@@ -3,7 +3,7 @@
     "heading": {
       "label": "Box list"
     },
-    "buttonLink": {
+    "buttonIconLink": {
       "label": "Button link",
       "iconRounded": {
         "icon": "insert_emoticon"
