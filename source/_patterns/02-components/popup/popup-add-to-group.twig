@@ -1,0 +1,32 @@
+{% embed "modules-popup" with { popup: { jsClass: popupAddToGroup.jsClass } } %}
+  {% block content %}
+    {% embed "modules-grid-full" %}
+      {% block items %}
+        {% embed "modules-grid-item" %}
+          {% block content %}
+            {% include "elements-heading-has-spacing-after" with { headingHasSpacingAfter: popupAddToGroup.headingHasSpacingAfter } %}
+          {% endblock %}
+        {% endembed %}
+        {% embed "modules-grid-item" %}
+          {% block content %}
+            {% include "modules-forms-text-field" with { formsLabel: popupAddToGroup.formsLabel, formsText: popupAddToGroup.formsText } %}
+          {% endblock %}
+        {% endembed %}
+      {% endblock %}
+    {% endembed %}
+    {% embed "modules-grid-full" %}
+      {% block items %}
+        {% embed "modules-grid-item" %}
+          {% block content %}
+            {% include "elements-button-link" with { buttonLink: popupAddToGroup.buttonLink } %}
+          {% endblock %}
+        {% endembed %}
+        {% embed "modules-grid-item" %}
+          {% block content %}
+            {% include "elements-button-link-neutral" with { buttonLinkNeutral: popupAddToGroup.buttonLinkNeutral } %}
+          {% endblock %}
+        {% endembed %}
+      {% endblock %}
+    {% endembed %}
+  {% endblock %}
+{% endembed %}

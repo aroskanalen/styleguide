@@ -42,7 +42,7 @@
       "label": "Gem"
     }
   },
-  "boxUsers": {
+  "boxGroups": {
     "heading": {
       "label": "Grupper"
     },
@@ -52,7 +52,7 @@
       },
       "label": "Tilføj til gruppe",
       "jsClass": "js-toggle-modal",
-      "dataModal": "js-modal-add-user"
+      "dataModal": "js-modal-add-to-group"
     },
     "list": [
       {
@@ -62,7 +62,7 @@
       }
     ]
   },
-  "boxGroups": {
+  "boxRoles": {
     "heading": {
       "label": "Roller"
     },
@@ -81,5 +81,30 @@
         "label": "Bruger"
       }
     ]
+  },
+  "popupAddToGroup": {
+    "headingHasSpacingAfter": {
+      "label": "Tilføj til gruppe"
+    },
+    "formsLabel": {
+      "for": "add_group",
+      "label": "Gruppe"
+    },
+    "formsText": {
+      "id": "add_group",
+      "name": "add_user",
+      "add_group": "Indtast navn på gruppen"
+    },
+    "buttonLink": {
+      "url": "link.pages-admin-dashboard-group-added",
+      "title": "Tilføj til gruppe",
+      "label": "Tilføj til gruppe"
+    },
+    "buttonLinkNeutral": {
+      "url": "link.pages-admin-dashboard",
+      "title": "Annullér",
+      "label": "Annullér"
+    },
+    "jsClass": "js-modal-add-to-group"
   }
 }

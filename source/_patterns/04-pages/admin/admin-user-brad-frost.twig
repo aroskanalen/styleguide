@@ -22,15 +22,17 @@
       {% block items %}
         {% embed "modules-grid-item" %}
           {% block content %}
-            {% include "components-box-list" with { boxList: boxUsers } %}
+            {% include "components-box-list" with { boxList: boxGroups } %}
           {% endblock %}
         {% endembed %}
         {% embed "modules-grid-item" %}
           {% block content %}
-            {% include "components-box-list" with { boxList: boxGroups } %}
+            {% include "components-box-list" with { boxList: boxRoles } %}
           {% endblock %}
         {% endembed %}
       {% endblock %}
     {% endembed %}
   </div>
 </main>
+
+{% include "components-popup-add-to-group" with { popupAddToGroup: popupAddToGroup } %}
