@@ -4,6 +4,11 @@
       {% block items %}
         {% embed "modules-grid-item" %}
           {% block content %}
+            {% include "elements-heading-has-spacing-after" with { headingHasSpacingAfter: popupAddUser.headingHasSpacingAfter } %}
+          {% endblock %}
+        {% endembed %}
+        {% embed "modules-grid-item" %}
+          {% block content %}
             {% include "modules-forms-text-field" with { formsLabel: popupAddUser.formsLabel, formsText: popupAddUser.formsText } %}
           {% endblock %}
         {% endembed %}

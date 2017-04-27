@@ -91,6 +91,9 @@
     }
   },
   "popupAddUser": {
+    "headingHasSpacingAfter": {
+      "label": "Tilføj bruger"
+    },
     "formsLabel": {
       "for": "add_user",
       "label": "E-mail"
