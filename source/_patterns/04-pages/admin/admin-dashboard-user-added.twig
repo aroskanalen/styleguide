@@ -3,6 +3,7 @@
 
 <main role="main" class="content">
   <div class="content--inner">
+    {% include "modules-message-info" with { messageInfo: messageInfo } %}
     {% embed "modules-grid-halfs" %}
       {% block items %}
         {% embed "modules-grid-item" %}
