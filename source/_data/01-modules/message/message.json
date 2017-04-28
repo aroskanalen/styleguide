@@ -1,8 +1,14 @@
 {
   "message": {
-    "content": "Salutantibus vitae elit libero, a pharetra augue. Morbi odio eros, volutpat ut pharetra vitae."
+    "content": "This is a message"
   },
   "messageInfo": {
-    "content": "Salutantibus vitae elit libero, a pharetra augue. Morbi odio eros, volutpat ut pharetra vitae."
+    "content": "This is a info message"
+  },
+  "messageError": {
+    "content": "This is an error message"
+  },
+  "messageWarning": {
+    "content": "This is a warning"
   }
 }
