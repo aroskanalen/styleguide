@@ -4,6 +4,7 @@
  *
  */
 
+$box-pager-margin-top: 10px;
 $box-pager-border-style: 1px solid $gray-lighter;
 $box-pager-border-style-active: 1px solid $theme-color;
 $box-pager-border-radius: $border-radius;
@@ -19,6 +20,8 @@ $box-pager-empty-padding: 10px;
 
 .box-pager {
   @include flexbox;
+
+  margin-top: $box-pager-margin-top;
 
   &--item,
   &--item-inner {
