@@ -1,4 +1,4 @@
-{% embed "modules-forms-field" %}
+{% embed "modules-forms-field" with { formsField: formsTextField } %}
   {% block content %}
     {% include "elements-forms-text" with { formsText: formsTextField.formsText } %}
   {% endblock %}

@@ -9,7 +9,7 @@
         {% endembed %}
         {% embed "modules-grid-item" %}
           {% block content %}
-            {% include "modules-forms-text-field" with { formsLabel: popupAddUser.formsLabel, formsText: popupAddUser.formsText } %}
+            {% include "modules-forms-text-field" with { formsTextField: popupAddUser.formsEmail } %}
           {% endblock %}
         {% endembed %}
         {% embed "modules-grid-item" %}

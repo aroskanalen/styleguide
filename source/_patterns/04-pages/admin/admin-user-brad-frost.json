@@ -18,14 +18,29 @@
     "heading": {
       "label": "Brad Frost"
     },
-    "formsLabelName": {
-      "for": "name",
-      "label": "Navn"
+    "formsName": {
+      "formsLabel": {
+        "for": "name",
+        "label": "Navn"
+      },
+      "formsText": {
+        "id": "name",
+        "name": "name",
+        "value": "Brad Frost",
+        "placeholder": "Indtast navn"
+      }
     },
-    "formsTextName": {
-      "id": "name",
-      "name": "name",
-      "value": "Brad Frost"
+    "formsEmail": {
+      "formsLabel": {
+        "for": "email",
+        "label": "E-mail"
+      },
+      "formsText": {
+        "id": "email",
+        "name": "email",
+        "value": "bradfrost@example.com",
+        "placeholder": "Indtast e-mail"
+      }
     },
     "formsLabelEmail": {
       "for": "email",
@@ -85,14 +100,16 @@
     "headingHasSpacingAfter": {
       "label": "Tilføj til gruppe"
     },
-    "formsLabel": {
-      "for": "add_group",
-      "label": "Gruppe"
-    },
-    "formsText": {
-      "id": "add_group",
-      "name": "add_group",
-      "add_group": "Indtast navn på gruppen"
+    "formsName": {
+      "formsLabel": {
+        "for": "add_group",
+        "label": "Navn"
+      },
+      "formsText": {
+        "id": "add_group",
+        "name": "add_group",
+        "placeholder": "Indtast navn på gruppen"
+      }
     },
     "buttonLink": {
       "url": "link.pages-admin-dashboard-group-added",
@@ -110,14 +127,16 @@
     "headingHasSpacingAfter": {
       "label": "Tilføj rolle"
     },
-    "formsLabel": {
-      "for": "add_role",
-      "label": "Rolle"
-    },
-    "formsText": {
-      "id": "add_role",
-      "name": "add_role",
-      "add_group": "Indtast navn på rollen"
+    "formsName": {
+      "formsLabel": {
+        "for": "add_role",
+        "label": "Rolle"
+      },
+      "formsText": {
+        "id": "add_role",
+        "name": "add_role",
+        "placeholder": "Indtast navn på rollen"
+      }
     },
     "buttonLink": {
       "url": "link.pages-admin-dashboard-role-added",

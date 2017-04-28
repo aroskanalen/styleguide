@@ -72,14 +72,16 @@
     "headingHasSpacingAfter": {
       "label": "Tilføj bruger"
     },
-    "formsLabel": {
-      "for": "add_user",
-      "label": "E-mail"
-    },
-    "formsText": {
-      "id": "add_user",
-      "name": "add_user",
-      "placeholder": "Indtast e-mail på brugeren"
+    "formsEmail": {
+      "formsLabel": {
+        "for": "add_user",
+        "label": "E-mail"
+      },
+      "formsText": {
+        "id": "add_user",
+        "name": "add_user",
+        "placeholder": "Indtast e-mail på brugeren"
+      }
     },
     "buttonLink": {
       "url": "link.pages-admin-dashboard-user-added",
@@ -97,14 +99,16 @@
     "headingHasSpacingAfter": {
       "label": "Tilføj gruppe"
     },
-    "formsLabel": {
-      "for": "add_group",
-      "label": "Navn"
-    },
-    "formsText": {
-      "id": "add_group",
-      "name": "add_user",
-      "add_group": "Indtast navn på gruppen"
+    "formsName": {
+      "formsLabel": {
+        "for": "add_group",
+        "label": "Navn"
+      },
+      "formsText": {
+        "id": "add_group",
+        "name": "add_group",
+        "placeholder": "Indtast navn på gruppen"
+      }
     },
     "buttonLink": {
       "url": "link.pages-admin-dashboard-group-added",

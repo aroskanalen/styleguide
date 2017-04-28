@@ -9,8 +9,8 @@
           {% block content %}
             {% embed "modules-box" with { box: boxUserBradFrost } %}
               {% block content %}
-                {% include "modules-forms-text-field" with { formsLabel: boxUserBradFrost.formsLabelName, formsText: boxUserBradFrost.formsTextName } %}
-                {% include "modules-forms-text-field" with { formsLabel: boxUserBradFrost.formsLabelEmail, formsText: boxUserBradFrost.formsTextEmail } %}
+                {% include "modules-forms-text-field" with { formsTextField: boxUserBradFrost.formsName } %}
+                {% include "modules-forms-text-field" with { formsTextField: boxUserBradFrost.formsEmail } %}
                 {% include "elements-button-link-spacing-top" with { buttonLinkSpacingTop: boxUserBradFrost.buttonLink } %}
               {% endblock %}
             {% endembed %}
