@@ -42,12 +42,28 @@
   font-weight: normal;
   letter-spacing: normal;
   line-height: 1;
+  overflow: hidden;
   text-transform: none;
   white-space: nowrap;
+  width: 40px;
   word-wrap: normal;
 
-  &.md-18 { font-size: 18px; }
-  &.md-24 { font-size: 24px; }
-  &.md-36 { font-size: 36px; }
-  &.md-48 { font-size: 48px; }
+  &.md-18 {
+    font-size: 18px;
+    width: 31px;
+  }
+
+  &.md-24 {
+    font-size: 24px;
+    width: 40px;
+  }
+
+  &.md-36 {
+    font-size: 36px;
+    width: 62px;
+  }
+  &.md-48 {
+    font-size: 48px;
+    width: 82px;
+  }
 }
