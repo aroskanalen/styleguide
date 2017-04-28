@@ -1,0 +1,6 @@
+<div class="forms-field">
+  {% include "elements-forms-label" with { formsLabel: formsField.formsLabel } %}
+  {% block content %}
+    {% include "elements-forms-text" with { formsText: formsField.formsText } %}
+  {% endblock %}
+</div>

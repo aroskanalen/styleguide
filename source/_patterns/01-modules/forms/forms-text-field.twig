@@ -1,4 +1,5 @@
-<div class="forms-text-field">
-  {% include "elements-forms-label" %}
-  {% include "elements-forms-text" %}
-</div>
+{% embed "modules-forms-field" %}
+  {% block content %}
+    {% include "elements-forms-text" with { formsText: formsTextField.formsText } %}
+  {% endblock %}
+{% endembed %}

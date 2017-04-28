@@ -20,15 +20,3 @@ $forms-text-spacing: 15px;
   padding-top: $forms-text-spacing;
   width: 100%;
 }
-
-.backup {
-  &--input {
-    @include flexbox;
-    @include flex-direction(column);
-
-  }
-
-  label + .forms-text {
-    margin-top: $forms-text-spacing;
-  }
-}
