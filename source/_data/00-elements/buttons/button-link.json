@@ -1,7 +1,7 @@
 {
   "buttonLink": {
-    "url": "{{ url }}",
-    "title": "{{ title }}",
-    "label": "{{ label }}"
+    "url": "#",
+    "title": "Button Link title",
+    "label": "Button Link label"
   }
 }
