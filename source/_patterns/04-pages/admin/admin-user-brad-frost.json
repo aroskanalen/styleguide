@@ -72,7 +72,7 @@
       },
       "label": "Tilføj rolle",
       "jsClass": "js-toggle-modal",
-      "dataModal": "js-modal-add-group"
+      "dataModal": "js-modal-add-role"
     },
     "list": [
       {
@@ -91,7 +91,7 @@
     },
     "formsText": {
       "id": "add_group",
-      "name": "add_user",
+      "name": "add_group",
       "add_group": "Indtast navn på gruppen"
     },
     "buttonLink": {
@@ -100,10 +100,35 @@
       "label": "Tilføj til gruppe"
     },
     "buttonLinkNeutral": {
-      "url": "link.pages-admin-dashboard",
+      "url": "link.pages-admin-user-brad-frost",
       "title": "Annullér",
       "label": "Annullér"
     },
     "jsClass": "js-modal-add-to-group"
+  },
+  "popupAddRole": {
+    "headingHasSpacingAfter": {
+      "label": "Tilføj rolle"
+    },
+    "formsLabel": {
+      "for": "add_role",
+      "label": "Rolle"
+    },
+    "formsText": {
+      "id": "add_role",
+      "name": "add_role",
+      "add_group": "Indtast navn på rollen"
+    },
+    "buttonLink": {
+      "url": "link.pages-admin-dashboard-role-added",
+      "title": "Tilføj rolle",
+      "label": "Tilføj rolle"
+    },
+    "buttonLinkNeutral": {
+      "url": "link.pages-admin-user-brad-frost",
+      "title": "Annullér",
+      "label": "Annullér"
+    },
+    "jsClass": "js-modal-add-role"
   }
 }

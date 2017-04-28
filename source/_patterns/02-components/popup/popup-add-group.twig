@@ -14,16 +14,16 @@
         {% endembed %}
       {% endblock %}
     {% endembed %}
-    {% embed "modules-grid-full" %}
+    {% embed "modules-grid-halfs" %}
       {% block items %}
         {% embed "modules-grid-item" %}
           {% block content %}
-            {% include "elements-button-link" with { buttonLink: popupAddGroup.buttonLink } %}
+            {% include "elements-button-link-neutral" with { buttonLinkNeutral: popupAddGroup.buttonLinkNeutral } %}
           {% endblock %}
         {% endembed %}
         {% embed "modules-grid-item" %}
           {% block content %}
-            {% include "elements-button-link-neutral" with { buttonLinkNeutral: popupAddGroup.buttonLinkNeutral } %}
+            {% include "elements-button-link" with { buttonLink: popupAddGroup.buttonLink } %}
           {% endblock %}
         {% endembed %}
       {% endblock %}

@@ -19,16 +19,16 @@
         {% endembed %}
       {% endblock %}
     {% endembed %}
-    {% embed "modules-grid-full" %}
+    {% embed "modules-grid-halfs" %}
       {% block items %}
         {% embed "modules-grid-item" %}
           {% block content %}
-            {% include "elements-button-link" with { buttonLink: popupAddUser.buttonLink } %}
+            {% include "elements-button-link-neutral" with { buttonLinkNeutral: popupAddUser.buttonLinkNeutral } %}
           {% endblock %}
         {% endembed %}
         {% embed "modules-grid-item" %}
           {% block content %}
-            {% include "elements-button-link-neutral" with { buttonLinkNeutral: popupAddUser.buttonLinkNeutral } %}
+            {% include "elements-button-link" with { buttonLink: popupAddUser.buttonLink } %}
           {% endblock %}
         {% endembed %}
       {% endblock %}
