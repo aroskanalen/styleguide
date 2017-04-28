@@ -1,0 +1,91 @@
+{
+  "bodyClass": "is-page",
+  "submenuLinks": [
+    {
+      "url": "#",
+      "title": "Brugere",
+      "label": "Brugere",
+      "class": ""
+    },
+    {
+      "url": "#",
+      "title": "Grupper",
+      "label": "Grupper",
+      "class": ""
+    }
+  ],
+  "boxUserGroup1": {
+    "heading": {
+      "label": "Group 1"
+    },
+    "formsName": {
+      "formsLabel": {
+        "for": "name",
+        "label": "Navn"
+      },
+      "formsText": {
+        "id": "name",
+        "name": "name",
+        "value": "Group 1",
+        "placeholder": "Indtast navn"
+      }
+    },
+    "buttonLink": {
+      "url": "link.pages-group-1-edit",
+      "title": "Gem",
+      "label": "Gem"
+    }
+  },
+  "boxUsers": {
+    "heading": {
+      "label": "Brugere"
+    },
+    "buttonIconLink": {
+      "iconRounded": {
+        "icon": "person_add"
+      },
+      "label": "Tilføj bruger",
+      "jsClass": "js-toggle-modal",
+      "dataModal": "js-modal-add-to-group"
+    },
+    "list": [
+      {
+        "url": "#",
+        "title": "Admin",
+        "label": "Admin"
+      },
+      {
+        "url": "#",
+        "title": "Brad Frost",
+        "label": "Brad Frost"
+      }
+    ]
+  },
+  "popupAddToGroup": {
+    "headingHasSpacingAfter": {
+      "label": "Tilføj til gruppe"
+    },
+    "formsName": {
+      "formsLabel": {
+        "for": "add_to_group",
+        "label": "Navn"
+      },
+      "formsText": {
+        "id": "add_group",
+        "name": "add_to_group",
+        "placeholder": "Indtast navn på gruppen"
+      }
+    },
+    "buttonLink": {
+      "url": "link.pages-admin-dashboard-group-added",
+      "title": "Tilføj til gruppe",
+      "label": "Tilføj til gruppe"
+    },
+    "buttonLinkNeutral": {
+      "url": "link.pages-admin-group-1-edit",
+      "title": "Annullér",
+      "label": "Annullér"
+    },
+    "jsClass": "js-modal-add-to-group"
+  }
+}

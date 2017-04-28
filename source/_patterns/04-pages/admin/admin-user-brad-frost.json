@@ -42,17 +42,8 @@
         "placeholder": "Indtast e-mail"
       }
     },
-    "formsLabelEmail": {
-      "for": "email",
-      "label": "E-mail"
-    },
-    "formsTextEmail": {
-      "id": "email",
-      "name": "email",
-      "value": "bradfrost@example.com"
-    },
     "buttonLink": {
-      "url": "link.pages-user-brad-frost",
+      "url": "link.pages-admin-user-brad-frost",
       "title": "Gem",
       "label": "Gem"
     }
