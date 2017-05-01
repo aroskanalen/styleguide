@@ -60,7 +60,7 @@
       "jsClass": "js-toggle-modal",
       "dataModal": "js-modal-add-to-group"
     },
-    "list": [
+    "contentList": [
       {
         "url": "#",
         "title": "Gruppe 1",
@@ -80,10 +80,11 @@
       "jsClass": "js-toggle-modal",
       "dataModal": "js-modal-add-role"
     },
-    "list": [
+    "contentList": [
       {
         "title": "Bruger",
-        "label": "Bruger"
+        "label": "Bruger",
+        "text": "(standardrolle)"
       }
     ]
   },
@@ -103,7 +104,7 @@
       }
     },
     "buttonLink": {
-      "url": "link.pages-admin-dashboard-group-added",
+      "url": "link.pages-admin-user-brad-frost-group-added",
       "title": "Tilføj til gruppe",
       "label": "Tilføj til gruppe"
     },

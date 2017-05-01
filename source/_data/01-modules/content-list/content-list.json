@@ -1,22 +1,23 @@
 {
-  "list": [
+  "contentList": [
     {
       "url": "#",
       "title": "List item titel",
       "label": "List item label",
-      "class": ""
+      "icon": "more_vert"
     },
     {
       "url": "#",
       "title": "List item titel",
       "label": "List item label",
-      "class": ""
+      "text": "text",
+      "icon": "close"
     },
     {
       "url": "#",
       "title": "List item titel",
       "label": "List item label",
-      "class": ""
+      "icon": "more_vert"
     }
   ]
 }

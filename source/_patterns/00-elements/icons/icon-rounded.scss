@@ -15,6 +15,7 @@ $icon-rounded-padding: .25em;
   border-radius: $icon-rounded-border-radius;
   color: $icon-rounded-color-default;
   padding: $icon-rounded-padding;
+  width: 40px;
 
   &.is-color-gray {
     color: $icon-rounded-color-gray;

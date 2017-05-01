@@ -48,16 +48,18 @@
       "jsClass": "js-toggle-modal",
       "dataModal": "js-modal-add-to-group"
     },
-    "list": [
+    "contentList": [
       {
         "url": "#",
         "title": "Admin",
-        "label": "Admin"
+        "label": "Admin",
+        "icon": "more_vert"
       },
       {
         "url": "#",
         "title": "Brad Frost",
-        "label": "Brad Frost"
+        "label": "Brad Frost",
+        "icon": "more_vert"
       }
     ]
   },

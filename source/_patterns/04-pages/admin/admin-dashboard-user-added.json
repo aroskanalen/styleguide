@@ -29,7 +29,7 @@
       "label": "Opret bruger",
       "jsClass": "js-toggle-modal"
     },
-    "list": [
+    "contentList": [
       {
         "url": "#",
         "title": "Admin",
@@ -60,7 +60,7 @@
       },
       "label": "Opret gruppe"
     },
-    "list": [
+    "contentList": [
       {
         "url": "#",
         "title": "Public",

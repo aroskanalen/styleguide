@@ -1,0 +1,40 @@
+{% include "components-header" with { isActive: 5 } %}
+{% include "modules-submenu" %}
+
+<main role="main" class="content">
+  <div class="content--inner">
+    {% include "modules-message-info" with { messageInfo: messageInfo } %}
+    {% embed "modules-grid-full" %}
+      {% block items %}
+        {% embed "modules-grid-item" %}
+          {% block content %}
+            {% embed "modules-box" with { box: boxUserBradFrost } %}
+              {% block content %}
+                {% include "modules-forms-text-field" with { formsTextField: boxUserBradFrost.formsName } %}
+                {% include "modules-forms-text-field" with { formsTextField: boxUserBradFrost.formsEmail } %}
+                {% include "elements-button-link-spacing-top" with { buttonLinkSpacingTop: boxUserBradFrost.buttonLink } %}
+              {% endblock %}
+            {% endembed %}
+          {% endblock %}
+        {% endembed %}
+      {% endblock %}
+    {% endembed %}
+    {% embed "modules-grid-halfs" %}
+      {% block items %}
+        {% embed "modules-grid-item" %}
+          {% block content %}
+            {% include "components-box-list" with { boxList: boxGroups } %}
+          {% endblock %}
+        {% endembed %}
+        {% embed "modules-grid-item" %}
+          {% block content %}
+            {% include "components-box-list" with { boxList: boxRoles } %}
+          {% endblock %}
+        {% endembed %}
+      {% endblock %}
+    {% endembed %}
+  </div>
+</main>
+
+{% include "components-popup-add-to-group" with { popupAddToGroup: popupAddToGroup } %}
+{% include "components-popup-add-role" with { popupAddRole: popupAddRole } %}

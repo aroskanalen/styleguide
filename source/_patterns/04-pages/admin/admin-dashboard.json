@@ -27,7 +27,7 @@
       "jsClass": "js-toggle-modal",
       "dataModal": "js-modal-add-user"
     },
-    "list": [
+    "contentList": [
       {
         "url": "#",
         "title": "Admin",
@@ -53,7 +53,7 @@
       "jsClass": "js-toggle-modal",
       "dataModal": "js-modal-add-group"
     },
-    "list": [
+    "contentList": [
       {
         "url": "link-pages-admin-group-1",
         "title": "Group 1",

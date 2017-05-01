@@ -14,36 +14,41 @@
       "class": ""
     }
   ],
-  "boxUserSetPassword": {
+  "messageInfo": {
+    "content": "Brad Frost blev tilføjet til Gruppe 2"
+  },
+  "boxUserBradFrost": {
     "heading": {
-      "label": "Vælg kodeord"
+      "label": "Brad Frost"
     },
-    "formsPasswordField": {
+    "formsName": {
       "formsLabel": {
-        "for": "password",
-        "label": "Kodeord"
+        "for": "name",
+        "label": "Navn"
       },
-      "formsPassword": {
-        "id": "password",
-        "name": "password",
-        "placeholder": "Indtast kodeord"
+      "formsText": {
+        "id": "name",
+        "name": "name",
+        "value": "Brad Frost",
+        "placeholder": "Indtast navn"
       }
     },
-    "formsPasswordFieldRepeat": {
+    "formsEmail": {
       "formsLabel": {
-        "for": "password_repeat",
-        "label": "Gentag kodeord"
+        "for": "email",
+        "label": "E-mail"
       },
-      "formsPassword": {
-        "id": "password_repeat",
-        "name": "password_repeat",
-        "placeholder": "Indtast kodeord igen"
+      "formsText": {
+        "id": "email",
+        "name": "email",
+        "value": "bradfrost@example.com",
+        "placeholder": "Indtast e-mail"
       }
     },
     "buttonLink": {
-      "url": "link.pages-user-brad-frost",
-      "title": "Fortsæt",
-      "label": "Fortsæt"
+      "url": "link.pages-admin-user-brad-frost",
+      "title": "Gem",
+      "label": "Gem"
     }
   },
   "boxGroups": {
@@ -58,11 +63,16 @@
       "jsClass": "js-toggle-modal",
       "dataModal": "js-modal-add-to-group"
     },
-    "list": [
+    "contentList": [
       {
         "url": "#",
         "title": "Gruppe 1",
         "label": "Gruppe 1"
+      },
+      {
+        "url": "#",
+        "title": "Gruppe 2",
+        "label": "Gruppe 2"
       }
     ]
   },
@@ -81,7 +91,9 @@
     "contentList": [
       {
         "title": "Bruger",
-        "label": "Bruger"
+        "label": "Bruger",
+        "icon": "more_vert",
+        "text": "(standardrolle)"
       }
     ]
   },
@@ -89,17 +101,19 @@
     "headingHasSpacingAfter": {
       "label": "Tilføj til gruppe"
     },
-    "formsLabel": {
-      "for": "add_group",
-      "label": "Gruppe"
-    },
-    "formsText": {
-      "id": "add_group",
-      "name": "add_group",
-      "add_group": "Indtast navn på gruppen"
+    "formsName": {
+      "formsLabel": {
+        "for": "add_group",
+        "label": "Navn"
+      },
+      "formsText": {
+        "id": "add_group",
+        "name": "add_group",
+        "placeholder": "Indtast navn på gruppen"
+      }
     },
     "buttonLink": {
-      "url": "link.pages-admin-dashboard-group-added",
+      "url": "link.pages-admin-user-brad-frost-group-added",
       "title": "Tilføj til gruppe",
       "label": "Tilføj til gruppe"
     },
@@ -114,14 +128,16 @@
     "headingHasSpacingAfter": {
       "label": "Tilføj rolle"
     },
-    "formsLabel": {
-      "for": "add_role",
-      "label": "Rolle"
-    },
-    "formsText": {
-      "id": "add_role",
-      "name": "add_role",
-      "add_group": "Indtast navn på rollen"
+    "formsName": {
+      "formsLabel": {
+        "for": "add_role",
+        "label": "Rolle"
+      },
+      "formsText": {
+        "id": "add_role",
+        "name": "add_role",
+        "placeholder": "Indtast navn på rollen"
+      }
     },
     "buttonLink": {
       "url": "link.pages-admin-dashboard-role-added",

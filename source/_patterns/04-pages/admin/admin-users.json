@@ -27,7 +27,7 @@
       "jsClass": "js-toggle-modal",
       "dataModal": "js-modal-add-user"
     },
-    "list": [
+    "contentList": [
       {
         "url": "#",
         "title": "Admin",

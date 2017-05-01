@@ -1,9 +1,17 @@
-<div class="content-list-item {{ listItem.class }}">
-  {% if listItem.url %}
-    <a href="{{ listItem.url }}" title="{{ listItem.title }}">
+<div class="content-list-item {{ contentListItem.class }}">
+  <span class="content-list-item--link">
+  {% if contentListItem.url %}
+    <a href="{{ contentListItem.url }}" title="{{ contentListItem.title }}">
   {% endif %}
-    {{ listItem.label }}
-  {% if listItem.url %}
+    {{ contentListItem.label }}
+  {% if contentListItem.url %}
     </a>
+  {% endif %}
+  </span>
+  {% if contentListItem.text %}
+      <span class="content-list-item--text">{{ contentListItem.text }}</span>
+  {% endif %}
+  {% if contentListItem.icon %}
+    <span class="content-list-item--icon">{% include "elements-icon-default" with { iconDefault: { icon: contentListItem.icon } } %}</span>
   {% endif %}
 </div>

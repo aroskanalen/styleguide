@@ -27,7 +27,7 @@
       "jsClass": "js-toggle-modal",
       "dataModal": "js-modal-add-group"
     },
-    "list": [
+    "contentList": [
       {
         "url": "#",
         "title": "Public",

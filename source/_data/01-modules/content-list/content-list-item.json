@@ -1,8 +1,9 @@
 {
-  "listItem": {
+  "contentListItem": {
     "url": "#",
     "title": "List item titel",
     "label": "List item label",
-    "class": ""
+    "text": "text",
+    "icon": "more_vert"
   }
 }
