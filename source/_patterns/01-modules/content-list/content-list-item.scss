@@ -12,13 +12,15 @@ $content-list-item-spacing-top: 15px;
 $content-list-item-icon-spacing-left: 10px;
 
 
-.content-list-item {
-  @include align-items(center);
-  @include flexbox;
-
+.content-list-item:not(:first-child) {
   border-top: $content-list-item-border-style;
   margin-top: $content-list-item-spacing-top;
   padding-top: $content-list-item-padding;
+}
+
+.content-list-item {
+  @include align-items(center);
+  @include flexbox;
 
   &--link {
     @include flex-grow(1);

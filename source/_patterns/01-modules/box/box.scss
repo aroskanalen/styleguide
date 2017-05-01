@@ -9,6 +9,7 @@ $box-border-style: 1px solid $gray-lighter;
 $box-border-radius: $border-radius;
 $box-padding: $layout-padding;
 $box-spacing-top: 10px;
+$box-paragraph-spacing-top: 15px;
 
 .box {
   &--inner {
@@ -17,5 +18,9 @@ $box-spacing-top: 10px;
     border-radius: $box-border-radius;
     margin-top: $box-spacing-top;
     padding: $box-padding;
+  }
+
+  p + p {
+    margin-top: $box-paragraph-spacing-top;
   }
 }

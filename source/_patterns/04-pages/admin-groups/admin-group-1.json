@@ -1,0 +1,41 @@
+{
+  "bodyClass": "is-page",
+  "submenuLinks": [
+    {
+      "url": "#",
+      "title": "Brugere",
+      "label": "Brugere",
+      "class": ""
+    },
+    {
+      "url": "#",
+      "title": "Grupper",
+      "label": "Grupper",
+      "class": ""
+    }
+  ],
+  "boxGroup": {
+    "heading": {
+      "label": "Gruppe 1"
+    }
+  },
+  "boxGroupMembers": {
+    "heading": {
+      "label": "Brugere"
+    },
+    "contentList": [
+      {
+        "url": "#",
+        "title": "Admin",
+        "label": "Admin",
+        "icon": "more_vert"
+      },
+      {
+        "url": "#",
+        "title": "Brad Frost",
+        "label": "Brad Frost",
+        "icon": "more_vert"
+      }
+    ]
+  }
+}

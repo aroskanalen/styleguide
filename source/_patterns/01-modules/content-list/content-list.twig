@@ -1,5 +1,7 @@
 <div class="content-list">
-  {% for item in contentList %}
-    {% include "modules-content-list-item" with { contentListItem: item } %}
-  {% endfor %}
+  {% block content %}
+    {% for item in contentList %}
+      {% include "modules-content-list-item" with { contentListItem: item } %}
+    {% endfor %}
+  {% endblock %}
 </div>
