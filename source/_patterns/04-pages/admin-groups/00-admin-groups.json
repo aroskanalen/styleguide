@@ -52,12 +52,12 @@
       }
     },
     "buttonLink": {
-      "url": "link.pages-admin-dashboard-group-added",
+      "url": "link.pages-admin-groups",
       "title": "Tilføj gruppe",
       "label": "Tilføj gruppe"
     },
     "buttonLinkNeutral": {
-      "url": "link.pages-admin-dashboard",
+      "url": "link.pages-admin-groups",
       "title": "Annullér",
       "label": "Annullér"
     },
