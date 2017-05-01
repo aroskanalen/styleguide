@@ -4,7 +4,7 @@
   {% endblock %}
   {% block content %}
     {% if boxList.buttonIconLink %}
-      {% include "modules-button-icon-link" with { buttonIconLink: boxList.buttonIconLink } %}
+      {% include "modules-button-icon-link-spacing-after" with { buttonIconLinkSpacingAfter: boxList.buttonIconLink } %}
     {% endif %}
     {% include "modules-content-list" with { contentList: boxList.contentList } %}
     {% if boxList.boxLink %}
