@@ -1,7 +1,4 @@
 {% embed "modules-box" %}
-  {% block header %}
-    {% include "elements-heading" with { heading: boxList.heading } %}
-  {% endblock %}
   {% block content %}
     {% if boxList.buttonIconLink %}
       {% include "modules-button-icon-link-spacing-after" with { buttonIconLinkSpacingAfter: boxList.buttonIconLink } %}

@@ -22,6 +22,8 @@ $content-list-item-icon-spacing-left: 10px;
   @include align-items(center);
   @include flexbox;
 
+  position: relative;
+
   &--link {
     @include flex-grow(1);
   }
