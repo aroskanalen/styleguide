@@ -3,7 +3,7 @@
     {% block header %}{% endblock %}
     {% block content %}
       {% for item in panelMenu %}
-        {% include "modules-content-list-item" with { contentListItem: item } %}
+        {% include "modules-content-list-item" with { panelMenuListItem: item } %}
       {% endfor %}
     {% endblock %}
   {% endembed %}

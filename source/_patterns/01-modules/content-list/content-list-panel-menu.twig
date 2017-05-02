@@ -1,0 +1,11 @@
+{% embed "modules-content-list" with { contentList: contentListPanelMenu } %}
+  {% block content %}
+    {% for item in contentListPanelMenu %}
+      {% embed "modules-content-list-item" with { contentListItem: item } %}
+        {% block footer %}
+          {% include "modules-panel-menu" %}
+        {% endblock %}
+      {% endembed %}
+    {% endfor %}
+  {% endblock %}
+{% endembed %}

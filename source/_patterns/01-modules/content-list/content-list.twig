@@ -1,7 +1,8 @@
 <div class="content-list">
   {% block content %}
     {% for item in contentList %}
-      {% include "modules-content-list-item" with { contentListItem: item } %}
+      {% embed "modules-content-list-item" with { contentListItem: item } %}
+      {% endembed %}
     {% endfor %}
   {% endblock %}
 </div>
