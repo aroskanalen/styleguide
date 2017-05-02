@@ -3,17 +3,20 @@
     {
       "url": "#",
       "title": "List item titel",
-      "label": "List item label"
+      "label": "List item label",
+      "icon": "more_vert"
     },
     {
       "url": "#",
       "title": "List item titel",
-      "label": "List item label"
+      "label": "List item label",
+      "icon": "more_vert"
     },
     {
       "url": "#",
       "title": "List item titel",
-      "label": "List item label"
+      "label": "List item label",
+      "icon": "more_vert"
     }
   ]
 }
