@@ -1,5 +1,5 @@
-{% embed "modules-forms-field" with { formsField: formsTextField } %}
+{% embed "modules-forms-field" with { data: data } %}
   {% block content %}
-    {% include "elements-forms-text" with { formsText: formsTextField.formsText } %}
+    {% include "elements-forms-text" %}
   {% endblock %}
 {% endembed %}

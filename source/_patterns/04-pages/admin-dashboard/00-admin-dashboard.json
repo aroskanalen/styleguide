@@ -88,11 +88,10 @@
         "for": "add_user",
         "label": "E-mail"
       },
-      "formsText": {
-        "id": "add_user",
-        "name": "add_user",
-        "placeholder": "Indtast e-mail på brugeren"
-      }
+      "id": "add_user",
+      "name": "add_user",
+      "value": "",
+      "placeholder": "Indtast e-mail på brugeren"
     },
     "buttonLink": {
       "url": "link.pages-admin-dashboard-user-added",
@@ -115,11 +114,10 @@
         "for": "add_group",
         "label": "Navn"
       },
-      "formsText": {
-        "id": "add_group",
-        "name": "add_group",
-        "placeholder": "Indtast navn på gruppen"
-      }
+      "id": "add_group",
+      "name": "add_group",
+      "value": "",
+      "placeholder": "Indtast navn på gruppen"
     },
     "buttonLink": {
       "url": "link.pages-admin-dashboard",

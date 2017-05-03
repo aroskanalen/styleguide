@@ -1,0 +1,10 @@
+{
+  "data": {
+    "id": "email",
+    "name": "email",
+    "type": "email",
+    "placeholder": "email",
+    "value": "",
+    "class": "forms-email"
+  }
+}

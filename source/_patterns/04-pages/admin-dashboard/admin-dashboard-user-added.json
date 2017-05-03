@@ -27,24 +27,25 @@
         "color": "theme"
       },
       "label": "Opret bruger",
-      "jsClass": "js-toggle-modal"
+      "jsClass": "js-toggle-modal",
+      "dataModal": "js-modal-add-user"
     },
     "contentList": [
       {
         "url": "#",
         "title": "Admin",
         "label": "Admin",
-        "class": ""
+        "icon": "more_vert"
       },
       {
         "url": "link.pages-admin-user-brad-frost",
         "title": "Brad Frost",
         "label": "Brad Frost",
-        "class": ""
+        "icon": "more_vert"
       }
     ],
     "boxLink": {
-      "url": "link.templates-admin-users",
+      "url": "link.pages-admin-users",
       "title": "Alle brugere",
       "label": "Alle brugere"
     }
@@ -55,33 +56,50 @@
     },
     "buttonIconLink": {
       "iconRounded": {
-        "icon": "group_add",
-        "color": "theme"
+        "icon": "group_add"
       },
-      "label": "Opret gruppe"
+      "label": "Opret gruppe",
+      "jsClass": "js-toggle-modal",
+      "dataModal": "js-modal-add-group"
     },
     "contentList": [
+      {
+        "url": "link.pages-admin-group-1",
+        "title": "Group 1",
+        "label": "Group 1",
+        "icon": "more_vert"
+      },
+      {
+        "url": "#",
+        "title": "Group 2",
+        "label": "Group 2",
+        "icon": "more_vert"
+      },
       {
         "url": "#",
         "title": "Public",
         "label": "Public",
-        "class": ""
+        "icon": "more_vert"
       }
     ],
     "boxLink": {
-      "url": "#",
+      "url": "link.pages-admin-groups",
       "title": "Alle grupper",
       "label": "Alle grupper"
     }
   },
   "popupAddUser": {
-    "formsLabel": {
-      "for": "add_user",
-      "label": "E-mail"
+    "headingHasSpacingAfter": {
+      "label": "Tilføj bruger"
     },
-    "formsText": {
+    "formsEmail": {
+      "formsLabel": {
+        "for": "add_user",
+        "label": "E-mail"
+      },
       "id": "add_user",
       "name": "add_user",
+      "value": "",
       "placeholder": "Indtast e-mail på brugeren"
     },
     "buttonLink": {
@@ -93,6 +111,33 @@
       "url": "link.pages-admin-dashboard",
       "title": "Annullér",
       "label": "Annullér"
-    }
+    },
+    "jsClass": "js-modal-add-user"
+  },
+  "popupAddGroup": {
+    "headingHasSpacingAfter": {
+      "label": "Tilføj gruppe"
+    },
+    "formsName": {
+      "formsLabel": {
+        "for": "add_group",
+        "label": "Navn"
+      },
+      "id": "add_group",
+      "name": "add_group",
+      "value": "",
+      "placeholder": "Indtast navn på gruppen"
+    },
+    "buttonLink": {
+      "url": "link.pages-admin-dashboard",
+      "title": "Tilføj gruppe",
+      "label": "Tilføj gruppe"
+    },
+    "buttonLinkNeutral": {
+      "url": "link.pages-admin-dashboard",
+      "title": "Annullér",
+      "label": "Annullér"
+    },
+    "jsClass": "js-modal-add-group"
   }
 }

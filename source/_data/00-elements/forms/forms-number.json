@@ -1,0 +1,10 @@
+{
+  "data": {
+    "id": "number",
+    "name": "number",
+    "type": "number",
+    "placeholder": "number",
+    "value": "",
+    "class": "forms-number"
+  }
+}
