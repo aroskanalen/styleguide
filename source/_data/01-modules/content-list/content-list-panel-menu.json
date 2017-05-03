@@ -2,20 +2,20 @@
   "contentListPanelMenu": [
     {
       "url": "#",
-      "title": "List item titel",
-      "label": "List item label",
+      "title": "List item panel menu titel",
+      "label": "List item panel menu label",
       "icon": "more_vert"
     },
     {
       "url": "#",
-      "title": "List item titel",
-      "label": "List item label",
+      "title": "List item panel menu titel",
+      "label": "List item panel menu label",
       "icon": "more_vert"
     },
     {
       "url": "#",
-      "title": "List item titel",
-      "label": "List item label",
+      "title": "List item panel menu titel",
+      "label": "List item panel menu label",
       "icon": "more_vert"
     }
   ]

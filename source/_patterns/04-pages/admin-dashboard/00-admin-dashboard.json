@@ -32,7 +32,7 @@
         "url": "#",
         "title": "Admin",
         "label": "Admin",
-        "class": ""
+        "icon": "more_vert"
       }
     ],
     "boxLink": {
@@ -58,19 +58,19 @@
         "url": "link.pages-admin-group-1",
         "title": "Group 1",
         "label": "Group 1",
-        "class": ""
+        "icon": "more_vert"
       },
       {
         "url": "#",
         "title": "Group 2",
         "label": "Group 2",
-        "class": ""
+        "icon": "more_vert"
       },
       {
         "url": "#",
         "title": "Public",
         "label": "Public",
-        "class": ""
+        "icon": "more_vert"
       }
     ],
     "boxLink": {
