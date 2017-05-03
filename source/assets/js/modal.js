@@ -1,5 +1,8 @@
 /**
+ *
  * Toggle modal
+ *
+ * This is used in Pattern Lab for presentation purposes, don't used in production.
  *
  */
 

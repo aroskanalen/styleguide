@@ -12,7 +12,7 @@
       <span class="content-list-item--text">{{ contentListItem.text }}</span>
   {% endif %}
   {% if contentListItem.icon %}
-    <span class="content-list-item--icon">{% include "elements-icon-default" with { iconDefault: { icon: contentListItem.icon } } %}</span>
+    <span class="content-list-item--icon js-toggle-element {{ contentListItem.iconJsClass }}" data-toggle="js-panel-menu">{% include "elements-icon-default" with { iconDefault: { icon: contentListItem.icon } } %}</span>
   {% endif %}
   {% block footer %}
   {% endblock %}

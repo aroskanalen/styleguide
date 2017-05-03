@@ -15,4 +15,8 @@ $panel-menu-z-index: 99;
   right: 0;
   top: 100%;
   z-index: $panel-menu-z-index;
+
+  &.is-hidden {
+    display: none;
+  }
 }
