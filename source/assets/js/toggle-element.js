@@ -10,9 +10,10 @@
   // Function for toggle burger navigation.
   function toggleElement() {
     $('.js-toggle-element').bind('touchstart click', function(e) {
-      var toggleElement = $(".js-toggle-me", this);
+      var toggleTarget = $("." + $(this).attr('data-toggle-element'));
+      var toggleElement = $(this).parent().find(toggleTarget);
 
-      $(".js-toggle-me").toggle();
+      toggleElement.toggle();
     });
   }
 
