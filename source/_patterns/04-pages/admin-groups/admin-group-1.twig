@@ -1,5 +1,5 @@
 {% include "components-header" with { isActive: 5 } %}
-{% include "modules-submenu" %}
+{% include "modules-submenu" with { data: submenu } %}
 
 <main role="main" class="content">
   <div class="content--inner">
@@ -7,7 +7,7 @@
       {% block items %}
         {% embed "modules-grid-item" %}
           {% block content %}
-            {% include "components-box-list" with { boxList: boxGroupMembers } %}
+            {% include "components-box-list" with { data: boxUsers } %}
           {% endblock %}
         {% endembed %}
       {% endblock %}
@@ -15,4 +15,4 @@
   </div>
 </main>
 
-{% include "components-popup-add-to-group" with { popupAddToGroup: popupAddToGroup } %}
+{% include "components-popup-add-group" with { data: popupAddToGroup } %}

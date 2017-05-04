@@ -1,66 +1,85 @@
 {
   "bodyClass": "is-page",
-  "submenuLinks": [
-    {
-      "url": "#",
-      "title": "Brugere",
-      "label": "Brugere",
-      "class": ""
-    },
-    {
-      "url": "#",
-      "title": "Grupper",
-      "label": "Grupper",
-      "class": ""
-    }
-  ],
-  "boxGroups": {
-    "heading": {
-      "label": "Grupper"
-    },
-    "buttonIconLink": {
-      "iconRounded": {
-        "icon": "group_add",
-        "color": "theme"
-      },
-      "label": "Opret gruppe",
-      "jsClass": "js-toggle-modal",
-      "dataModal": "js-modal-add-group"
-    },
-    "contentList": [
+  "submenu": {
+    "items": [
       {
-        "url": "#",
-        "title": "Public",
-        "label": "Public",
+        "url": "link.pages-admin-users",
+        "title": "Brugere",
+        "label": "Brugere",
+        "class": ""
+      },
+      {
+        "url": "link.pages-admin-groups",
+        "title": "Grupper",
+        "label": "Grupper",
         "class": ""
       }
     ]
   },
-  "popupAddGroup": {
-    "headingHasSpacingAfter": {
-      "label": "Tilføj gruppe"
-    },
-    "formsName": {
-      "formsLabel": {
-        "for": "add_group",
-        "label": "Navn"
-      },
-      "formsText": {
-        "id": "add_group",
-        "name": "add_group",
-        "placeholder": "Indtast navn på gruppen"
-      }
+  "boxGroups": {
+    "heading": {
+      "label": "Grupper"
     },
     "buttonLink": {
-      "url": "link.pages-admin-groups",
-      "title": "Tilføj gruppe",
-      "label": "Tilføj gruppe"
+      "label": "Opret gruppe",
+      "icon": "group_add",
+      "jsClass": "js-toggle-modal",
+      "dataModal": "js-modal-add-group"
     },
-    "buttonLinkNeutral": {
+    "items": [
+      {
+        "url": "#",
+        "title": "Gruppe 1",
+        "label": "Gruppe 1",
+        "actions": {
+          "icon": "more_vert",
+          "items": [
+            {
+              "url": "#",
+              "title": "Se gruppe",
+              "label": "Se gruppe"
+            },
+            {
+              "url": "#",
+              "title": "Redigér gruppe",
+              "label": "Redigér gruppe"
+            },
+            {
+              "url": "#",
+              "title": "Slet gruppe",
+              "label": "Slet gruppe"
+            }
+          ]
+        }
+      }
+    ],
+    "boxLink": {
       "url": "link.pages-admin-groups",
+      "title": "Alle grupper",
+      "label": "Alle grupper"
+    }
+  },
+  "popupAddGroup": {
+    "jsClass": "js-modal-add-group",
+    "heading": {
+      "label": "Opret gruppe"
+    },
+    "formEmail": {
+      "for": "name",
+      "label": "Navn",
+      "id": "name",
+      "name": "name",
+      "placeholder": "Indtast navn på gruppen"
+    },
+    "cancel": {
+      "url": "link.pages-admin-dashboard",
       "title": "Annullér",
       "label": "Annullér"
     },
-    "jsClass": "js-modal-add-group"
+    "submit": {
+      "url": "link.pages-admin-dashboard",
+      "title": "Gem",
+      "label": "Gem"
+    }
   }
 }

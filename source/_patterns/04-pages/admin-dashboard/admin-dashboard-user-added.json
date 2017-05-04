@@ -105,7 +105,7 @@
       "label": "Grupper"
     },
     "buttonLink": {
-      "label": "Tilføj gruppe",
+      "label": "Opret gruppe",
       "icon": "group_add",
       "jsClass": "js-toggle-modal",
       "dataModal": "js-modal-add-group"
@@ -139,14 +139,14 @@
     ],
     "boxLink": {
       "url": "link.pages-admin-groups",
-      "title": "Alle brugere",
-      "label": "Alle brugere"
+      "title": "Alle grupper",
+      "label": "Alle grupper"
     }
   },
   "popupAddGroup": {
     "jsClass": "js-modal-add-group",
     "heading": {
-      "label": "Tilføj gruppe"
+      "label": "Opret gruppe"
     },
     "formEmail": {
       "for": "name",
