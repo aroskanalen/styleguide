@@ -1,127 +1,138 @@
 {
   "bodyClass": "is-page",
-  "submenuLinks": [
-    {
-      "url": "#",
-      "title": "Brugere",
-      "label": "Brugere",
-      "class": ""
-    },
-    {
-      "url": "#",
-      "title": "Grupper",
-      "label": "Grupper",
-      "class": ""
-    }
-  ],
-  "boxUserBradFrost": {
-    "label": "Brad Frost",
-    "formsName": {
-      "formsLabel": {
-        "for": "name",
-        "label": "Navn"
+  "submenu": {
+    "items": [
+      {
+        "url": "link.pages-admin-users",
+        "title": "Brugere",
+        "label": "Brugere",
+        "class": ""
       },
+      {
+        "url": "link.pages-admin-groups",
+        "title": "Grupper",
+        "label": "Grupper",
+        "class": ""
+      }
+    ]
+  },
+  "box": {
+    "heading": {
+      "label": "Brad Frost"
+    },
+    "formName": {
+      "for": "name",
+      "label": "Navn",
       "id": "name",
       "name": "name",
       "value": "Brad Frost",
-      "placeholder": "Indtast navn"
+      "placeholder": "Indtast navn på gruppen"
     },
-    "formsEmail": {
-      "formsLabel": {
-        "for": "email",
-        "label": "E-mail"
-      },
+    "formEmail": {
+      "for": "email",
+      "label": "E-mail",
       "id": "email",
       "name": "email",
       "value": "bradfrost@example.com",
       "placeholder": "Indtast e-mail"
     },
-    "buttonLink": {
-      "url": "link.pages-admin-user-brad-frost",
+    "submit": {
+      "url": "link.pages-admin-group-1-edit",
       "title": "Gem",
       "label": "Gem"
     }
   },
   "boxGroups": {
-    "label": "Grupper",
-    "buttonIconLink": {
-      "iconRounded": {
-        "icon": "group_add"
-      },
-      "label": "Tilføj til gruppe",
-      "jsClass": "js-toggle-modal",
-      "dataModal": "js-modal-add-to-group"
+    "heading": {
+      "label": "Grupper"
     },
-    "contentList": [
+    "buttonLink": {
+      "label": "Opret gruppe",
+      "icon": "group_add",
+      "jsClass": "js-toggle-modal",
+      "dataModal": "js-modal-add-group"
+    },
+    "items": [
       {
         "url": "#",
         "title": "Gruppe 1",
-        "label": "Gruppe 1"
+        "label": "Gruppe 1",
+        "actions": {
+          "icon": "more_vert",
+          "items": [
+            {
+              "url": "#",
+              "title": "Fjern fra gruppe",
+              "label": "Fjern fra gruppe"
+            }
+          ]
+        }
       }
     ]
   },
+  "popupAddGroup": {
+    "jsClass": "js-modal-add-group",
+    "heading": {
+      "label": "Tilføj til gruppe"
+    },
+    "formEmail": {
+      "for": "name",
+      "label": "Navn",
+      "id": "name",
+      "name": "name",
+      "placeholder": "Indtast navn på gruppen"
+    },
+    "cancel": {
+      "url": "link.pages-admin-user-brad-frost",
+      "title": "Annullér",
+      "label": "Annullér"
+    },
+    "submit": {
+      "url": "link.pages-admin-user-brad-frost",
+      "title": "Gem",
+      "label": "Gem"
+    }
+  },
   "boxRoles": {
-    "label": "Roller",
-    "buttonIconLink": {
-      "iconRounded": {
-        "icon": "security"
-      },
+    "heading": {
+      "label": "Roller"
+    },
+    "buttonLink": {
       "label": "Tilføj rolle",
+      "icon": "security",
       "jsClass": "js-toggle-modal",
       "dataModal": "js-modal-add-role"
     },
-    "contentList": [
+    "items": [
       {
+        "url": "#",
         "title": "Bruger",
         "label": "Bruger",
         "text": "(standardrolle)"
       }
     ]
   },
-  "popupAddToGroup": {
-    "label": "Tilføj til gruppe",
-    "formsName": {
-      "formsLabel": {
-        "for": "add_group",
-        "label": "Navn"
-      },
-      "id": "add_group",
-      "name": "add_group",
-      "placeholder": "Indtast navn på gruppen"
-    },
-    "buttonLink": {
-      "url": "link.pages-admin-user-brad-frost-group-added",
-      "title": "Tilføj til gruppe",
-      "label": "Tilføj til gruppe"
-    },
-    "buttonLinkNeutral": {
-      "url": "link.pages-admin-user-brad-frost",
-      "title": "Annullér",
-      "label": "Annullér"
-    },
-    "jsClass": "js-modal-add-to-group"
-  },
   "popupAddRole": {
-    "label": "Tilføj rolle",
-    "formsName": {
-      "formsLabel": {
-        "for": "add_role",
-        "label": "Rolle"
-      },
-      "id": "add_role",
-      "name": "add_role",
-      "placeholder": "Indtast navn på rollen"
-    },
-    "buttonLink": {
-      "url": "link.pages-admin-user-brad-frost",
-      "title": "Tilføj rolle",
+    "jsClass": "js-modal-add-role",
+    "heading": {
       "label": "Tilføj rolle"
     },
-    "buttonLinkNeutral": {
+    "formEmail": {
+      "for": "name",
+      "label": "Navn",
+      "id": "name",
+      "name": "name",
+      "placeholder": "Indtast navn på rollen"
+    },
+    "cancel": {
       "url": "link.pages-admin-user-brad-frost",
       "title": "Annullér",
       "label": "Annullér"
     },
-    "jsClass": "js-modal-add-role"
+    "submit": {
+      "url": "link.pages-admin-user-brad-frost",
+      "title": "Gem",
+      "label": "Gem"
+    }
   }
 }
