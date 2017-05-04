@@ -1,18 +1,21 @@
 {% include "components-header" with { isActive: 5 } %}
-{% include "modules-submenu" %}
+{% include "modules-submenu" with { data: submenu } %}
 
 <main role="main" class="content">
   <div class="content--inner">
-    {% include "modules-message-info" with { messageInfo: messageInfo } %}
+    {% include "modules-message-info" with { data: message } %}
     {% embed "modules-grid-full" %}
       {% block items %}
         {% embed "modules-grid-item" %}
           {% block content %}
-            {% embed "modules-box" with { box: boxUserBradFrost } %}
+            {% embed "modules-box" %}
+              {% block header %}
+                {% include "elements-heading-spacing-after" with { data: box.heading } %}
+              {% endblock %}
               {% block content %}
-                {% include "modules-forms-text-field" with { formsTextField: boxUserBradFrost.formsName } %}
-                {% include "modules-forms-text-field" with { formsTextField: boxUserBradFrost.formsEmail } %}
-                {% include "elements-button-link-spacing-top" with { buttonLinkSpacingTop: boxUserBradFrost.buttonLink } %}
+                {% include "modules-forms-text-field" with { data: box.formName } %}
+                {% include "modules-forms-email-field" with { data: box.formEmail } %}
+                {% include "elements-button-link-spacing-top" with { data: box.submit } %}
               {% endblock %}
             {% endembed %}
           {% endblock %}
@@ -23,12 +26,12 @@
       {% block items %}
         {% embed "modules-grid-item" %}
           {% block content %}
-            {% include "components-box-list" with { boxList: boxGroups } %}
+            {% include "components-box-list" with { data: boxGroups } %}
           {% endblock %}
         {% endembed %}
         {% embed "modules-grid-item" %}
           {% block content %}
-            {% include "components-box-list" with { boxList: boxRoles } %}
+            {% include "components-box-list" with { data: boxRoles } %}
           {% endblock %}
         {% endembed %}
       {% endblock %}
@@ -36,5 +39,5 @@
   </div>
 </main>
 
-{% include "components-popup-add-to-group" with { popupAddToGroup: popupAddToGroup } %}
-{% include "components-popup-add-role" with { popupAddRole: popupAddRole } %}
+{% include "components-popup-add-group" with { data: popupAddGroup } %}
+{% include "components-popup-add-role" with { data: popupAddRole } %}

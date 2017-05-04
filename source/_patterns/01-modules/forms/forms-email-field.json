@@ -1,6 +1,6 @@
 {
   "data": {
-    "for": "forms_label_id",
+    "for": "forms_field_email_id",
     "label": "Forms Email Field",
     "id": "forms_field_email_id",
     "name": "forms_field_email_id",

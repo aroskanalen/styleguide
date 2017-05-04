@@ -1,6 +1,6 @@
 {
   "data": {
-    "for": "forms_label_id",
+    "for": "forms_text_id",
     "label": "Forms Text Field",
     "id": "forms_text_id",
     "name": "forms_text_id",

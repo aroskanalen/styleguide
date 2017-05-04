@@ -2,9 +2,7 @@
   "data": {
     "id": "text",
     "name": "text",
-    "type": "text",
     "placeholder": "text",
-    "value": "",
-    "class": "forms-text"
+    "value": "text"
   }
 }

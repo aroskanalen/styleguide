@@ -47,10 +47,10 @@
       "label": "Grupper"
     },
     "buttonLink": {
-      "label": "Opret gruppe",
+      "label": "Tilføj til gruppe",
       "icon": "group_add",
       "jsClass": "js-toggle-modal",
-      "dataModal": "js-modal-add-group"
+      "dataModal": "js-modal-add-to-group"
     },
     "items": [
       {
@@ -70,8 +70,8 @@
       }
     ]
   },
-  "popupAddGroup": {
-    "jsClass": "js-modal-add-group",
+  "popupAddToGroup": {
+    "jsClass": "js-modal-add-to-group",
     "heading": {
       "label": "Tilføj til gruppe"
     },
@@ -88,7 +88,7 @@
       "label": "Annullér"
     },
     "submit": {
-      "url": "link.pages-admin-user-brad-frost",
+      "url": "link.pages-admin-user-brad-frost-group-added",
       "title": "Gem",
       "label": "Gem"
     }
