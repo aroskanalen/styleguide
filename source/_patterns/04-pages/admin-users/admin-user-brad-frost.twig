@@ -3,38 +3,55 @@
 
 <main role="main" class="content">
   <div class="content--inner">
-    {% embed "modules-grid-full" %}
-      {% block items %}
-        {% embed "modules-grid-item" %}
-          {% block content %}
-            {% embed "modules-box" %}
-              {% block header %}
-                {% include "elements-heading-spacing-after" with { data: box.heading } %}
-              {% endblock %}
-              {% block content %}
-                {% include "modules-forms-text-field" with { data: box.formName } %}
-                {% include "modules-forms-email-field" with { data: box.formEmail } %}
-                {% include "elements-button-link-spacing-top" with { data: box.submit } %}
-              {% endblock %}
-            {% endembed %}
-          {% endblock %}
-        {% endembed %}
-      {% endblock %}
-    {% endembed %}
-    {% embed "modules-grid-halfs" %}
-      {% block items %}
-        {% embed "modules-grid-item" %}
-          {% block content %}
-            {% include "components-box-list" with { data: boxGroups } %}
-          {% endblock %}
-        {% endembed %}
-        {% embed "modules-grid-item" %}
-          {% block content %}
-            {% include "components-box-list" with { data: boxRoles } %}
-          {% endblock %}
-        {% endembed %}
-      {% endblock %}
-    {% endembed %}
+  {% embed "modules-box" %}
+    {% block header %}
+      {% include "elements-heading-spacing-after" with { data: box.heading } %}
+    {% endblock %}
+    {% block content %}
+      {% embed "modules-grid-full" %}
+        {% block items %}
+          {% embed "modules-grid-item" %}
+            {% block content %}
+                {% embed "modules-grid-halfs" %}
+                  {% block items %}
+                    {% embed "modules-grid-item" %}
+                      {% block content %}
+                        {% include "modules-forms-text-field" with { data: box.formFirstName } %}
+                      {% endblock %}
+                    {% endembed %}
+                    {% embed "modules-grid-item" %}
+                      {% block content %}
+                        {% include "modules-forms-text-field" with { data: box.formLastName } %}
+                      {% endblock %}
+                    {% endembed %}
+                  {% endblock %}
+                {% endembed %}
+            {% endblock %}
+          {% endembed %}
+          {% embed "modules-grid-item" %}
+            {% block content %}
+              {% include "modules-forms-email-field" with { data: box.formEmail } %}
+              {% include "elements-button-link-spacing-top" with { data: box.submit } %}
+            {% endblock %}
+          {% endembed %}
+        {% endblock %}
+      {% endembed %}
+    {% endblock %}
+  {% endembed %}
+  {% embed "modules-grid-halfs" %}
+    {% block items %}
+      {% embed "modules-grid-item" %}
+        {% block content %}
+          {% include "components-box-list" with { data: boxGroups } %}
+        {% endblock %}
+      {% endembed %}
+      {% embed "modules-grid-item" %}
+        {% block content %}
+          {% include "components-box-list" with { data: boxRoles } %}
+        {% endblock %}
+      {% endembed %}
+    {% endblock %}
+  {% endembed %}
   </div>
 </main>
 

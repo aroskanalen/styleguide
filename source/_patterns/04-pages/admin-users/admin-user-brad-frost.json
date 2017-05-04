@@ -20,13 +20,21 @@
     "heading": {
       "label": "Brad Frost"
     },
-    "formName": {
-      "for": "name",
-      "label": "Navn",
-      "id": "name",
-      "name": "name",
-      "value": "Brad Frost",
-      "placeholder": "Indtast navn på gruppen"
+    "formFirstName": {
+      "for": "first_name",
+      "label": "Fornavn",
+      "id": "first_name",
+      "name": "first_name",
+      "value": "Brad",
+      "placeholder": "Indtast fornavn"
+    },
+    "formLastName": {
+      "for": "last_name",
+      "label": "Efternavn",
+      "id": "last_name",
+      "name": "last_name",
+      "value": "Frost",
+      "placeholder": "Indtast efternavn"
     },
     "formEmail": {
       "for": "email",
