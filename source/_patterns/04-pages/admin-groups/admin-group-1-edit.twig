@@ -7,9 +7,9 @@
       {% block items %}
         {% embed "modules-grid-item" %}
           {% block content %}
-            {% embed "modules-box" with { box: boxUserGroup1 } %}
+            {% embed "modules-box" with { data: boxUserGroup1 } %}
               {% block content %}
-                {% include "modules-forms-text-field" with { formsTextField: boxUserGroup1.formsName } %}
+                {% include "modules-forms-text-field" with { data: boxUserGroup1.formsName } %}
                 {% include "elements-button-link-spacing-top" with { buttonLinkSpacingTop: boxUserGroup1.buttonLink } %}
               {% endblock %}
             {% endembed %}
@@ -17,7 +17,7 @@
         {% endembed %}
         {% embed "modules-grid-item" %}
           {% block content %}
-            {% include "components-box-list" with { boxList: boxUsers } %}
+            {% include "components-box-list" with { data: boxUsers } %}
           {% endblock %}
         {% endembed %}
       {% endblock %}

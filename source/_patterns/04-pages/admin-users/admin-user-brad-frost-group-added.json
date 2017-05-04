@@ -26,24 +26,20 @@
         "for": "name",
         "label": "Navn"
       },
-      "formsText": {
-        "id": "name",
-        "name": "name",
-        "value": "Brad Frost",
-        "placeholder": "Indtast navn"
-      }
+      "id": "name",
+      "name": "name",
+      "value": "Brad Frost",
+      "placeholder": "Indtast navn"
     },
     "formsEmail": {
       "formsLabel": {
         "for": "email",
         "label": "E-mail"
       },
-      "formsText": {
-        "id": "email",
-        "name": "email",
-        "value": "bradfrost@example.com",
-        "placeholder": "Indtast e-mail"
-      }
+      "id": "email",
+      "name": "email",
+      "value": "bradfrost@example.com",
+      "placeholder": "Indtast e-mail"
     },
     "buttonLink": {
       "url": "link.pages-admin-user-brad-frost",
@@ -106,11 +102,9 @@
         "for": "add_group",
         "label": "Navn"
       },
-      "formsText": {
-        "id": "add_group",
-        "name": "add_group",
-        "placeholder": "Indtast navn på gruppen"
-      }
+      "id": "add_group",
+      "name": "add_group",
+      "placeholder": "Indtast navn på gruppen"
     },
     "buttonLink": {
       "url": "link.pages-admin-user-brad-frost-group-added",
@@ -133,11 +127,9 @@
         "for": "add_role",
         "label": "Rolle"
       },
-      "formsText": {
-        "id": "add_role",
-        "name": "add_role",
-        "placeholder": "Indtast navn på rollen"
-      }
+      "id": "add_role",
+      "name": "add_role",
+      "placeholder": "Indtast navn på rollen"
     },
     "buttonLink": {
       "url": "link.pages-admin-dashboard-role-added",

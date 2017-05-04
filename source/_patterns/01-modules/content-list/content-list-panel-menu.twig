@@ -1,11 +1,7 @@
-{% embed "modules-content-list" with { contentList: contentListPanelMenu } %}
+{% embed "modules-content-list" with { data: data } %}
   {% block content %}
-    {% for item in contentListPanelMenu %}
-      {% embed "modules-content-list-item" with { contentListItem: item, iconJsClass: "js-toggle-element" } %}
-        {% block footer %}
-          {% include "modules-panel-menu" %}
-        {% endblock %}
-      {% endembed %}
+    {% for item in data.items %}
+      {% include "modules-content-list-item" with { data: item } %}
     {% endfor %}
   {% endblock %}
 {% endembed %}

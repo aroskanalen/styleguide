@@ -15,20 +15,16 @@
     }
   ],
   "boxUserGroup1": {
-    "heading": {
-      "label": "Group 1"
-    },
+    "label": "Group 1",
     "formsName": {
       "formsLabel": {
         "for": "name",
         "label": "Navn"
       },
-      "formsText": {
-        "id": "name",
-        "name": "name",
-        "value": "Group 1",
-        "placeholder": "Indtast navn"
-      }
+      "id": "name",
+      "name": "name",
+      "value": "Group 1",
+      "placeholder": "Indtast navn"
     },
     "buttonLink": {
       "url": "link.pages-admin-group-1-edit",
@@ -37,9 +33,7 @@
     }
   },
   "boxUsers": {
-    "heading": {
-      "label": "Brugere"
-    },
+    "label": "Brugere",
     "buttonIconLink": {
       "iconRounded": {
         "icon": "person_add"
@@ -64,9 +58,7 @@
     ]
   },
   "popupAddToGroup": {
-    "headingHasSpacingAfter": {
-      "label": "Tilføj til gruppe"
-    },
+    "label": "Tilføj til gruppe",
     "formsName": {
       "formsLabel": {
         "for": "add_to_group",

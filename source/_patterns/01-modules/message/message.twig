@@ -1,10 +1,12 @@
 <div class="message">
   <div class="message--inner {{ messageClass }}">
     <div class="message--content">
-      {{ message.content }}
+      {{ data.content }}
     </div>
-    <div class="message--close">
-      {% include "elements-icon-default" with { iconDefault: { icon: "close" } } %}
-    </div>
+    {% block close %}
+      <div class="message--close">
+        {% include "elements-icon-default" with { data: { icon: "close" } } %}
+      </div>
+    {% endblock %}
   </div>
 </div>

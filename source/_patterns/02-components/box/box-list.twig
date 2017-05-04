@@ -1,20 +1,25 @@
-{% embed "modules-box" %}
-  {% block content %}
-    {% if boxList.buttonIconLink %}
-      {% include "modules-button-icon-link-spacing-after" with { buttonIconLinkSpacingAfter: boxList.buttonIconLink } %}
+{% embed "modules-box" with { data: data } %}
+  {% block header %}
+    {% if data.heading %}
+      {% include "elements-heading-spacing-after" with { data: data.heading } %}
     {% endif %}
-    {% include "modules-content-list-panel-menu" with { contentListPanelMenu: boxList.contentList } %}
-    {% if boxList.boxLink %}
-      {% include "modules-box-link" with { boxLink: boxList.boxLink } %}
+  {% endblock %}
+  {% block content %}
+    {% if data.buttonLink %}
+      {% include "modules-button-icon-link-spacing-after" with { data: data.buttonLink } %}
+    {% endif %}
+    {% include "modules-content-list-panel-menu" with { data: data.items } %}
+    {% if data.boxLink %}
+      {% include "modules-box-link" with { data: data.boxLink } %}
     {% endif %}
   {% endblock %}
   {% block footer %}
-    {% if boxList.boxPager %}
+    {% if data.boxPager %}
       {% embed "modules-grid-two-thirds-centered" %}
         {% block items %}
           {% embed "modules-grid-item-centered" %}
             {% block content %}
-              {% include "modules-box-pager" with { boxPager: boxList.boxPager } %}
+              {% include "modules-box-pager" with { data: data.boxPager } %}
             {% endblock %}
           {% endembed %}
         {% endblock %}

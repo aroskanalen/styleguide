@@ -1,9 +1,9 @@
-<div class="panel-menu is-hidden js-panel-menu">
-  {% embed "modules-box" with { box: panelMenu } %}
+<div class="panel-menu js-panel-menu is-positioned is-hidden">
+  {% embed "modules-box" with { data: data } %}
     {% block header %}{% endblock %}
     {% block content %}
-      {% for item in panelMenu %}
-        {% include "modules-content-list-item-compact" with { contentListItemCompact: item } %}
+      {% for item in data.items %}
+        {% include "modules-content-list-item-compact" with { data: item } %}
       {% endfor %}
     {% endblock %}
   {% endembed %}

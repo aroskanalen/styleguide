@@ -42,6 +42,14 @@ $message-error-color:            #ffbaba;
       border: 1px solid darken($message-error-color, 25%);
       color: darken($message-error-color, 50%);
     }
+
+    &.is-inline-error {
+      background-color: transparent;
+      border: 0;
+      color: darken($message-error-color, 20%);
+      font-size: 14px;
+      padding: 0;
+    }
   }
 
   &--content {

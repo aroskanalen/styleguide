@@ -1,4 +1,4 @@
-<div class="button-icon-link {{ buttonIconLinkClass }} {{ buttonIconLink.jsClass }}" data-modal="{{ buttonIconLink.dataModal }}">
-  {% include "elements-icon-rounded" with { iconRounded: buttonIconLink.iconRounded } %}
-  {% include "elements-button-text" with { buttonText: { label: buttonIconLink.label, class: "has-spacing-before" } } %}
+<div class="button-icon-link {{ data.jsClass }}" data-modal="{{ data.dataModal }}">
+  {% include "elements-icon-rounded" with { data: data } %}
+  {% include "elements-button-text" with { data: { label: data.label, class: "has-spacing-before" } } %}
 </div>

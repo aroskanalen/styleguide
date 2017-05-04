@@ -15,32 +15,26 @@
     }
   ],
   "boxUserBradFrost": {
-    "heading": {
-      "label": "Brad Frost"
-    },
+    "label": "Brad Frost",
     "formsName": {
       "formsLabel": {
         "for": "name",
         "label": "Navn"
       },
-      "formsText": {
-        "id": "name",
-        "name": "name",
-        "value": "Brad Frost",
-        "placeholder": "Indtast navn"
-      }
+      "id": "name",
+      "name": "name",
+      "value": "Brad Frost",
+      "placeholder": "Indtast navn"
     },
     "formsEmail": {
       "formsLabel": {
         "for": "email",
         "label": "E-mail"
       },
-      "formsText": {
-        "id": "email",
-        "name": "email",
-        "value": "bradfrost@example.com",
-        "placeholder": "Indtast e-mail"
-      }
+      "id": "email",
+      "name": "email",
+      "value": "bradfrost@example.com",
+      "placeholder": "Indtast e-mail"
     },
     "buttonLink": {
       "url": "link.pages-admin-user-brad-frost",
@@ -49,9 +43,7 @@
     }
   },
   "boxGroups": {
-    "heading": {
-      "label": "Grupper"
-    },
+    "label": "Grupper",
     "buttonIconLink": {
       "iconRounded": {
         "icon": "group_add"
@@ -69,9 +61,7 @@
     ]
   },
   "boxRoles": {
-    "heading": {
-      "label": "Roller"
-    },
+    "label": "Roller",
     "buttonIconLink": {
       "iconRounded": {
         "icon": "security"
@@ -89,19 +79,15 @@
     ]
   },
   "popupAddToGroup": {
-    "headingHasSpacingAfter": {
-      "label": "Tilføj til gruppe"
-    },
+    "label": "Tilføj til gruppe",
     "formsName": {
       "formsLabel": {
         "for": "add_group",
         "label": "Navn"
       },
-      "formsText": {
-        "id": "add_group",
-        "name": "add_group",
-        "placeholder": "Indtast navn på gruppen"
-      }
+      "id": "add_group",
+      "name": "add_group",
+      "placeholder": "Indtast navn på gruppen"
     },
     "buttonLink": {
       "url": "link.pages-admin-user-brad-frost-group-added",
@@ -116,19 +102,15 @@
     "jsClass": "js-modal-add-to-group"
   },
   "popupAddRole": {
-    "headingHasSpacingAfter": {
-      "label": "Tilføj rolle"
-    },
+    "label": "Tilføj rolle",
     "formsName": {
       "formsLabel": {
         "for": "add_role",
         "label": "Rolle"
       },
-      "formsText": {
-        "id": "add_role",
-        "name": "add_role",
-        "placeholder": "Indtast navn på rollen"
-      }
+      "id": "add_role",
+      "name": "add_role",
+      "placeholder": "Indtast navn på rollen"
     },
     "buttonLink": {
       "url": "link.pages-admin-user-brad-frost",
