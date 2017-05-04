@@ -1,47 +1,74 @@
 {
   "bodyClass": "is-page",
-  "submenuLinks": [
-    {
-      "url": "#",
-      "title": "Brugere",
-      "label": "Brugere",
-      "class": ""
-    },
-    {
-      "url": "#",
-      "title": "Grupper",
-      "label": "Grupper",
-      "class": ""
-    }
-  ],
-  "messageInfo": {
-    "content": "Brugeren er oprettet"
+  "submenu": {
+    "items": [
+      {
+        "url": "link.pages-admin-users",
+        "title": "Brugere",
+        "label": "Brugere",
+        "class": ""
+      },
+      {
+        "url": "link.pages-admin-groups",
+        "title": "Grupper",
+        "label": "Grupper",
+        "class": ""
+      }
+    ]
+  },
+  "message": {
+    "content": "Brugeren er tilføjet"
   },
   "boxUsers": {
     "heading": {
       "label": "Brugere"
     },
-    "buttonIconLink": {
-      "iconRounded": {
-        "icon": "person_add",
-        "color": "theme"
-      },
-      "label": "Opret bruger",
+    "buttonLink": {
+      "label": "Tilføj bruger",
+      "icon": "person_add",
       "jsClass": "js-toggle-modal",
       "dataModal": "js-modal-add-user"
     },
-    "contentList": [
+    "items": [
       {
         "url": "#",
         "title": "Admin",
         "label": "Admin",
-        "icon": "more_vert"
+        "actions": {
+          "icon": "more_vert",
+          "items": [
+            {
+              "url": "#",
+              "title": "Brugerprofil",
+              "label": "Brugerprofil"
+            }
+          ]
+        }
       },
       {
         "url": "link.pages-admin-user-brad-frost",
         "title": "Brad Frost",
         "label": "Brad Frost",
-        "icon": "more_vert"
+        "actions": {
+          "icon": "more_vert",
+          "items": [
+            {
+              "url": "#",
+              "title": "Brugerprofil",
+              "label": "Brugerprofil"
+            },
+            {
+              "url": "#",
+              "title": "Redigér bruger",
+              "label": "Redigér bruger"
+            },
+            {
+              "url": "#",
+              "title": "Slet bruger",
+              "label": "Slet bruger"
+            }
+          ]
+        }
       }
     ],
     "boxLink": {
@@ -50,94 +77,93 @@
       "label": "Alle brugere"
     }
   },
+  "popupAddUser": {
+    "jsClass": "js-modal-add-user",
+    "heading": {
+      "label": "Tilføj bruger"
+    },
+    "formEmail": {
+      "for": "email",
+      "label": "E-mail",
+      "id": "email",
+      "name": "email",
+      "placeholder": "Indtast brugerens e-mail"
+    },
+    "cancel": {
+      "url": "link.pages-admin-dashboard",
+      "title": "Annullér",
+      "label": "Annullér"
+    },
+    "submit": {
+      "url": "link.pages-admin-dashboard",
+      "title": "Gem",
+      "label": "Gem"
+    }
+  },
   "boxGroups": {
     "heading": {
       "label": "Grupper"
     },
-    "buttonIconLink": {
-      "iconRounded": {
-        "icon": "group_add"
-      },
-      "label": "Opret gruppe",
+    "buttonLink": {
+      "label": "Tilføj gruppe",
+      "icon": "group_add",
       "jsClass": "js-toggle-modal",
       "dataModal": "js-modal-add-group"
     },
-    "contentList": [
-      {
-        "url": "link.pages-admin-group-1",
-        "title": "Group 1",
-        "label": "Group 1",
-        "icon": "more_vert"
-      },
+    "items": [
       {
         "url": "#",
-        "title": "Group 2",
-        "label": "Group 2",
-        "icon": "more_vert"
-      },
-      {
-        "url": "#",
-        "title": "Public",
-        "label": "Public",
-        "icon": "more_vert"
+        "title": "Gruppe 1",
+        "label": "Gruppe 1",
+        "actions": {
+          "icon": "more_vert",
+          "items": [
+            {
+              "url": "#",
+              "title": "Se gruppe",
+              "label": "Se gruppe"
+            },
+            {
+              "url": "#",
+              "title": "Redigér gruppe",
+              "label": "Redigér gruppe"
+            },
+            {
+              "url": "#",
+              "title": "Slet gruppe",
+              "label": "Slet gruppe"
+            }
+          ]
+        }
       }
     ],
     "boxLink": {
       "url": "link.pages-admin-groups",
-      "title": "Alle grupper",
-      "label": "Alle grupper"
+      "title": "Alle brugere",
+      "label": "Alle brugere"
     }
   },
-  "popupAddUser": {
-    "headingHasSpacingAfter": {
-      "label": "Tilføj bruger"
-    },
-    "formsEmail": {
-      "formsLabel": {
-        "for": "add_user",
-        "label": "E-mail"
-      },
-      "id": "add_user",
-      "name": "add_user",
-      "value": "",
-      "placeholder": "Indtast e-mail på brugeren"
-    },
-    "buttonLink": {
-      "url": "link.pages-admin-dashboard-user-added",
-      "title": "Tilføj bruger",
-      "label": "Tilføj bruger"
-    },
-    "buttonLinkNeutral": {
-      "url": "link.pages-admin-dashboard",
-      "title": "Annullér",
-      "label": "Annullér"
-    },
-    "jsClass": "js-modal-add-user"
-  },
   "popupAddGroup": {
-    "headingHasSpacingAfter": {
+    "jsClass": "js-modal-add-group",
+    "heading": {
       "label": "Tilføj gruppe"
     },
-    "formsName": {
-      "formsLabel": {
-        "for": "add_group",
-        "label": "Navn"
-      },
-      "id": "add_group",
-      "name": "add_group",
-      "value": "",
+    "formEmail": {
+      "for": "name",
+      "label": "Navn",
+      "id": "name",
+      "name": "name",
       "placeholder": "Indtast navn på gruppen"
     },
-    "buttonLink": {
-      "url": "link.pages-admin-dashboard",
-      "title": "Tilføj gruppe",
-      "label": "Tilføj gruppe"
-    },
-    "buttonLinkNeutral": {
+    "cancel": {
       "url": "link.pages-admin-dashboard",
       "title": "Annullér",
       "label": "Annullér"
     },
-    "jsClass": "js-modal-add-group"
+    "submit": {
+      "url": "link.pages-admin-dashboard",
+      "title": "Gem",
+      "label": "Gem"
+    }
   }
 }

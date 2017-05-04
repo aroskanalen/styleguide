@@ -38,11 +38,6 @@
               "url": "#",
               "title": "Brugerprofil",
               "label": "Brugerprofil"
-            },
-            {
-              "url": "#",
-              "title": "Redigér bruger",
-              "label": "Redigér bruger"
             }
           ]
         }
@@ -72,7 +67,7 @@
       "label": "Annullér"
     },
     "submit": {
-      "url": "link.pages-admin-dashboard",
+      "url": "link.pages-admin-dashboard-user-added",
       "title": "Gem",
       "label": "Gem"
     }
