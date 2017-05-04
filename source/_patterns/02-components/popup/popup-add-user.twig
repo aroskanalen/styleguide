@@ -1,15 +1,15 @@
-{% embed "modules-popup" with { popup: { jsClass: popupAddUser.jsClass } } %}
+{% embed "modules-popup" with { data: data } %}
   {% block content %}
     {% embed "modules-grid-full" %}
       {% block items %}
         {% embed "modules-grid-item" %}
           {% block content %}
-            {% include "elements-heading-spacing-after" with { headingHasSpacingAfter: popupAddUser.headingHasSpacingAfter } %}
+            {% include "elements-heading-spacing-after" with { data: data.heading } %}
           {% endblock %}
         {% endembed %}
         {% embed "modules-grid-item" %}
           {% block content %}
-            {% include "modules-forms-email-field" with { data: popupAddUser.formsEmail } %}
+            {% include "modules-forms-text-field" with { data: data.formEmail } %}
           {% endblock %}
         {% endembed %}
         {% embed "modules-grid-item" %}
@@ -23,12 +23,12 @@
       {% block items %}
         {% embed "modules-grid-item" %}
           {% block content %}
-            {% include "elements-button-link-neutral" with { buttonLinkNeutral: popupAddUser.buttonLinkNeutral } %}
+            {% include "elements-button-link-neutral" with { data: data.cancel } %}
           {% endblock %}
         {% endembed %}
         {% embed "modules-grid-item" %}
           {% block content %}
-            {% include "elements-button-link" with { buttonLink: popupAddUser.buttonLink } %}
+            {% include "elements-button-link" with { data: data.submit } %}
           {% endblock %}
         {% endembed %}
       {% endblock %}
