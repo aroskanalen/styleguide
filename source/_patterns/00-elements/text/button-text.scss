@@ -9,6 +9,11 @@ $button-text-spacing-left: 10px;
 
 .button-text {
   color: $button-text-color;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
 
   &.has-spacing-before {
     margin-left: $button-text-spacing-left;
