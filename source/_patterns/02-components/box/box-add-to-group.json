@@ -11,6 +11,11 @@
       "value": "Br",
       "placeholder": "Find brugeren ved at indtaste navn"
     },
+    "cancel": {
+      "url": "#",
+      "title": "Annullér",
+      "label": "Annullér"
+    },
     "submit": {
       "url": "#",
       "title": "Færdig",

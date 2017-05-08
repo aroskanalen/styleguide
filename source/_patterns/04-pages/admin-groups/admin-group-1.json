@@ -67,24 +67,19 @@
   "popupAddToGroup": {
     "jsClass": "js-modal-add-user",
     "heading": {
-      "label": "Tilføj bruger til gruppen"
+      "label": "Tilføj bruger til gruppe"
     },
-    "formEmail": {
-      "for": "email",
-      "label": "E-mail",
-      "id": "email",
-      "name": "email",
-      "placeholder": "Indtast brugerens e-mail"
-    },
-    "cancel": {
-      "url": "link.pages-admin-group-1",
-      "title": "Annullér",
-      "label": "Annullér"
+    "formName": {
+      "for": "name",
+      "label": "Søg efter bruger",
+      "id": "name",
+      "name": "name",
+      "placeholder": "Find brugeren ved at indtaste navn"
     },
     "submit": {
       "url": "link.pages-admin-group-1",
-      "title": "Gem",
-      "label": "Gem"
+      "title": "Færdig",
+      "label": "Færdig"
     }
   }
 }

@@ -9,7 +9,12 @@
   {% endif %}
   </span>
   {% if data.text %}
-      <span class="content-list-item--text">{{ data.text }}</span>
+    <span class="content-list-item--text">{{ data.text }}</span>
+  {% endif %}
+  {% if data.icon %}
+    {% block icon %}
+      <span class="content-list-item--icon">{% include "elements-icon-default" with { data: data.icon } %}</span>
+    {% endblock %}
   {% endif %}
   {% if data.actions %}
     {% block actions %}
