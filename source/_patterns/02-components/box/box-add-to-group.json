@@ -8,13 +8,8 @@
       "label": "Søg efter bruger",
       "id": "name",
       "name": "name",
-      "value": "Br",
+      "value": "Us",
       "placeholder": "Find brugeren ved at indtaste navn"
-    },
-    "cancel": {
-      "url": "#",
-      "title": "Annullér",
-      "label": "Annullér"
     },
     "submit": {
       "url": "#",
@@ -24,27 +19,23 @@
     "items": [
       {
         "url": "#",
-        "title": "Brad Frost",
-        "label": "Brad Frost"
+        "title": "User",
+        "label": "User"
       },
       {
         "url": "#",
-        "title": "Brian Jensen",
-        "label": "Brian Jensen"
+        "title": "User",
+        "label": "User"
       },
       {
-        "title": "Brad Frost (allerede i gruppen)",
-        "label": "Brad Frost (allerede i gruppen)",
-        "icon": {
-          "icon": "close"
-        }
+        "url": "#",
+        "title": "User",
+        "label": "User"
       },
       {
-        "title": "Brian Jensen (allerede i gruppen)",
-        "label": "Brian Jensen (allerede i gruppen)",
-        "icon": {
-          "icon": "close"
-        }
+        "url": "#",
+        "title": "User",
+        "label": "User"
       }
     ]
   }
