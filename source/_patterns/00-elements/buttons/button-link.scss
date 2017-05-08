@@ -22,6 +22,7 @@ $button-link-neutral-border-style: 2px solid $gray-light;
   border: $button-link-border-style;
   border-radius: $button-link-border-radius;
   color: $button-link-text-color;
+  cursor: pointer;
   display: block;
   padding: $button-link-padding;
   text-align: center;
