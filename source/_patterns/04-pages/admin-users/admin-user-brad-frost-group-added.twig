@@ -4,14 +4,14 @@
 <main role="main" class="content">
   <div class="content--inner">
     {% include "modules-message-info" with { data: message } %}
-    {% embed "modules-box" %}
-      {% block header %}
-        {% include "elements-heading-spacing-after" with { data: box.heading } %}
-      {% endblock %}
-      {% block content %}
-        {% embed "modules-grid-full" %}
-          {% block items %}
-            {% embed "modules-grid-item" %}
+    {% embed "modules-grid-full" %}
+      {% block items %}
+        {% embed "modules-grid-item" %}
+          {% block content %}
+            {% embed "modules-box" %}
+              {% block header %}
+                {% include "elements-heading-spacing-after" with { data: box.heading } %}
+              {% endblock %}
               {% block content %}
                 {% embed "modules-grid-halfs" %}
                   {% block items %}
@@ -27,18 +27,23 @@
                     {% endembed %}
                   {% endblock %}
                 {% endembed %}
-              {% endblock %}
-            {% endembed %}
-            {% embed "modules-grid-item" %}
-              {% block content %}
-                {% include "modules-forms-email-field" with { data: box.formEmail } %}
-                {% include "elements-button-link-spacing-top" with { data: box.submit } %}
+                {% embed "modules-grid-full" %}
+                  {% block items %}
+                    {% embed "modules-grid-item" %}
+                      {% block content %}
+                        {% include "modules-forms-email-field" with { data: box.formEmail } %}
+                        {% include "elements-button-link-spacing-top" with { data: box.submit } %}
+                      {% endblock %}
+                    {% endembed %}
+                  {% endblock %}
+                {% endembed %}
               {% endblock %}
             {% endembed %}
           {% endblock %}
         {% endembed %}
       {% endblock %}
     {% endembed %}
+
     {% embed "modules-grid-halfs" %}
       {% block items %}
         {% embed "modules-grid-item" %}
