@@ -51,6 +51,10 @@
   }
 }
 
+.is-system .content {
+  margin-top: 7em;
+}
+
 // Screen creation design uses full width.
 .is-page.is-screen .content--inner {
   max-width: 100%;
