@@ -7,12 +7,18 @@
  */
 
 (function($) {
-  // Function for toggle burger navigation.
   function toggleElement() {
-    $('.js-toggle-element').bind('touchstart click', function(e) {
-      var toggleTarget = $("." + $(this).attr('data-toggle-element'));
-      var toggleElement = $(this).parent().find(toggleTarget);
+    var toggleTarget;
+    var toggleElement;
 
+    $('.js-toggle-element').bind('touchstart click', function(e) {
+      toggleTarget = $("." + $(this).attr('data-toggle-element'));
+      toggleElement = $(this).parent().find(toggleTarget);
+
+      toggleElement.toggle();
+    });
+
+    $("." + $('.js-toggle-element').attr('data-toggle-element-close')).bind('touchstart click', function() {
       toggleElement.toggle();
     });
   }

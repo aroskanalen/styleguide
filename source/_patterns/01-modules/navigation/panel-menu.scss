@@ -6,16 +6,28 @@
 
 $panel-menu-spacing-top: 10px;
 $panel-menu-max-width: 280px;
+$panel-menu-before-z-index: 90;
 $panel-menu-z-index: 99;
 
 .panel-menu {
   margin-top: $panel-menu-spacing-top;
   max-width: $panel-menu-max-width;
 
-  &.is-positioned {
+  &--overlay {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: $panel-menu-before-z-index;
+  }
+
+  &.is-positioned,
+  &.is-positioned &--inner {
     position: absolute;
     right: 0;
-    top: 100%;
+    width: 100%;
     z-index: $panel-menu-z-index;
   }
 

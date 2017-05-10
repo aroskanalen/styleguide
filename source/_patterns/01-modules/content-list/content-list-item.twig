@@ -18,7 +18,7 @@
   {% endif %}
   {% if data.actions %}
     {% block actions %}
-      <span class="content-list-item--icon js-toggle-element" data-toggle-element="{{ data.actions.jsClass | default("js-panel-menu") }}">{% include "elements-icon-default" with { data: data.actions } %}</span>
+      <span class="content-list-item--icon js-toggle-element" data-toggle-element="{{ data.actions.jsClass | default("js-panel-menu") }}" data-toggle-element-close="{{ data.actions.jsClass | default("js-panel-menu-close") }}">{% include "elements-icon-default" with { data: data.actions } %}</span>
       {% include "modules-panel-menu" with { data: data.actions } %}
     {% endblock %}
   {% endif %}
