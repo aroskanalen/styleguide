@@ -7,19 +7,33 @@
  */
 
 (function($) {
+  function clickHandler(element) {
+    console.log(element);
+
+    element.hide()
+    $(document).off('touchstart click', clickHandler);
+  };
+
   function toggleElement() {
     var toggleTarget;
     var toggleElement;
 
-    $('.js-toggle-element').bind('touchstart click', function() {
+    $('.js-toggle-element').on('touchstart click', function() {
+      event.stopPropagation();
+
       toggleTarget = $("." + $(this).attr('data-toggle-element'));
       toggleElement = $(this).parent().find(toggleTarget);
 
       toggleElement.toggle();
 
-      $(document).bind('touchstart click', function() {
-        toggleElement.toggle();
-      }).unbind('touchstart click');
+      // Register click handler after timeout.
+      setTimeout(function () {
+        $(document).on('touchstart click', clickHandler(toggleElement));
+      });
+
+      // $(document).bind('touchstart click', function() {
+      // toggleElement.toggle();
+      // }).unbind('touchstart click');
     });
   }
 
