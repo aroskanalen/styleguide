@@ -7,12 +7,6 @@
  */
 
 (function($) {
-  function clickHandler(element) {
-    element.hide();
-
-    $(document).off('touchstart click', clickHandler);
-  }
-
   function toggleElement() {
     var toggleTarget;
     var toggleElement;
@@ -21,13 +15,21 @@
       toggleTarget = $("." + $(this).attr('data-toggle-element'));
       toggleElement = $(this).parent().find(toggleTarget);
 
-      toggleElement.toggle();
+      // Hide alle open elements
+      toggleTarget.hide();
+
+      // Show current element
+      toggleElement.show();
 
       // Register click handler after timeout.
       setTimeout(function() {
-        $(document).on('touchstart click', clickHandler(toggleElement));
-      }, 500);
+        $(document).on('touchstart click', function () {
+          toggleElement.hide();
+        })
+      });
 
+      // Remove event
+      $(document).off('touchstart click');
     });
   }
 
