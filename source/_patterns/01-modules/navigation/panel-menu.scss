@@ -13,18 +13,6 @@ $panel-menu-z-index: 99;
   margin-top: $panel-menu-spacing-top;
   max-width: $panel-menu-max-width;
 
-  &--overlay {
-    background-color: rgba(0, 0, 0, .1);
-    bottom: 0;
-    content: "";
-    cursor: pointer;
-    left: 0;
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: $panel-menu-before-z-index;
-  }
-
   &.is-positioned,
   &.is-positioned &--inner {
     position: absolute;

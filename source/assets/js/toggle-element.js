@@ -11,15 +11,15 @@
     var toggleTarget;
     var toggleElement;
 
-    $('.js-toggle-element').bind('touchstart click', function(e) {
+    $('.js-toggle-element').bind('touchstart click', function() {
       toggleTarget = $("." + $(this).attr('data-toggle-element'));
       toggleElement = $(this).parent().find(toggleTarget);
 
       toggleElement.toggle();
-    });
 
-    $("." + $('.js-toggle-element').attr('data-toggle-element-close')).bind('touchstart click', function() {
-      toggleElement.toggle();
+      $(document).bind('touchstart click', function() {
+        toggleElement.toggle();
+      }).unbind('touchstart click');
     });
   }
 
