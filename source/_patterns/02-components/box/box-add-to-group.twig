@@ -1,0 +1,25 @@
+{% embed "modules-box" with { data: data } %}
+  {% block header %}
+    {% if data.heading %}
+      {% include "elements-heading-spacing-after" with { data: data.heading } %}
+    {% endif %}
+  {% endblock %}
+  {% block content %}
+    {% embed "modules-grid-full" %}
+      {% block items %}
+        {% embed "modules-grid-item" %}
+          {% block content %}
+            {% include "elements-forms-text" with { data: data.formName } %}
+          {% endblock %}
+        {% endembed %}
+        {% embed "modules-grid-item" %}
+          {% block content %}
+            {% if data.items %}
+              {% include "modules-content-list" with { data: data } %}
+            {% endif %}
+          {% endblock %}
+        {% endembed %}
+      {% endblock %}
+    {% endembed %}
+  {% endblock %}
+{% endembed %}

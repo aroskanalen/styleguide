@@ -1,0 +1,42 @@
+{
+  "data": {
+    "heading": {
+      "label": "Tilføj bruger til gruppe"
+    },
+    "formName": {
+      "for": "name",
+      "label": "Søg efter bruger",
+      "id": "name",
+      "name": "name",
+      "value": "Us",
+      "placeholder": "Find brugeren ved at indtaste navn"
+    },
+    "submit": {
+      "url": "#",
+      "title": "Færdig",
+      "label": "Færdig"
+    },
+    "items": [
+      {
+        "url": "#",
+        "title": "User",
+        "label": "User"
+      },
+      {
+        "url": "#",
+        "title": "User",
+        "label": "User"
+      },
+      {
+        "url": "#",
+        "title": "User",
+        "label": "User"
+      },
+      {
+        "url": "#",
+        "title": "User",
+        "label": "User"
+      }
+    ]
+  }
+}

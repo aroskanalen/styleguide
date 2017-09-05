@@ -1,0 +1,49 @@
+{% include "components-header" with { isActive: 5 } %}
+{% include "modules-submenu" with { data: submenu } %}
+
+<main role="main" class="content">
+  <div class="content--inner">
+  {% embed "modules-grid-full" %}
+    {% block items %}
+      {% embed "modules-grid-item" %}
+        {% block content %}
+          {% embed "modules-box" %}
+            {% block header %}
+              {% include "elements-heading-spacing-after" with { data: user.heading } %}
+            {% endblock %}
+            {% block content %}
+              {% embed "modules-grid-full" %}
+                {% block items %}
+                  {% embed "modules-grid-item" %}
+                    {% block content %}
+                      {% include "modules-content-list" with { data: user } %}
+                    {% endblock %}
+                  {% endembed %}
+                {% endblock %}
+              {% endembed %}
+            {% endblock %}
+          {% endembed %}
+        {% endblock %}
+      {% endembed %}
+    {% endblock %}
+  {% endembed %}
+
+  {% embed "modules-grid-halfs" %}
+    {% block items %}
+      {% embed "modules-grid-item" %}
+        {% block content %}
+          {% include "components-box-list" with { data: boxGroups } %}
+        {% endblock %}
+      {% endembed %}
+      {% embed "modules-grid-item" %}
+        {% block content %}
+          {% include "components-box-list" with { data: boxRoles } %}
+        {% endblock %}
+      {% endembed %}
+    {% endblock %}
+  {% endembed %}
+  </div>
+</main>
+
+{% include "components-popup-add-to-group" with { data: popupAddToGroup } %}
+{% include "components-popup-add-role" with { data: popupAddRole } %}

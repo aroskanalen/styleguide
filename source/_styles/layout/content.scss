@@ -36,7 +36,7 @@
 }
 
 .is-page .content {
-  margin-top: 12em;
+  margin-top: 11em;
   padding-left: 1em;
   padding-right: 1em;
   position: relative;
@@ -49,6 +49,10 @@
 
     @include word-wrap;
   }
+}
+
+.is-system .content {
+  margin-top: 7em;
 }
 
 // Screen creation design uses full width.
