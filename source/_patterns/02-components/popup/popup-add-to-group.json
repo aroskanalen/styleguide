@@ -1,0 +1,46 @@
+{
+  "data": {
+    "heading": {
+      "label": "Tilføj bruger til gruppe"
+    },
+    "formName": {
+      "for": "name",
+      "label": "Søg efter bruger",
+      "id": "name",
+      "name": "name",
+      "value": "Br",
+      "placeholder": "Find brugeren ved at indtaste navn"
+    },
+    "submit": {
+      "url": "#",
+      "title": "Færdig",
+      "label": "Færdig"
+    },
+    "items": [
+      {
+        "url": "#",
+        "title": "Brad Frost",
+        "label": "Brad Frost"
+      },
+      {
+        "url": "#",
+        "title": "Brian Jensen",
+        "label": "Brian Jensen"
+      },
+      {
+        "title": "Brad Frost (allerede i gruppen)",
+        "label": "Brad Frost (allerede i gruppen)",
+        "icon": {
+          "icon": "close"
+        }
+      },
+      {
+        "title": "Brian Jensen (allerede i gruppen)",
+        "label": "Brian Jensen (allerede i gruppen)",
+        "icon": {
+          "icon": "close"
+        }
+      }
+    ]
+  }
+}
