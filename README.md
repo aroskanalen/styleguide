@@ -1,4 +1,11 @@
-# OS2Display Styleguide
+# !!! Deprecation warning !!!
+
+This repository has been included in the [admin-bundle](https://github.com/os2display/admin-bundle) in os2display 5.0.0.
+
+No new development should be made in this repository. It only exists for backwards compatibility regarding vagrants.
+
+
+## OS2Display Styleguide
 
 OS2Display styleguide using [Pattern Lab](http://patternlab.io/).
 
